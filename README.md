@@ -1,6 +1,6 @@
 # Console_Robot 机械臂控制后端交接文档
 
-这个项目是机械臂检测工位的后端控制程序，核心作用是把前端/工艺卡系统、埃斯顿机器人、PLC、光源控制器、MySQL 数据库和拍照触发流程串起来。师弟接手时先把它当成一个 ASP.NET Core Web API 项目理解：HTTP 接口负责接收指令，Service 层负责真正和硬件、数据库、轨迹文件打交道。
+这个项目是机械臂检测工位的后端控制程序，核心作用是把前端/工艺卡系统、埃斯顿机器人、PLC、光源控制器、MySQL 数据库和拍照触发流程串起来。可以先把它当成一个 ASP.NET Core Web API 项目理解：HTTP 接口负责接收指令，Service 层负责真正和硬件、数据库、轨迹文件打交道。
 
 ## 项目当前状态
 
@@ -101,7 +101,7 @@ flowchart LR
 - `ConnectionStrings:MySqlConnection`
 - `ConnectionStrings:ErrorLogs`
 
-不要把生产密码、GitHub Token 或真实密钥写进公共仓库。交接给下一位同学时，建议另建 `appsettings.example.json`，真实配置只放本机或内网部署环境。
+不要把生产密码、GitHub Token 或真实密钥写进公共仓库。建议另建 `appsettings.example.json`，真实配置只放本机或内网部署环境。
 
 ### 3. 启动后端
 
@@ -599,17 +599,6 @@ WebBackend/EstunRemoteApiLib-V1.3/x64/bin/
 - 一号位/二号位到位信号是否和代码点表一致
 - 工作令号和 `PartName` 是否能查到工艺卡
 
-## 建议的交接路线
-
-给下一位同学接手时，建议按这个顺序带：
-
-1. 先讲整体链路：前端/工艺卡 -> 后端 -> 机器人/PLC/光源/数据库。
-2. 打开 Swagger 演示 `connect`、`startup`、`servo`、`wpos/jpos`。
-3. 拿一条短轨迹讲 `.erd/.erp` 怎么对应。
-4. 在 `RobotService.RunCommandAsync()` 里讲 `det=1` 为什么会拍照。
-5. 在 `AutoOrManDetectService` 里讲一号位、翻转、二号位的时序。
-6. 在 `SemiAutoService` 里讲前端上传工艺卡后怎么跑立式和倾斜。
-7. 最后讲排错：日志、PLC 点表、机器人报警、数据库记录。
 
 ## 版本管理建议
 
