@@ -1,0 +1,502 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebBackend.Dao.PlcConfiguration
+  commentId: T:WebBackend.Dao.PlcConfiguration
+  id: PlcConfiguration
+  parent: WebBackend.Dao
+  children:
+  - WebBackend.Dao.PlcConfiguration.#ctor
+  - WebBackend.Dao.PlcConfiguration.CpuType
+  - WebBackend.Dao.PlcConfiguration.IpAddress
+  - WebBackend.Dao.PlcConfiguration.Port
+  langs:
+  - csharp
+  - vb
+  name: PlcConfiguration
+  nameWithType: PlcConfiguration
+  fullName: WebBackend.Dao.PlcConfiguration
+  type: Class
+  source:
+    remote:
+      path: WebBackend/Dao/PlcConfiguration.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: PlcConfiguration
+    path: WebBackend/Dao/PlcConfiguration.cs
+    startLine: 26
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: PLC配置�?
+  example: []
+  syntax:
+    content: 'public class PlcConfiguration : IPlcConfiguration'
+    content.vb: Public Class PlcConfiguration Implements IPlcConfiguration
+  inheritance:
+  - System.Object
+  implements:
+  - WebBackend.Dao.IPlcConfiguration
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: WebBackend.Dao.PlcConfiguration.CpuType
+  commentId: P:WebBackend.Dao.PlcConfiguration.CpuType
+  id: CpuType
+  parent: WebBackend.Dao.PlcConfiguration
+  langs:
+  - csharp
+  - vb
+  name: CpuType
+  nameWithType: PlcConfiguration.CpuType
+  fullName: WebBackend.Dao.PlcConfiguration.CpuType
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/PlcConfiguration.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: CpuType
+    path: WebBackend/Dao/PlcConfiguration.cs
+    startLine: 31
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: CPU类型，如S71200，S71500�?
+  example: []
+  syntax:
+    content: public string CpuType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CpuType As String
+  overload: WebBackend.Dao.PlcConfiguration.CpuType*
+  implements:
+  - WebBackend.Dao.IPlcConfiguration.CpuType
+- uid: WebBackend.Dao.PlcConfiguration.IpAddress
+  commentId: P:WebBackend.Dao.PlcConfiguration.IpAddress
+  id: IpAddress
+  parent: WebBackend.Dao.PlcConfiguration
+  langs:
+  - csharp
+  - vb
+  name: IpAddress
+  nameWithType: PlcConfiguration.IpAddress
+  fullName: WebBackend.Dao.PlcConfiguration.IpAddress
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/PlcConfiguration.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: IpAddress
+    path: WebBackend/Dao/PlcConfiguration.cs
+    startLine: 35
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: IP地址，如192.168.1.201
+  example: []
+  syntax:
+    content: public string IpAddress { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property IpAddress As String
+  overload: WebBackend.Dao.PlcConfiguration.IpAddress*
+  implements:
+  - WebBackend.Dao.IPlcConfiguration.IpAddress
+- uid: WebBackend.Dao.PlcConfiguration.Port
+  commentId: P:WebBackend.Dao.PlcConfiguration.Port
+  id: Port
+  parent: WebBackend.Dao.PlcConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Port
+  nameWithType: PlcConfiguration.Port
+  fullName: WebBackend.Dao.PlcConfiguration.Port
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/PlcConfiguration.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: Port
+    path: WebBackend/Dao/PlcConfiguration.cs
+    startLine: 39
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: PLC运行端口
+  example: []
+  syntax:
+    content: public string Port { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Port As String
+  overload: WebBackend.Dao.PlcConfiguration.Port*
+  implements:
+  - WebBackend.Dao.IPlcConfiguration.Port
+- uid: WebBackend.Dao.PlcConfiguration.#ctor
+  commentId: M:WebBackend.Dao.PlcConfiguration.#ctor
+  id: '#ctor'
+  parent: WebBackend.Dao.PlcConfiguration
+  langs:
+  - csharp
+  - vb
+  name: PlcConfiguration()
+  nameWithType: PlcConfiguration.PlcConfiguration()
+  fullName: WebBackend.Dao.PlcConfiguration.PlcConfiguration()
+  type: Constructor
+  source:
+    remote:
+      path: WebBackend/Dao/PlcConfiguration.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: .ctor
+    path: WebBackend/Dao/PlcConfiguration.cs
+    startLine: 43
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 无参构造函数，默认每个值都为空字符�?
+  example: []
+  syntax:
+    content: public PlcConfiguration()
+    content.vb: Public Sub New()
+  overload: WebBackend.Dao.PlcConfiguration.#ctor*
+  nameWithType.vb: PlcConfiguration.New()
+  fullName.vb: WebBackend.Dao.PlcConfiguration.New()
+  name.vb: New()
+references:
+- uid: WebBackend.Dao
+  commentId: N:WebBackend.Dao
+  href: WebBackend.html
+  name: WebBackend.Dao
+  nameWithType: WebBackend.Dao
+  fullName: WebBackend.Dao
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: WebBackend.Dao.IPlcConfiguration
+  commentId: T:WebBackend.Dao.IPlcConfiguration
+  parent: WebBackend.Dao
+  href: WebBackend.Dao.IPlcConfiguration.html
+  name: IPlcConfiguration
+  nameWithType: IPlcConfiguration
+  fullName: WebBackend.Dao.IPlcConfiguration
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WebBackend.Dao.PlcConfiguration.CpuType*
+  commentId: Overload:WebBackend.Dao.PlcConfiguration.CpuType
+  href: WebBackend.Dao.PlcConfiguration.html#WebBackend_Dao_PlcConfiguration_CpuType
+  name: CpuType
+  nameWithType: PlcConfiguration.CpuType
+  fullName: WebBackend.Dao.PlcConfiguration.CpuType
+- uid: WebBackend.Dao.IPlcConfiguration.CpuType
+  commentId: P:WebBackend.Dao.IPlcConfiguration.CpuType
+  parent: WebBackend.Dao.IPlcConfiguration
+  href: WebBackend.Dao.IPlcConfiguration.html#WebBackend_Dao_IPlcConfiguration_CpuType
+  name: CpuType
+  nameWithType: IPlcConfiguration.CpuType
+  fullName: WebBackend.Dao.IPlcConfiguration.CpuType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: WebBackend.Dao.PlcConfiguration.IpAddress*
+  commentId: Overload:WebBackend.Dao.PlcConfiguration.IpAddress
+  href: WebBackend.Dao.PlcConfiguration.html#WebBackend_Dao_PlcConfiguration_IpAddress
+  name: IpAddress
+  nameWithType: PlcConfiguration.IpAddress
+  fullName: WebBackend.Dao.PlcConfiguration.IpAddress
+- uid: WebBackend.Dao.IPlcConfiguration.IpAddress
+  commentId: P:WebBackend.Dao.IPlcConfiguration.IpAddress
+  parent: WebBackend.Dao.IPlcConfiguration
+  href: WebBackend.Dao.IPlcConfiguration.html#WebBackend_Dao_IPlcConfiguration_IpAddress
+  name: IpAddress
+  nameWithType: IPlcConfiguration.IpAddress
+  fullName: WebBackend.Dao.IPlcConfiguration.IpAddress
+- uid: WebBackend.Dao.PlcConfiguration.Port*
+  commentId: Overload:WebBackend.Dao.PlcConfiguration.Port
+  href: WebBackend.Dao.PlcConfiguration.html#WebBackend_Dao_PlcConfiguration_Port
+  name: Port
+  nameWithType: PlcConfiguration.Port
+  fullName: WebBackend.Dao.PlcConfiguration.Port
+- uid: WebBackend.Dao.IPlcConfiguration.Port
+  commentId: P:WebBackend.Dao.IPlcConfiguration.Port
+  parent: WebBackend.Dao.IPlcConfiguration
+  href: WebBackend.Dao.IPlcConfiguration.html#WebBackend_Dao_IPlcConfiguration_Port
+  name: Port
+  nameWithType: IPlcConfiguration.Port
+  fullName: WebBackend.Dao.IPlcConfiguration.Port
+- uid: WebBackend.Dao.PlcConfiguration.#ctor*
+  commentId: Overload:WebBackend.Dao.PlcConfiguration.#ctor
+  href: WebBackend.Dao.PlcConfiguration.html#WebBackend_Dao_PlcConfiguration__ctor
+  name: PlcConfiguration
+  nameWithType: PlcConfiguration.PlcConfiguration
+  fullName: WebBackend.Dao.PlcConfiguration.PlcConfiguration
+  nameWithType.vb: PlcConfiguration.New
+  fullName.vb: WebBackend.Dao.PlcConfiguration.New
+  name.vb: New

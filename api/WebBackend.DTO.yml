@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebBackend.DTO
+  commentId: N:WebBackend.DTO
+  id: WebBackend.DTO
+  children:
+  - WebBackend.DTO.GlobalSpeedRequest
+  - WebBackend.DTO.R
+  - WebBackend.DTO.TaskGetRequest
+  - WebBackend.DTO.ToolIdRequest
+  - WebBackend.DTO.TraceRequest
+  langs:
+  - csharp
+  - vb
+  name: WebBackend.DTO
+  nameWithType: WebBackend.DTO
+  fullName: WebBackend.DTO
+  type: Namespace
+  assemblies:
+  - WebBackend
+references:
+- uid: WebBackend.DTO.GlobalSpeedRequest
+  commentId: T:WebBackend.DTO.GlobalSpeedRequest
+  parent: WebBackend.DTO
+  href: WebBackend.DTO.GlobalSpeedRequest.html
+  name: GlobalSpeedRequest
+  nameWithType: GlobalSpeedRequest
+  fullName: WebBackend.DTO.GlobalSpeedRequest
+- uid: WebBackend.DTO.R
+  commentId: T:WebBackend.DTO.R
+  href: WebBackend.DTO.R.html
+  name: R
+  nameWithType: R
+  fullName: WebBackend.DTO.R
+- uid: WebBackend.DTO.TaskGetRequest
+  commentId: T:WebBackend.DTO.TaskGetRequest
+  parent: WebBackend.DTO
+  href: WebBackend.DTO.TaskGetRequest.html
+  name: TaskGetRequest
+  nameWithType: TaskGetRequest
+  fullName: WebBackend.DTO.TaskGetRequest
+- uid: WebBackend.DTO.ToolIdRequest
+  commentId: T:WebBackend.DTO.ToolIdRequest
+  parent: WebBackend.DTO
+  href: WebBackend.DTO.ToolIdRequest.html
+  name: ToolIdRequest
+  nameWithType: ToolIdRequest
+  fullName: WebBackend.DTO.ToolIdRequest
+- uid: WebBackend.DTO.TraceRequest
+  commentId: T:WebBackend.DTO.TraceRequest
+  parent: WebBackend.DTO
+  href: WebBackend.DTO.TraceRequest.html
+  name: TraceRequest
+  nameWithType: TraceRequest
+  fullName: WebBackend.DTO.TraceRequest
+- uid: WebBackend.DTO
+  commentId: N:WebBackend.DTO
+  href: WebBackend.html
+  name: WebBackend.DTO
+  nameWithType: WebBackend.DTO
+  fullName: WebBackend.DTO
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.DTO
+    name: DTO
+    href: WebBackend.DTO.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.DTO
+    name: DTO
+    href: WebBackend.DTO.html

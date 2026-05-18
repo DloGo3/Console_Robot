@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config>
+	<SETThrift_Server port="23456"/>
+	<GETThrift_Server port="23457"/>
+	<STATUSTcp_Server port="6700"/>
+	<FTP_Server port="2121"/>
+	<TimeOutConfig conn_time="1000" recv_time="1000" send_time="1000" retries="3"/>
+	<Language set="en"/><!--support en for English，ch fro Chinese-->
+</Config>

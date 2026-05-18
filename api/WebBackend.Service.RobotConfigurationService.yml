@@ -1,0 +1,596 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebBackend.Service.RobotConfigurationService
+  commentId: T:WebBackend.Service.RobotConfigurationService
+  id: RobotConfigurationService
+  parent: WebBackend.Service
+  children:
+  - WebBackend.Service.RobotConfigurationService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{WebBackend.Service.RobotConfigurationService},WebBackend.Util.Control)
+  - WebBackend.Service.RobotConfigurationService.RobotConfig
+  langs:
+  - csharp
+  - vb
+  name: RobotConfigurationService
+  nameWithType: RobotConfigurationService
+  fullName: WebBackend.Service.RobotConfigurationService
+  type: Class
+  source:
+    remote:
+      path: WebBackend/Service/RobotConfigurationService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: RobotConfigurationService
+    path: WebBackend/Service/RobotConfigurationService.cs
+    startLine: 12
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 用于管理和重新加载机器人配置数据的服务�?
+  example: []
+  syntax:
+    content: public class RobotConfigurationService
+    content.vb: Public Class RobotConfigurationService
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: WebBackend.Service.RobotConfigurationService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{WebBackend.Service.RobotConfigurationService},WebBackend.Util.Control)
+  commentId: M:WebBackend.Service.RobotConfigurationService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{WebBackend.Service.RobotConfigurationService},WebBackend.Util.Control)
+  id: '#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{WebBackend.Service.RobotConfigurationService},WebBackend.Util.Control)'
+  parent: WebBackend.Service.RobotConfigurationService
+  langs:
+  - csharp
+  - vb
+  name: RobotConfigurationService(IConfiguration, ILogger<RobotConfigurationService>, Control)
+  nameWithType: RobotConfigurationService.RobotConfigurationService(IConfiguration, ILogger<RobotConfigurationService>, Control)
+  fullName: WebBackend.Service.RobotConfigurationService.RobotConfigurationService(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Logging.ILogger<WebBackend.Service.RobotConfigurationService>, WebBackend.Util.Control)
+  type: Constructor
+  source:
+    remote:
+      path: WebBackend/Service/RobotConfigurationService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: .ctor
+    path: WebBackend/Service/RobotConfigurationService.cs
+    startLine: 24
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 初始�?<xref href="WebBackend.Service.RobotConfigurationService" data-throw-if-not-resolved="false"></xref> 类的新实例�?
+  example: []
+  syntax:
+    content: public RobotConfigurationService(IConfiguration configuration, ILogger<RobotConfigurationService> logger, Control control)
+    parameters:
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+      description: 应用程序的配置�?
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{WebBackend.Service.RobotConfigurationService}
+      description: 用于记录日志的记录器�?
+    - id: control
+      type: WebBackend.Util.Control
+      description: 机器人控制器�?
+    content.vb: Public Sub New(configuration As IConfiguration, logger As ILogger(Of RobotConfigurationService), control As Control)
+  overload: WebBackend.Service.RobotConfigurationService.#ctor*
+  nameWithType.vb: RobotConfigurationService.New(IConfiguration, ILogger(Of RobotConfigurationService), Control)
+  fullName.vb: WebBackend.Service.RobotConfigurationService.New(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Logging.ILogger(Of WebBackend.Service.RobotConfigurationService), WebBackend.Util.Control)
+  name.vb: New(IConfiguration, ILogger(Of RobotConfigurationService), Control)
+- uid: WebBackend.Service.RobotConfigurationService.RobotConfig
+  commentId: P:WebBackend.Service.RobotConfigurationService.RobotConfig
+  id: RobotConfig
+  parent: WebBackend.Service.RobotConfigurationService
+  langs:
+  - csharp
+  - vb
+  name: RobotConfig
+  nameWithType: RobotConfigurationService.RobotConfig
+  fullName: WebBackend.Service.RobotConfigurationService.RobotConfig
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Service/RobotConfigurationService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: RobotConfig
+    path: WebBackend/Service/RobotConfigurationService.cs
+    startLine: 79
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 获取或设置机器人配置�?
+  example: []
+  syntax:
+    content: public IRobotConfiguration RobotConfig { get; }
+    parameters: []
+    return:
+      type: WebBackend.Dao.IRobotConfiguration
+    content.vb: Public Property RobotConfig As IRobotConfiguration
+  overload: WebBackend.Service.RobotConfigurationService.RobotConfig*
+references:
+- uid: WebBackend.Service
+  commentId: N:WebBackend.Service
+  href: WebBackend.html
+  name: WebBackend.Service
+  nameWithType: WebBackend.Service
+  fullName: WebBackend.Service
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Service
+    name: Service
+    href: WebBackend.Service.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Service
+    name: Service
+    href: WebBackend.Service.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WebBackend.Service.RobotConfigurationService
+  commentId: T:WebBackend.Service.RobotConfigurationService
+  href: WebBackend.Service.RobotConfigurationService.html
+  name: RobotConfigurationService
+  nameWithType: RobotConfigurationService
+  fullName: WebBackend.Service.RobotConfigurationService
+- uid: WebBackend.Service.RobotConfigurationService.#ctor*
+  commentId: Overload:WebBackend.Service.RobotConfigurationService.#ctor
+  href: WebBackend.Service.RobotConfigurationService.html#WebBackend_Service_RobotConfigurationService__ctor_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Logging_ILogger_WebBackend_Service_RobotConfigurationService__WebBackend_Util_Control_
+  name: RobotConfigurationService
+  nameWithType: RobotConfigurationService.RobotConfigurationService
+  fullName: WebBackend.Service.RobotConfigurationService.RobotConfigurationService
+  nameWithType.vb: RobotConfigurationService.New
+  fullName.vb: WebBackend.Service.RobotConfigurationService.New
+  name.vb: New
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: Microsoft.Extensions.Logging.ILogger{WebBackend.Service.RobotConfigurationService}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{WebBackend.Service.RobotConfigurationService}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<RobotConfigurationService>
+  nameWithType: ILogger<RobotConfigurationService>
+  fullName: Microsoft.Extensions.Logging.ILogger<WebBackend.Service.RobotConfigurationService>
+  nameWithType.vb: ILogger(Of RobotConfigurationService)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of WebBackend.Service.RobotConfigurationService)
+  name.vb: ILogger(Of RobotConfigurationService)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: WebBackend.Service.RobotConfigurationService
+    name: RobotConfigurationService
+    href: WebBackend.Service.RobotConfigurationService.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: WebBackend.Service.RobotConfigurationService
+    name: RobotConfigurationService
+    href: WebBackend.Service.RobotConfigurationService.html
+  - name: )
+- uid: WebBackend.Util.Control
+  commentId: T:WebBackend.Util.Control
+  parent: WebBackend.Util
+  href: WebBackend.Util.Control.html
+  name: Control
+  nameWithType: Control
+  fullName: WebBackend.Util.Control
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: WebBackend.Util
+  commentId: N:WebBackend.Util
+  href: WebBackend.html
+  name: WebBackend.Util
+  nameWithType: WebBackend.Util
+  fullName: WebBackend.Util
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Util
+    name: Util
+    href: WebBackend.Util.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Util
+    name: Util
+    href: WebBackend.Util.html
+- uid: WebBackend.Service.RobotConfigurationService.RobotConfig*
+  commentId: Overload:WebBackend.Service.RobotConfigurationService.RobotConfig
+  href: WebBackend.Service.RobotConfigurationService.html#WebBackend_Service_RobotConfigurationService_RobotConfig
+  name: RobotConfig
+  nameWithType: RobotConfigurationService.RobotConfig
+  fullName: WebBackend.Service.RobotConfigurationService.RobotConfig
+- uid: WebBackend.Dao.IRobotConfiguration
+  commentId: T:WebBackend.Dao.IRobotConfiguration
+  parent: WebBackend.Dao
+  href: WebBackend.Dao.IRobotConfiguration.html
+  name: IRobotConfiguration
+  nameWithType: IRobotConfiguration
+  fullName: WebBackend.Dao.IRobotConfiguration
+- uid: WebBackend.Dao
+  commentId: N:WebBackend.Dao
+  href: WebBackend.html
+  name: WebBackend.Dao
+  nameWithType: WebBackend.Dao
+  fullName: WebBackend.Dao
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html

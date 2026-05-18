@@ -1,0 +1,46 @@
+{
+    "metadata": [
+        {
+            "src": [
+                {
+                    "src": "./WebBackend",
+                    "files": [
+                        "*.csproj"
+                    ]
+                }
+            ],
+            "dest": "api"
+        }
+    ],
+    "build": {
+        "content": [
+            {
+                "files": [
+                    "**/*.{md,yml}"
+                ],
+                "exclude": [
+                    "_site/**"
+                ]
+            }
+        ],
+        "resource": [
+            {
+                "files": [
+                    "images/**",
+                    "docs/*.pdf"
+                ]
+            }
+        ],
+        "output": "_site",
+        "template": [
+            "default",
+            "modern"
+        ],
+        "globalMetadata": {
+            "_appName": "Develop Robot Arm Control API Documentation",
+            "_appTitle": "Develop Robot Arm Control API Documentation",
+            "_enableSearch": false,
+            "pdf": false
+        }
+    }
+}

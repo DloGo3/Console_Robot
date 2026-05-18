@@ -1,0 +1,1892 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebBackend.Service.RobotService
+  commentId: T:WebBackend.Service.RobotService
+  id: RobotService
+  parent: WebBackend.Service
+  children:
+  - WebBackend.Service.RobotService.#ctor(WebBackend.Dao.IApplicationData,WebBackend.Util.Control,WebBackend.Service.PlcService,Microsoft.Extensions.Logging.ILogger{WebBackend.Service.RobotService},WebBackend.Dao.RobotConfiguration)
+  - WebBackend.Service.RobotService.ContinueMove
+  - WebBackend.Service.RobotService.ContinueMoveAsync
+  - WebBackend.Service.RobotService.Disconnect
+  - WebBackend.Service.RobotService.GetAPIStatus
+  - WebBackend.Service.RobotService.GetCurrentJPos
+  - WebBackend.Service.RobotService.GetCurrentTask
+  - WebBackend.Service.RobotService.GetCurrentWPos
+  - WebBackend.Service.RobotService.GetGlobalSpeed
+  - WebBackend.Service.RobotService.GetRunMode
+  - WebBackend.Service.RobotService.GetServoState
+  - WebBackend.Service.RobotService.GetSysMode
+  - WebBackend.Service.RobotService.GetTaskQueue
+  - WebBackend.Service.RobotService.LoadTool(System.Int32)
+  - WebBackend.Service.RobotService.LoadUserCoord(System.Int32)
+  - WebBackend.Service.RobotService.Pause(System.Int32)
+  - WebBackend.Service.RobotService.RunAllCommand
+  - WebBackend.Service.RobotService.RunAllCommandAsync
+  - WebBackend.Service.RobotService.RunCommand(WebBackend.Dao.Command)
+  - WebBackend.Service.RobotService.SetGlobalSpeed(System.Int32)
+  - WebBackend.Service.RobotService.SetRunMode(EstunApiStruct_CLI.E_RunModeType_CLI)
+  - WebBackend.Service.RobotService.SetSysMode(EstunApiStruct_CLI.E_SysModeType_CLI)
+  - WebBackend.Service.RobotService.SetToolId(System.Int32)
+  - WebBackend.Service.RobotService.Sleep(System.Int32)
+  - WebBackend.Service.RobotService.Start(System.Int32)
+  - WebBackend.Service.RobotService.Startup
+  - WebBackend.Service.RobotService.Stop(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: RobotService
+  nameWithType: RobotService
+  fullName: WebBackend.Service.RobotService
+  type: Class
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: RobotService
+    path: WebBackend/Service/RobotService.cs
+    startLine: 21
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 提供给RobotController机器人相关功�?
+  remarks: 构造函数，用于依赖注入全局数据以及机器人控制器
+  example: []
+  syntax:
+    content: public class RobotService
+    content.vb: Public Class RobotService
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: WebBackend.Service.RobotService.#ctor(WebBackend.Dao.IApplicationData,WebBackend.Util.Control,WebBackend.Service.PlcService,Microsoft.Extensions.Logging.ILogger{WebBackend.Service.RobotService},WebBackend.Dao.RobotConfiguration)
+  commentId: M:WebBackend.Service.RobotService.#ctor(WebBackend.Dao.IApplicationData,WebBackend.Util.Control,WebBackend.Service.PlcService,Microsoft.Extensions.Logging.ILogger{WebBackend.Service.RobotService},WebBackend.Dao.RobotConfiguration)
+  id: '#ctor(WebBackend.Dao.IApplicationData,WebBackend.Util.Control,WebBackend.Service.PlcService,Microsoft.Extensions.Logging.ILogger{WebBackend.Service.RobotService},WebBackend.Dao.RobotConfiguration)'
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: RobotService(IApplicationData, Control, PlcService, ILogger<RobotService>, RobotConfiguration)
+  nameWithType: RobotService.RobotService(IApplicationData, Control, PlcService, ILogger<RobotService>, RobotConfiguration)
+  fullName: WebBackend.Service.RobotService.RobotService(WebBackend.Dao.IApplicationData, WebBackend.Util.Control, WebBackend.Service.PlcService, Microsoft.Extensions.Logging.ILogger<WebBackend.Service.RobotService>, WebBackend.Dao.RobotConfiguration)
+  type: Constructor
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: .ctor
+    path: WebBackend/Service/RobotService.cs
+    startLine: 21
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 提供给RobotController机器人相关功�?
+  remarks: 构造函数，用于依赖注入全局数据以及机器人控制器
+  example: []
+  syntax:
+    content: public RobotService(IApplicationData appData, Control controller, PlcService plcService, ILogger<RobotService> logger, RobotConfiguration configuration)
+    parameters:
+    - id: appData
+      type: WebBackend.Dao.IApplicationData
+      description: 全局数据
+    - id: controller
+      type: WebBackend.Util.Control
+      description: 机器人控制器
+    - id: plcService
+      type: WebBackend.Service.PlcService
+      description: PLC业务逻辑�?
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{WebBackend.Service.RobotService}
+      description: 日志记录�?
+    - id: configuration
+      type: WebBackend.Dao.RobotConfiguration
+      description: 机器人配置信�?
+    content.vb: Public Sub New(appData As IApplicationData, controller As Control, plcService As PlcService, logger As ILogger(Of RobotService), configuration As RobotConfiguration)
+  overload: WebBackend.Service.RobotService.#ctor*
+  nameWithType.vb: RobotService.New(IApplicationData, Control, PlcService, ILogger(Of RobotService), RobotConfiguration)
+  fullName.vb: WebBackend.Service.RobotService.New(WebBackend.Dao.IApplicationData, WebBackend.Util.Control, WebBackend.Service.PlcService, Microsoft.Extensions.Logging.ILogger(Of WebBackend.Service.RobotService), WebBackend.Dao.RobotConfiguration)
+  name.vb: New(IApplicationData, Control, PlcService, ILogger(Of RobotService), RobotConfiguration)
+- uid: WebBackend.Service.RobotService.Startup
+  commentId: M:WebBackend.Service.RobotService.Startup
+  id: Startup
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: Startup()
+  nameWithType: RobotService.Startup()
+  fullName: WebBackend.Service.RobotService.Startup()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: Startup
+    path: WebBackend/Service/RobotService.cs
+    startLine: 69
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 启动机器人并让机器人准备运动
+  example: []
+  syntax:
+    content: public int Startup()
+    return:
+      type: System.Int32
+      description: >-
+        <p>0       启动成功</p>
+
+        <p>-1      机械臂连接失�?/p>
+
+        <p>-2      尝试清除机械臂错误信息但还是存在错误，需要上示教器查�?/p>
+
+        <p>-3      申请运动权限失败</p>
+
+        <p>-4      舵机启动失败，还处于关机状�?/p>
+
+        <p>-5      舵机启动失败，处于错误状�?/p>
+
+        <p>-6      设置全局速度失败</p>
+
+        <p>-7      加载用户坐标系失�?/p>
+
+        <p>-8      加载工具坐标系失�?/p>
+
+        <p>-9      停止机械臂失败（清空运动队列失败�?/p>
+
+        <p>-10     设置系统模式为API模式失败</p>
+    content.vb: Public Function Startup() As Integer
+  overload: WebBackend.Service.RobotService.Startup*
+- uid: WebBackend.Service.RobotService.Start(System.Int32)
+  commentId: M:WebBackend.Service.RobotService.Start(System.Int32)
+  id: Start(System.Int32)
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: Start(int)
+  nameWithType: RobotService.Start(int)
+  fullName: WebBackend.Service.RobotService.Start(int)
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: Start
+    path: WebBackend/Service/RobotService.cs
+    startLine: 245
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 开始机器人运动
+  example: []
+  syntax:
+    content: public bool Start(int milliseconds)
+    parameters:
+    - id: milliseconds
+      type: System.Int32
+      description: 等待信号发送和接受的时间（以毫秒为单位�?
+    return:
+      type: System.Boolean
+      description: 成功返回true，失败返回false
+    content.vb: Public Function Start(milliseconds As Integer) As Boolean
+  overload: WebBackend.Service.RobotService.Start*
+  nameWithType.vb: RobotService.Start(Integer)
+  fullName.vb: WebBackend.Service.RobotService.Start(Integer)
+  name.vb: Start(Integer)
+- uid: WebBackend.Service.RobotService.Pause(System.Int32)
+  commentId: M:WebBackend.Service.RobotService.Pause(System.Int32)
+  id: Pause(System.Int32)
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: Pause(int)
+  nameWithType: RobotService.Pause(int)
+  fullName: WebBackend.Service.RobotService.Pause(int)
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: Pause
+    path: WebBackend/Service/RobotService.cs
+    startLine: 255
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 暂停机器人运动，但不清空队列
+  example: []
+  syntax:
+    content: public bool Pause(int milliseconds)
+    parameters:
+    - id: milliseconds
+      type: System.Int32
+      description: 等待信号发送和接受的时间（以毫秒为单位�?
+    return:
+      type: System.Boolean
+      description: 成功返回true，失败返回false
+    content.vb: Public Function Pause(milliseconds As Integer) As Boolean
+  overload: WebBackend.Service.RobotService.Pause*
+  nameWithType.vb: RobotService.Pause(Integer)
+  fullName.vb: WebBackend.Service.RobotService.Pause(Integer)
+  name.vb: Pause(Integer)
+- uid: WebBackend.Service.RobotService.Stop(System.Int32)
+  commentId: M:WebBackend.Service.RobotService.Stop(System.Int32)
+  id: Stop(System.Int32)
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: Stop(int)
+  nameWithType: RobotService.Stop(int)
+  fullName: WebBackend.Service.RobotService.Stop(int)
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: Stop
+    path: WebBackend/Service/RobotService.cs
+    startLine: 266
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 停止机器人运行并清空队列
+  example: []
+  syntax:
+    content: public bool Stop(int milliseconds)
+    parameters:
+    - id: milliseconds
+      type: System.Int32
+      description: 等待信号发送和接受的时间（以毫秒为单位�?
+    return:
+      type: System.Boolean
+      description: 成功返回true，失败返回false
+    content.vb: Public Function [Stop](milliseconds As Integer) As Boolean
+  overload: WebBackend.Service.RobotService.Stop*
+  nameWithType.vb: RobotService.Stop(Integer)
+  fullName.vb: WebBackend.Service.RobotService.Stop(Integer)
+  name.vb: Stop(Integer)
+- uid: WebBackend.Service.RobotService.Disconnect
+  commentId: M:WebBackend.Service.RobotService.Disconnect
+  id: Disconnect
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: Disconnect()
+  nameWithType: RobotService.Disconnect()
+  fullName: WebBackend.Service.RobotService.Disconnect()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: Disconnect
+    path: WebBackend/Service/RobotService.cs
+    startLine: 276
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 掉使能舵机、释放控制权限并断开连接
+  example: []
+  syntax:
+    content: public bool Disconnect()
+    return:
+      type: System.Boolean
+      description: 释放成功返回true，失败抛出异�?
+    content.vb: Public Function Disconnect() As Boolean
+  overload: WebBackend.Service.RobotService.Disconnect*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: 异常，记录了详细的异常信�?
+- uid: WebBackend.Service.RobotService.Sleep(System.Int32)
+  commentId: M:WebBackend.Service.RobotService.Sleep(System.Int32)
+  id: Sleep(System.Int32)
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: Sleep(int)
+  nameWithType: RobotService.Sleep(int)
+  fullName: WebBackend.Service.RobotService.Sleep(int)
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: Sleep
+    path: WebBackend/Service/RobotService.cs
+    startLine: 296
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 睡眠
+  example: []
+  syntax:
+    content: public void Sleep(int milliseconds)
+    parameters:
+    - id: milliseconds
+      type: System.Int32
+      description: 以毫秒为单位
+    content.vb: Public Sub Sleep(milliseconds As Integer)
+  overload: WebBackend.Service.RobotService.Sleep*
+  nameWithType.vb: RobotService.Sleep(Integer)
+  fullName.vb: WebBackend.Service.RobotService.Sleep(Integer)
+  name.vb: Sleep(Integer)
+- uid: WebBackend.Service.RobotService.SetGlobalSpeed(System.Int32)
+  commentId: M:WebBackend.Service.RobotService.SetGlobalSpeed(System.Int32)
+  id: SetGlobalSpeed(System.Int32)
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: SetGlobalSpeed(int)
+  nameWithType: RobotService.SetGlobalSpeed(int)
+  fullName: WebBackend.Service.RobotService.SetGlobalSpeed(int)
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: SetGlobalSpeed
+    path: WebBackend/Service/RobotService.cs
+    startLine: 306
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 设置全局速度
+  example: []
+  syntax:
+    content: public bool SetGlobalSpeed(int speed)
+    parameters:
+    - id: speed
+      type: System.Int32
+      description: 0~100 表示百分�?
+    return:
+      type: System.Boolean
+      description: 成功返回true，失败返回false
+    content.vb: Public Function SetGlobalSpeed(speed As Integer) As Boolean
+  overload: WebBackend.Service.RobotService.SetGlobalSpeed*
+  nameWithType.vb: RobotService.SetGlobalSpeed(Integer)
+  fullName.vb: WebBackend.Service.RobotService.SetGlobalSpeed(Integer)
+  name.vb: SetGlobalSpeed(Integer)
+- uid: WebBackend.Service.RobotService.GetGlobalSpeed
+  commentId: M:WebBackend.Service.RobotService.GetGlobalSpeed
+  id: GetGlobalSpeed
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: GetGlobalSpeed()
+  nameWithType: RobotService.GetGlobalSpeed()
+  fullName: WebBackend.Service.RobotService.GetGlobalSpeed()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: GetGlobalSpeed
+    path: WebBackend/Service/RobotService.cs
+    startLine: 315
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 获取全局速度
+  example: []
+  syntax:
+    content: public int GetGlobalSpeed()
+    return:
+      type: System.Int32
+      description: 整型�?~100 表示百分�?
+    content.vb: Public Function GetGlobalSpeed() As Integer
+  overload: WebBackend.Service.RobotService.GetGlobalSpeed*
+- uid: WebBackend.Service.RobotService.LoadUserCoord(System.Int32)
+  commentId: M:WebBackend.Service.RobotService.LoadUserCoord(System.Int32)
+  id: LoadUserCoord(System.Int32)
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: LoadUserCoord(int)
+  nameWithType: RobotService.LoadUserCoord(int)
+  fullName: WebBackend.Service.RobotService.LoadUserCoord(int)
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: LoadUserCoord
+    path: WebBackend/Service/RobotService.cs
+    startLine: 325
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 加载用户坐标�?
+  example: []
+  syntax:
+    content: public bool LoadUserCoord(int userId)
+    parameters:
+    - id: userId
+      type: System.Int32
+      description: 用户坐标系ID
+    return:
+      type: System.Boolean
+      description: 加载成功返回true，失败返回false
+    content.vb: Public Function LoadUserCoord(userId As Integer) As Boolean
+  overload: WebBackend.Service.RobotService.LoadUserCoord*
+  nameWithType.vb: RobotService.LoadUserCoord(Integer)
+  fullName.vb: WebBackend.Service.RobotService.LoadUserCoord(Integer)
+  name.vb: LoadUserCoord(Integer)
+- uid: WebBackend.Service.RobotService.LoadTool(System.Int32)
+  commentId: M:WebBackend.Service.RobotService.LoadTool(System.Int32)
+  id: LoadTool(System.Int32)
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: LoadTool(int)
+  nameWithType: RobotService.LoadTool(int)
+  fullName: WebBackend.Service.RobotService.LoadTool(int)
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: LoadTool
+    path: WebBackend/Service/RobotService.cs
+    startLine: 335
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 加载工具坐标�?
+  example: []
+  syntax:
+    content: public bool LoadTool(int toolId)
+    parameters:
+    - id: toolId
+      type: System.Int32
+      description: 工具坐标系ID
+    return:
+      type: System.Boolean
+      description: 加载成功返回true，失败返回false
+    content.vb: Public Function LoadTool(toolId As Integer) As Boolean
+  overload: WebBackend.Service.RobotService.LoadTool*
+  nameWithType.vb: RobotService.LoadTool(Integer)
+  fullName.vb: WebBackend.Service.RobotService.LoadTool(Integer)
+  name.vb: LoadTool(Integer)
+- uid: WebBackend.Service.RobotService.RunCommand(WebBackend.Dao.Command)
+  commentId: M:WebBackend.Service.RobotService.RunCommand(WebBackend.Dao.Command)
+  id: RunCommand(WebBackend.Dao.Command)
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: RunCommand(Command)
+  nameWithType: RobotService.RunCommand(Command)
+  fullName: WebBackend.Service.RobotService.RunCommand(WebBackend.Dao.Command)
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: RunCommand
+    path: WebBackend/Service/RobotService.cs
+    startLine: 350
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 运行一条指�?
+  example: []
+  syntax:
+    content: public int RunCommand(Command command)
+    parameters:
+    - id: command
+      type: WebBackend.Dao.Command
+      description: 待运行指令参�?
+    return:
+      type: System.Int32
+      description: >-
+        整数状态值：
+            <p>0   运行成功</p><p>-1  机械臂启动失�?/p><p>-2  非运动指�?/p><p>-3  指令执行失败</p>
+    content.vb: Public Function RunCommand(command As Command) As Integer
+  overload: WebBackend.Service.RobotService.RunCommand*
+- uid: WebBackend.Service.RobotService.RunAllCommand
+  commentId: M:WebBackend.Service.RobotService.RunAllCommand
+  id: RunAllCommand
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: RunAllCommand()
+  nameWithType: RobotService.RunAllCommand()
+  fullName: WebBackend.Service.RobotService.RunAllCommand()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: RunAllCommand
+    path: WebBackend/Service/RobotService.cs
+    startLine: 442
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 运行所有指令，运行结束后才返回�?
+  example: []
+  syntax:
+    content: public int RunAllCommand()
+    return:
+      type: System.Int32
+      description: >-
+        整数状态值：
+            <p>0   所有指令运行成�?/p><p>-1  机械臂启动失�?/p><p>-2  非运动指�?/p><p>-3  指令执行失败</p><p>-4  指令为空，未导入指令</p><p>-5  点位为空，未导入点位</p><p>-99 任务执行失败，服务器内部错误</p>
+    content.vb: Public Function RunAllCommand() As Integer
+  overload: WebBackend.Service.RobotService.RunAllCommand*
+- uid: WebBackend.Service.RobotService.RunAllCommandAsync
+  commentId: M:WebBackend.Service.RobotService.RunAllCommandAsync
+  id: RunAllCommandAsync
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: RunAllCommandAsync()
+  nameWithType: RobotService.RunAllCommandAsync()
+  fullName: WebBackend.Service.RobotService.RunAllCommandAsync()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: RunAllCommandAsync
+    path: WebBackend/Service/RobotService.cs
+    startLine: 497
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 运行所有指令，运行结束后才返回�?
+  example: []
+  syntax:
+    content: public Task<int> RunAllCommandAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: >-
+        整数状态值：
+            <p>0   所有指令运行成�?/p><p>-1  机械臂启动失�?/p><p>-2  非运动指�?/p><p>-3  指令执行失败</p><p>-4  指令为空，未导入指令</p><p>-5  点位为空，未导入点位</p><p>-99 任务执行失败，服务器内部错误</p>
+    content.vb: Public Function RunAllCommandAsync() As Task(Of Integer)
+  overload: WebBackend.Service.RobotService.RunAllCommandAsync*
+- uid: WebBackend.Service.RobotService.ContinueMove
+  commentId: M:WebBackend.Service.RobotService.ContinueMove
+  id: ContinueMove
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: ContinueMove()
+  nameWithType: RobotService.ContinueMove()
+  fullName: WebBackend.Service.RobotService.ContinueMove()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: ContinueMove
+    path: WebBackend/Service/RobotService.cs
+    startLine: 547
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 继续任务运行
+  example: []
+  syntax:
+    content: public int ContinueMove()
+    return:
+      type: System.Int32
+      description: >-
+        整数状态值：
+            <p>0   所有指令运行成�?/p><p>-1  机械臂启动失�?/p><p>-2  非运动指�?/p><p>-3  指令执行失败</p><p>-4  指令为空，未导入指令</p><p>-5  点位为空，未导入点位</p><p>-99 任务执行失败，服务器内部错误</p>
+    content.vb: Public Function ContinueMove() As Integer
+  overload: WebBackend.Service.RobotService.ContinueMove*
+- uid: WebBackend.Service.RobotService.ContinueMoveAsync
+  commentId: M:WebBackend.Service.RobotService.ContinueMoveAsync
+  id: ContinueMoveAsync
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: ContinueMoveAsync()
+  nameWithType: RobotService.ContinueMoveAsync()
+  fullName: WebBackend.Service.RobotService.ContinueMoveAsync()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: ContinueMoveAsync
+    path: WebBackend/Service/RobotService.cs
+    startLine: 597
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 继续任务运行
+  example: []
+  syntax:
+    content: public Task<int> ContinueMoveAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: >-
+        整数状态值：
+            <p>0   所有指令运行成�?/p><p>-1  机械臂启动失�?/p><p>-2  非运动指�?/p><p>-3  指令执行失败</p><p>-4  指令为空，未导入指令</p><p>-5  点位为空，未导入点位</p><p>-99 任务执行失败，服务器内部错误</p>
+    content.vb: Public Function ContinueMoveAsync() As Task(Of Integer)
+  overload: WebBackend.Service.RobotService.ContinueMoveAsync*
+- uid: WebBackend.Service.RobotService.GetCurrentJPos
+  commentId: M:WebBackend.Service.RobotService.GetCurrentJPos
+  id: GetCurrentJPos
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentJPos()
+  nameWithType: RobotService.GetCurrentJPos()
+  fullName: WebBackend.Service.RobotService.GetCurrentJPos()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: GetCurrentJPos
+    path: WebBackend/Service/RobotService.cs
+    startLine: 636
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 获取当前机械臂的世界坐标系（实际对应示教器上的用户坐标系�?
+  example: []
+  syntax:
+    content: public E_ROB_POS_CLI GetCurrentJPos()
+    return:
+      type: EstunApiStruct_CLI.E_ROB_POS_CLI
+      description: 笛卡尔坐标系
+    content.vb: Public Function GetCurrentJPos() As E_ROB_POS_CLI
+  overload: WebBackend.Service.RobotService.GetCurrentJPos*
+- uid: WebBackend.Service.RobotService.GetCurrentWPos
+  commentId: M:WebBackend.Service.RobotService.GetCurrentWPos
+  id: GetCurrentWPos
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentWPos()
+  nameWithType: RobotService.GetCurrentWPos()
+  fullName: WebBackend.Service.RobotService.GetCurrentWPos()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: GetCurrentWPos
+    path: WebBackend/Service/RobotService.cs
+    startLine: 645
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 获取当前机械臂的关节坐标�?
+  example: []
+  syntax:
+    content: public E_ROB_POS_CLI GetCurrentWPos()
+    return:
+      type: EstunApiStruct_CLI.E_ROB_POS_CLI
+      description: 六轴转动角度
+    content.vb: Public Function GetCurrentWPos() As E_ROB_POS_CLI
+  overload: WebBackend.Service.RobotService.GetCurrentWPos*
+- uid: WebBackend.Service.RobotService.GetServoState
+  commentId: M:WebBackend.Service.RobotService.GetServoState
+  id: GetServoState
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: GetServoState()
+  nameWithType: RobotService.GetServoState()
+  fullName: WebBackend.Service.RobotService.GetServoState()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: GetServoState
+    path: WebBackend/Service/RobotService.cs
+    startLine: 654
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 获得舵机状�?
+  example: []
+  syntax:
+    content: public E_ServoStatusType_CLI GetServoState()
+    return:
+      type: EstunApiStruct_CLI.E_ServoStatusType_CLI
+      description: 三种状态，详见E_ServoStatusType_CLI枚举�?
+    content.vb: Public Function GetServoState() As E_ServoStatusType_CLI
+  overload: WebBackend.Service.RobotService.GetServoState*
+- uid: WebBackend.Service.RobotService.GetAPIStatus
+  commentId: M:WebBackend.Service.RobotService.GetAPIStatus
+  id: GetAPIStatus
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: GetAPIStatus()
+  nameWithType: RobotService.GetAPIStatus()
+  fullName: WebBackend.Service.RobotService.GetAPIStatus()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: GetAPIStatus
+    path: WebBackend/Service/RobotService.cs
+    startLine: 663
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 获取控制器状�?
+  example: []
+  syntax:
+    content: public int GetAPIStatus()
+    return:
+      type: System.Int32
+      description: -1 表示失败�? 表示正常�? 表示机器人错误，2 表示机器人处于停止状态，需要调�?start 接口启动
+    content.vb: Public Function GetAPIStatus() As Integer
+  overload: WebBackend.Service.RobotService.GetAPIStatus*
+- uid: WebBackend.Service.RobotService.GetSysMode
+  commentId: M:WebBackend.Service.RobotService.GetSysMode
+  id: GetSysMode
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: GetSysMode()
+  nameWithType: RobotService.GetSysMode()
+  fullName: WebBackend.Service.RobotService.GetSysMode()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: GetSysMode
+    path: WebBackend/Service/RobotService.cs
+    startLine: 672
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 获取系统模式
+  example: []
+  syntax:
+    content: public E_SysModeType_CLI GetSysMode()
+    return:
+      type: EstunApiStruct_CLI.E_SysModeType_CLI
+      description: E_SysModeType_CLI枚举类，manualMode-手动模式，autoMode-自动模式，API-API模式（其他模式略�?
+    content.vb: Public Function GetSysMode() As E_SysModeType_CLI
+  overload: WebBackend.Service.RobotService.GetSysMode*
+- uid: WebBackend.Service.RobotService.SetSysMode(EstunApiStruct_CLI.E_SysModeType_CLI)
+  commentId: M:WebBackend.Service.RobotService.SetSysMode(EstunApiStruct_CLI.E_SysModeType_CLI)
+  id: SetSysMode(EstunApiStruct_CLI.E_SysModeType_CLI)
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: SetSysMode(E_SysModeType_CLI)
+  nameWithType: RobotService.SetSysMode(E_SysModeType_CLI)
+  fullName: WebBackend.Service.RobotService.SetSysMode(EstunApiStruct_CLI.E_SysModeType_CLI)
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: SetSysMode
+    path: WebBackend/Service/RobotService.cs
+    startLine: 682
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 设置系统运行模式
+  example: []
+  syntax:
+    content: public bool SetSysMode(E_SysModeType_CLI mode)
+    parameters:
+    - id: mode
+      type: EstunApiStruct_CLI.E_SysModeType_CLI
+      description: E_SysModeType_CLI枚举类，manualMode-手动模式，autoMode-自动模式，API-API模式（其他模式略�?
+    return:
+      type: System.Boolean
+      description: 成功返回true，失败返回false
+    content.vb: Public Function SetSysMode(mode As E_SysModeType_CLI) As Boolean
+  overload: WebBackend.Service.RobotService.SetSysMode*
+- uid: WebBackend.Service.RobotService.GetRunMode
+  commentId: M:WebBackend.Service.RobotService.GetRunMode
+  id: GetRunMode
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: GetRunMode()
+  nameWithType: RobotService.GetRunMode()
+  fullName: WebBackend.Service.RobotService.GetRunMode()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: GetRunMode
+    path: WebBackend/Service/RobotService.cs
+    startLine: 691
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 获取运动模式
+  example: []
+  syntax:
+    content: public E_RunModeType_CLI GetRunMode()
+    return:
+      type: EstunApiStruct_CLI.E_RunModeType_CLI
+      description: E_RunModeType_CLI枚举类，1为步进，2为连�?
+    content.vb: Public Function GetRunMode() As E_RunModeType_CLI
+  overload: WebBackend.Service.RobotService.GetRunMode*
+- uid: WebBackend.Service.RobotService.SetRunMode(EstunApiStruct_CLI.E_RunModeType_CLI)
+  commentId: M:WebBackend.Service.RobotService.SetRunMode(EstunApiStruct_CLI.E_RunModeType_CLI)
+  id: SetRunMode(EstunApiStruct_CLI.E_RunModeType_CLI)
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: SetRunMode(E_RunModeType_CLI)
+  nameWithType: RobotService.SetRunMode(E_RunModeType_CLI)
+  fullName: WebBackend.Service.RobotService.SetRunMode(EstunApiStruct_CLI.E_RunModeType_CLI)
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: SetRunMode
+    path: WebBackend/Service/RobotService.cs
+    startLine: 701
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 设置运动模式
+  example: []
+  syntax:
+    content: public bool SetRunMode(E_RunModeType_CLI mode)
+    parameters:
+    - id: mode
+      type: EstunApiStruct_CLI.E_RunModeType_CLI
+      description: E_RunModeType_CLI枚举类，1为步进，2为连�?
+    return:
+      type: System.Boolean
+      description: 设置成功返回true，失败返回false
+    content.vb: Public Function SetRunMode(mode As E_RunModeType_CLI) As Boolean
+  overload: WebBackend.Service.RobotService.SetRunMode*
+- uid: WebBackend.Service.RobotService.GetTaskQueue
+  commentId: M:WebBackend.Service.RobotService.GetTaskQueue
+  id: GetTaskQueue
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: GetTaskQueue()
+  nameWithType: RobotService.GetTaskQueue()
+  fullName: WebBackend.Service.RobotService.GetTaskQueue()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: GetTaskQueue
+    path: WebBackend/Service/RobotService.cs
+    startLine: 710
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 获取任务队列
+  example: []
+  syntax:
+    content: public ConcurrentQueue<Task> GetTaskQueue()
+    return:
+      type: System.Collections.Concurrent.ConcurrentQueue{WebBackend.Dao.Task}
+      description: 任务队列
+    content.vb: Public Function GetTaskQueue() As ConcurrentQueue(Of Task)
+  overload: WebBackend.Service.RobotService.GetTaskQueue*
+- uid: WebBackend.Service.RobotService.GetCurrentTask
+  commentId: M:WebBackend.Service.RobotService.GetCurrentTask
+  id: GetCurrentTask
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentTask()
+  nameWithType: RobotService.GetCurrentTask()
+  fullName: WebBackend.Service.RobotService.GetCurrentTask()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: GetCurrentTask
+    path: WebBackend/Service/RobotService.cs
+    startLine: 719
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 获取当前执行的任�?
+  example: []
+  syntax:
+    content: public Task GetCurrentTask()
+    return:
+      type: WebBackend.Dao.Task
+      description: 如果队列非空，返回当前任务，否则返回一个持续时间（Duration）为-1的Task
+    content.vb: Public Function GetCurrentTask() As Task
+  overload: WebBackend.Service.RobotService.GetCurrentTask*
+- uid: WebBackend.Service.RobotService.SetToolId(System.Int32)
+  commentId: M:WebBackend.Service.RobotService.SetToolId(System.Int32)
+  id: SetToolId(System.Int32)
+  parent: WebBackend.Service.RobotService
+  langs:
+  - csharp
+  - vb
+  name: SetToolId(int)
+  nameWithType: RobotService.SetToolId(int)
+  fullName: WebBackend.Service.RobotService.SetToolId(int)
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/RobotService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: SetToolId
+    path: WebBackend/Service/RobotService.cs
+    startLine: 733
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 设置工具坐标�?
+  example: []
+  syntax:
+    content: public bool SetToolId(int toolId)
+    parameters:
+    - id: toolId
+      type: System.Int32
+      description: 工具坐标系ID
+    return:
+      type: System.Boolean
+      description: 设置成功返回true，失败返回false
+    content.vb: Public Function SetToolId(toolId As Integer) As Boolean
+  overload: WebBackend.Service.RobotService.SetToolId*
+  nameWithType.vb: RobotService.SetToolId(Integer)
+  fullName.vb: WebBackend.Service.RobotService.SetToolId(Integer)
+  name.vb: SetToolId(Integer)
+references:
+- uid: WebBackend.Service
+  commentId: N:WebBackend.Service
+  href: WebBackend.html
+  name: WebBackend.Service
+  nameWithType: WebBackend.Service
+  fullName: WebBackend.Service
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Service
+    name: Service
+    href: WebBackend.Service.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Service
+    name: Service
+    href: WebBackend.Service.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WebBackend.Service.RobotService.#ctor*
+  commentId: Overload:WebBackend.Service.RobotService.#ctor
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService__ctor_WebBackend_Dao_IApplicationData_WebBackend_Util_Control_WebBackend_Service_PlcService_Microsoft_Extensions_Logging_ILogger_WebBackend_Service_RobotService__WebBackend_Dao_RobotConfiguration_
+  name: RobotService
+  nameWithType: RobotService.RobotService
+  fullName: WebBackend.Service.RobotService.RobotService
+  nameWithType.vb: RobotService.New
+  fullName.vb: WebBackend.Service.RobotService.New
+  name.vb: New
+- uid: WebBackend.Dao.IApplicationData
+  commentId: T:WebBackend.Dao.IApplicationData
+  parent: WebBackend.Dao
+  href: WebBackend.Dao.IApplicationData.html
+  name: IApplicationData
+  nameWithType: IApplicationData
+  fullName: WebBackend.Dao.IApplicationData
+- uid: WebBackend.Util.Control
+  commentId: T:WebBackend.Util.Control
+  parent: WebBackend.Util
+  href: WebBackend.Util.Control.html
+  name: Control
+  nameWithType: Control
+  fullName: WebBackend.Util.Control
+- uid: WebBackend.Service.PlcService
+  commentId: T:WebBackend.Service.PlcService
+  parent: WebBackend.Service
+  href: WebBackend.Service.PlcService.html
+  name: PlcService
+  nameWithType: PlcService
+  fullName: WebBackend.Service.PlcService
+- uid: Microsoft.Extensions.Logging.ILogger{WebBackend.Service.RobotService}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{WebBackend.Service.RobotService}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<RobotService>
+  nameWithType: ILogger<RobotService>
+  fullName: Microsoft.Extensions.Logging.ILogger<WebBackend.Service.RobotService>
+  nameWithType.vb: ILogger(Of RobotService)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of WebBackend.Service.RobotService)
+  name.vb: ILogger(Of RobotService)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: WebBackend.Service.RobotService
+    name: RobotService
+    href: WebBackend.Service.RobotService.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: WebBackend.Service.RobotService
+    name: RobotService
+    href: WebBackend.Service.RobotService.html
+  - name: )
+- uid: WebBackend.Dao.RobotConfiguration
+  commentId: T:WebBackend.Dao.RobotConfiguration
+  parent: WebBackend.Dao
+  href: WebBackend.Dao.RobotConfiguration.html
+  name: RobotConfiguration
+  nameWithType: RobotConfiguration
+  fullName: WebBackend.Dao.RobotConfiguration
+- uid: WebBackend.Dao
+  commentId: N:WebBackend.Dao
+  href: WebBackend.html
+  name: WebBackend.Dao
+  nameWithType: WebBackend.Dao
+  fullName: WebBackend.Dao
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html
+- uid: WebBackend.Util
+  commentId: N:WebBackend.Util
+  href: WebBackend.html
+  name: WebBackend.Util
+  nameWithType: WebBackend.Util
+  fullName: WebBackend.Util
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Util
+    name: Util
+    href: WebBackend.Util.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Util
+    name: Util
+    href: WebBackend.Util.html
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: WebBackend.Service.RobotService.Startup*
+  commentId: Overload:WebBackend.Service.RobotService.Startup
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_Startup
+  name: Startup
+  nameWithType: RobotService.Startup
+  fullName: WebBackend.Service.RobotService.Startup
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: WebBackend.Service.RobotService.Start*
+  commentId: Overload:WebBackend.Service.RobotService.Start
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_Start_System_Int32_
+  name: Start
+  nameWithType: RobotService.Start
+  fullName: WebBackend.Service.RobotService.Start
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: WebBackend.Service.RobotService.Pause*
+  commentId: Overload:WebBackend.Service.RobotService.Pause
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_Pause_System_Int32_
+  name: Pause
+  nameWithType: RobotService.Pause
+  fullName: WebBackend.Service.RobotService.Pause
+- uid: WebBackend.Service.RobotService.Stop*
+  commentId: Overload:WebBackend.Service.RobotService.Stop
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_Stop_System_Int32_
+  name: Stop
+  nameWithType: RobotService.Stop
+  fullName: WebBackend.Service.RobotService.Stop
+- uid: System.Exception
+  commentId: T:System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: WebBackend.Service.RobotService.Disconnect*
+  commentId: Overload:WebBackend.Service.RobotService.Disconnect
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_Disconnect
+  name: Disconnect
+  nameWithType: RobotService.Disconnect
+  fullName: WebBackend.Service.RobotService.Disconnect
+- uid: WebBackend.Service.RobotService.Sleep*
+  commentId: Overload:WebBackend.Service.RobotService.Sleep
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_Sleep_System_Int32_
+  name: Sleep
+  nameWithType: RobotService.Sleep
+  fullName: WebBackend.Service.RobotService.Sleep
+- uid: WebBackend.Service.RobotService.SetGlobalSpeed*
+  commentId: Overload:WebBackend.Service.RobotService.SetGlobalSpeed
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_SetGlobalSpeed_System_Int32_
+  name: SetGlobalSpeed
+  nameWithType: RobotService.SetGlobalSpeed
+  fullName: WebBackend.Service.RobotService.SetGlobalSpeed
+- uid: WebBackend.Service.RobotService.GetGlobalSpeed*
+  commentId: Overload:WebBackend.Service.RobotService.GetGlobalSpeed
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_GetGlobalSpeed
+  name: GetGlobalSpeed
+  nameWithType: RobotService.GetGlobalSpeed
+  fullName: WebBackend.Service.RobotService.GetGlobalSpeed
+- uid: WebBackend.Service.RobotService.LoadUserCoord*
+  commentId: Overload:WebBackend.Service.RobotService.LoadUserCoord
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_LoadUserCoord_System_Int32_
+  name: LoadUserCoord
+  nameWithType: RobotService.LoadUserCoord
+  fullName: WebBackend.Service.RobotService.LoadUserCoord
+- uid: WebBackend.Service.RobotService.LoadTool*
+  commentId: Overload:WebBackend.Service.RobotService.LoadTool
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_LoadTool_System_Int32_
+  name: LoadTool
+  nameWithType: RobotService.LoadTool
+  fullName: WebBackend.Service.RobotService.LoadTool
+- uid: WebBackend.Service.RobotService.RunCommand*
+  commentId: Overload:WebBackend.Service.RobotService.RunCommand
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_RunCommand_WebBackend_Dao_Command_
+  name: RunCommand
+  nameWithType: RobotService.RunCommand
+  fullName: WebBackend.Service.RobotService.RunCommand
+- uid: WebBackend.Dao.Command
+  commentId: T:WebBackend.Dao.Command
+  parent: WebBackend.Dao
+  href: WebBackend.Dao.Command.html
+  name: Command
+  nameWithType: Command
+  fullName: WebBackend.Dao.Command
+- uid: WebBackend.Service.RobotService.RunAllCommand*
+  commentId: Overload:WebBackend.Service.RobotService.RunAllCommand
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_RunAllCommand
+  name: RunAllCommand
+  nameWithType: RobotService.RunAllCommand
+  fullName: WebBackend.Service.RobotService.RunAllCommand
+- uid: WebBackend.Service.RobotService.RunAllCommandAsync*
+  commentId: Overload:WebBackend.Service.RobotService.RunAllCommandAsync
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_RunAllCommandAsync
+  name: RunAllCommandAsync
+  nameWithType: RobotService.RunAllCommandAsync
+  fullName: WebBackend.Service.RobotService.RunAllCommandAsync
+- uid: System.Threading.Tasks.Task{System.Int32}
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<int>
+  nameWithType: Task<int>
+  fullName: System.Threading.Tasks.Task<int>
+  nameWithType.vb: Task(Of Integer)
+  fullName.vb: System.Threading.Tasks.Task(Of Integer)
+  name.vb: Task(Of Integer)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: WebBackend.Service.RobotService.ContinueMove*
+  commentId: Overload:WebBackend.Service.RobotService.ContinueMove
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_ContinueMove
+  name: ContinueMove
+  nameWithType: RobotService.ContinueMove
+  fullName: WebBackend.Service.RobotService.ContinueMove
+- uid: WebBackend.Service.RobotService.ContinueMoveAsync*
+  commentId: Overload:WebBackend.Service.RobotService.ContinueMoveAsync
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_ContinueMoveAsync
+  name: ContinueMoveAsync
+  nameWithType: RobotService.ContinueMoveAsync
+  fullName: WebBackend.Service.RobotService.ContinueMoveAsync
+- uid: WebBackend.Service.RobotService.GetCurrentJPos*
+  commentId: Overload:WebBackend.Service.RobotService.GetCurrentJPos
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_GetCurrentJPos
+  name: GetCurrentJPos
+  nameWithType: RobotService.GetCurrentJPos
+  fullName: WebBackend.Service.RobotService.GetCurrentJPos
+- uid: EstunApiStruct_CLI.E_ROB_POS_CLI
+  commentId: T:EstunApiStruct_CLI.E_ROB_POS_CLI
+  parent: EstunApiStruct_CLI
+  isExternal: true
+  name: E_ROB_POS_CLI
+  nameWithType: E_ROB_POS_CLI
+  fullName: EstunApiStruct_CLI.E_ROB_POS_CLI
+- uid: EstunApiStruct_CLI
+  commentId: N:EstunApiStruct_CLI
+  isExternal: true
+  name: EstunApiStruct_CLI
+  nameWithType: EstunApiStruct_CLI
+  fullName: EstunApiStruct_CLI
+- uid: WebBackend.Service.RobotService.GetCurrentWPos*
+  commentId: Overload:WebBackend.Service.RobotService.GetCurrentWPos
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_GetCurrentWPos
+  name: GetCurrentWPos
+  nameWithType: RobotService.GetCurrentWPos
+  fullName: WebBackend.Service.RobotService.GetCurrentWPos
+- uid: WebBackend.Service.RobotService.GetServoState*
+  commentId: Overload:WebBackend.Service.RobotService.GetServoState
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_GetServoState
+  name: GetServoState
+  nameWithType: RobotService.GetServoState
+  fullName: WebBackend.Service.RobotService.GetServoState
+- uid: EstunApiStruct_CLI.E_ServoStatusType_CLI
+  commentId: T:EstunApiStruct_CLI.E_ServoStatusType_CLI
+  parent: EstunApiStruct_CLI
+  isExternal: true
+  name: E_ServoStatusType_CLI
+  nameWithType: E_ServoStatusType_CLI
+  fullName: EstunApiStruct_CLI.E_ServoStatusType_CLI
+- uid: WebBackend.Service.RobotService.GetAPIStatus*
+  commentId: Overload:WebBackend.Service.RobotService.GetAPIStatus
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_GetAPIStatus
+  name: GetAPIStatus
+  nameWithType: RobotService.GetAPIStatus
+  fullName: WebBackend.Service.RobotService.GetAPIStatus
+- uid: WebBackend.Service.RobotService.GetSysMode*
+  commentId: Overload:WebBackend.Service.RobotService.GetSysMode
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_GetSysMode
+  name: GetSysMode
+  nameWithType: RobotService.GetSysMode
+  fullName: WebBackend.Service.RobotService.GetSysMode
+- uid: EstunApiStruct_CLI.E_SysModeType_CLI
+  commentId: T:EstunApiStruct_CLI.E_SysModeType_CLI
+  parent: EstunApiStruct_CLI
+  isExternal: true
+  name: E_SysModeType_CLI
+  nameWithType: E_SysModeType_CLI
+  fullName: EstunApiStruct_CLI.E_SysModeType_CLI
+- uid: WebBackend.Service.RobotService.SetSysMode*
+  commentId: Overload:WebBackend.Service.RobotService.SetSysMode
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_SetSysMode_EstunApiStruct_CLI_E_SysModeType_CLI_
+  name: SetSysMode
+  nameWithType: RobotService.SetSysMode
+  fullName: WebBackend.Service.RobotService.SetSysMode
+- uid: WebBackend.Service.RobotService.GetRunMode*
+  commentId: Overload:WebBackend.Service.RobotService.GetRunMode
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_GetRunMode
+  name: GetRunMode
+  nameWithType: RobotService.GetRunMode
+  fullName: WebBackend.Service.RobotService.GetRunMode
+- uid: EstunApiStruct_CLI.E_RunModeType_CLI
+  commentId: T:EstunApiStruct_CLI.E_RunModeType_CLI
+  parent: EstunApiStruct_CLI
+  isExternal: true
+  name: E_RunModeType_CLI
+  nameWithType: E_RunModeType_CLI
+  fullName: EstunApiStruct_CLI.E_RunModeType_CLI
+- uid: WebBackend.Service.RobotService.SetRunMode*
+  commentId: Overload:WebBackend.Service.RobotService.SetRunMode
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_SetRunMode_EstunApiStruct_CLI_E_RunModeType_CLI_
+  name: SetRunMode
+  nameWithType: RobotService.SetRunMode
+  fullName: WebBackend.Service.RobotService.SetRunMode
+- uid: WebBackend.Service.RobotService.GetTaskQueue*
+  commentId: Overload:WebBackend.Service.RobotService.GetTaskQueue
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_GetTaskQueue
+  name: GetTaskQueue
+  nameWithType: RobotService.GetTaskQueue
+  fullName: WebBackend.Service.RobotService.GetTaskQueue
+- uid: System.Collections.Concurrent.ConcurrentQueue{WebBackend.Dao.Task}
+  commentId: T:System.Collections.Concurrent.ConcurrentQueue{WebBackend.Dao.Task}
+  parent: System.Collections.Concurrent
+  definition: System.Collections.Concurrent.ConcurrentQueue`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentqueue-1
+  name: ConcurrentQueue<Task>
+  nameWithType: ConcurrentQueue<Task>
+  fullName: System.Collections.Concurrent.ConcurrentQueue<WebBackend.Dao.Task>
+  nameWithType.vb: ConcurrentQueue(Of Task)
+  fullName.vb: System.Collections.Concurrent.ConcurrentQueue(Of WebBackend.Dao.Task)
+  name.vb: ConcurrentQueue(Of Task)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentQueue`1
+    name: ConcurrentQueue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentqueue-1
+  - name: <
+  - uid: WebBackend.Dao.Task
+    name: Task
+    href: WebBackend.Dao.Task.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentQueue`1
+    name: ConcurrentQueue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentqueue-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: WebBackend.Dao.Task
+    name: Task
+    href: WebBackend.Dao.Task.html
+  - name: )
+- uid: System.Collections.Concurrent.ConcurrentQueue`1
+  commentId: T:System.Collections.Concurrent.ConcurrentQueue`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentqueue-1
+  name: ConcurrentQueue<T>
+  nameWithType: ConcurrentQueue<T>
+  fullName: System.Collections.Concurrent.ConcurrentQueue<T>
+  nameWithType.vb: ConcurrentQueue(Of T)
+  fullName.vb: System.Collections.Concurrent.ConcurrentQueue(Of T)
+  name.vb: ConcurrentQueue(Of T)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentQueue`1
+    name: ConcurrentQueue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentqueue-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentQueue`1
+    name: ConcurrentQueue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentqueue-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Concurrent
+  commentId: N:System.Collections.Concurrent
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Concurrent
+  nameWithType: System.Collections.Concurrent
+  fullName: System.Collections.Concurrent
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Concurrent
+    name: Concurrent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Concurrent
+    name: Concurrent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent
+- uid: WebBackend.Service.RobotService.GetCurrentTask*
+  commentId: Overload:WebBackend.Service.RobotService.GetCurrentTask
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_GetCurrentTask
+  name: GetCurrentTask
+  nameWithType: RobotService.GetCurrentTask
+  fullName: WebBackend.Service.RobotService.GetCurrentTask
+- uid: WebBackend.Dao.Task
+  commentId: T:WebBackend.Dao.Task
+  parent: WebBackend.Dao
+  href: WebBackend.Dao.Task.html
+  name: Task
+  nameWithType: Task
+  fullName: WebBackend.Dao.Task
+- uid: WebBackend.Service.RobotService.SetToolId*
+  commentId: Overload:WebBackend.Service.RobotService.SetToolId
+  href: WebBackend.Service.RobotService.html#WebBackend_Service_RobotService_SetToolId_System_Int32_
+  name: SetToolId
+  nameWithType: RobotService.SetToolId
+  fullName: WebBackend.Service.RobotService.SetToolId

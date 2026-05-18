@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebBackend.Controller
+  commentId: N:WebBackend.Controller
+  id: WebBackend.Controller
+  children:
+  - WebBackend.Controller.FileController
+  - WebBackend.Controller.HomeController
+  - WebBackend.Controller.PlcController
+  - WebBackend.Controller.RobotController
+  - WebBackend.Controller.TestController
+  langs:
+  - csharp
+  - vb
+  name: WebBackend.Controller
+  nameWithType: WebBackend.Controller
+  fullName: WebBackend.Controller
+  type: Namespace
+  assemblies:
+  - WebBackend
+references:
+- uid: WebBackend.Controller.FileController
+  commentId: T:WebBackend.Controller.FileController
+  href: WebBackend.Controller.FileController.html
+  name: FileController
+  nameWithType: FileController
+  fullName: WebBackend.Controller.FileController
+- uid: WebBackend.Controller.HomeController
+  commentId: T:WebBackend.Controller.HomeController
+  href: WebBackend.Controller.HomeController.html
+  name: HomeController
+  nameWithType: HomeController
+  fullName: WebBackend.Controller.HomeController
+- uid: WebBackend.Controller.PlcController
+  commentId: T:WebBackend.Controller.PlcController
+  href: WebBackend.Controller.PlcController.html
+  name: PlcController
+  nameWithType: PlcController
+  fullName: WebBackend.Controller.PlcController
+- uid: WebBackend.Controller.RobotController
+  commentId: T:WebBackend.Controller.RobotController
+  href: WebBackend.Controller.RobotController.html
+  name: RobotController
+  nameWithType: RobotController
+  fullName: WebBackend.Controller.RobotController
+- uid: WebBackend.Controller.TestController
+  commentId: T:WebBackend.Controller.TestController
+  href: WebBackend.Controller.TestController.html
+  name: TestController
+  nameWithType: TestController
+  fullName: WebBackend.Controller.TestController

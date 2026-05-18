@@ -1,0 +1,185 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebBackend.Dao.IPlcConfiguration
+  commentId: T:WebBackend.Dao.IPlcConfiguration
+  id: IPlcConfiguration
+  parent: WebBackend.Dao
+  children:
+  - WebBackend.Dao.IPlcConfiguration.CpuType
+  - WebBackend.Dao.IPlcConfiguration.IpAddress
+  - WebBackend.Dao.IPlcConfiguration.Port
+  langs:
+  - csharp
+  - vb
+  name: IPlcConfiguration
+  nameWithType: IPlcConfiguration
+  fullName: WebBackend.Dao.IPlcConfiguration
+  type: Interface
+  source:
+    remote:
+      path: WebBackend/Dao/PlcConfiguration.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: IPlcConfiguration
+    path: WebBackend/Dao/PlcConfiguration.cs
+    startLine: 7
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: PLC配置接口
+  example: []
+  syntax:
+    content: public interface IPlcConfiguration
+    content.vb: Public Interface IPlcConfiguration
+- uid: WebBackend.Dao.IPlcConfiguration.CpuType
+  commentId: P:WebBackend.Dao.IPlcConfiguration.CpuType
+  id: CpuType
+  parent: WebBackend.Dao.IPlcConfiguration
+  langs:
+  - csharp
+  - vb
+  name: CpuType
+  nameWithType: IPlcConfiguration.CpuType
+  fullName: WebBackend.Dao.IPlcConfiguration.CpuType
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/PlcConfiguration.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: CpuType
+    path: WebBackend/Dao/PlcConfiguration.cs
+    startLine: 12
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: CPU类型，如S71200，S71500�?
+  example: []
+  syntax:
+    content: string CpuType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property CpuType As String
+  overload: WebBackend.Dao.IPlcConfiguration.CpuType*
+- uid: WebBackend.Dao.IPlcConfiguration.IpAddress
+  commentId: P:WebBackend.Dao.IPlcConfiguration.IpAddress
+  id: IpAddress
+  parent: WebBackend.Dao.IPlcConfiguration
+  langs:
+  - csharp
+  - vb
+  name: IpAddress
+  nameWithType: IPlcConfiguration.IpAddress
+  fullName: WebBackend.Dao.IPlcConfiguration.IpAddress
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/PlcConfiguration.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: IpAddress
+    path: WebBackend/Dao/PlcConfiguration.cs
+    startLine: 16
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: IP地址，如192.168.1.201
+  example: []
+  syntax:
+    content: string IpAddress { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property IpAddress As String
+  overload: WebBackend.Dao.IPlcConfiguration.IpAddress*
+- uid: WebBackend.Dao.IPlcConfiguration.Port
+  commentId: P:WebBackend.Dao.IPlcConfiguration.Port
+  id: Port
+  parent: WebBackend.Dao.IPlcConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Port
+  nameWithType: IPlcConfiguration.Port
+  fullName: WebBackend.Dao.IPlcConfiguration.Port
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/PlcConfiguration.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: Port
+    path: WebBackend/Dao/PlcConfiguration.cs
+    startLine: 20
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: PLC运行端口
+  example: []
+  syntax:
+    content: string Port { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Port As String
+  overload: WebBackend.Dao.IPlcConfiguration.Port*
+references:
+- uid: WebBackend.Dao
+  commentId: N:WebBackend.Dao
+  href: WebBackend.html
+  name: WebBackend.Dao
+  nameWithType: WebBackend.Dao
+  fullName: WebBackend.Dao
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html
+- uid: WebBackend.Dao.IPlcConfiguration.CpuType*
+  commentId: Overload:WebBackend.Dao.IPlcConfiguration.CpuType
+  href: WebBackend.Dao.IPlcConfiguration.html#WebBackend_Dao_IPlcConfiguration_CpuType
+  name: CpuType
+  nameWithType: IPlcConfiguration.CpuType
+  fullName: WebBackend.Dao.IPlcConfiguration.CpuType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WebBackend.Dao.IPlcConfiguration.IpAddress*
+  commentId: Overload:WebBackend.Dao.IPlcConfiguration.IpAddress
+  href: WebBackend.Dao.IPlcConfiguration.html#WebBackend_Dao_IPlcConfiguration_IpAddress
+  name: IpAddress
+  nameWithType: IPlcConfiguration.IpAddress
+  fullName: WebBackend.Dao.IPlcConfiguration.IpAddress
+- uid: WebBackend.Dao.IPlcConfiguration.Port*
+  commentId: Overload:WebBackend.Dao.IPlcConfiguration.Port
+  href: WebBackend.Dao.IPlcConfiguration.html#WebBackend_Dao_IPlcConfiguration_Port
+  name: Port
+  nameWithType: IPlcConfiguration.Port
+  fullName: WebBackend.Dao.IPlcConfiguration.Port

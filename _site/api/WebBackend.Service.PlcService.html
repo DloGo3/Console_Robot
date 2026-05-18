@@ -1,0 +1,409 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PlcService | Develop Robot Arm Control API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PlcService | Develop Robot Arm Control API Documentation ">
+      
+      <meta name="description" content="PLC业务逻辑类">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jjhhyyg/Console_Robot/new/master/apiSpec/new?filename=WebBackend_Service_PlcService.md&amp;value=---%0Auid%3A%20WebBackend.Service.PlcService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Develop Robot Arm Control API Documentation">
+            Develop Robot Arm Control API Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="WebBackend.Service.PlcService">
+
+
+
+  <h1 id="WebBackend_Service_PlcService" data-uid="WebBackend.Service.PlcService" class="text-break">
+Class PlcService  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Service/PLCService.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="WebBackend.html">WebBackend</a>.<a class="xref" href="WebBackend.Service.html">Service</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>WebBackend.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>PLC业务逻辑类</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PlcService</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PlcService</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="WebBackend_Service_PlcService__ctor_" data-uid="WebBackend.Service.PlcService.#ctor*"></a>
+
+  <h3 id="WebBackend_Service_PlcService__ctor_S7_Net_CpuType_System_String_Microsoft_Extensions_Logging_ILogger_WebBackend_Service_PlcService__System_Int16_System_Int16_" data-uid="WebBackend.Service.PlcService.#ctor(S7.Net.CpuType,System.String,Microsoft.Extensions.Logging.ILogger{WebBackend.Service.PlcService},System.Int16,System.Int16)">
+  PlcService(CpuType, string, ILogger&lt;PlcService&gt;, short, short)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Service/PLCService.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>初始化PLC服务，创建Plc对象并连接PLC</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlcService(CpuType cpuType, string ipAddress, ILogger&lt;PlcService&gt; logger, short rack = 0, short slot = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cpuType</code> <span class="xref">CpuType</span></dt>
+    <dd><p>PLC的CPU类型，见S7.Net.CpuType</p>
+</dd>
+    <dt><code>ipAddress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>PLC的IP地址，可在博图软件上进行配置</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="WebBackend.Service.PlcService.html">PlcService</a>&gt;</dt>
+    <dd><p>日志记录器</p>
+</dd>
+    <dt><code>rack</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>（机架）编号。对于大部分紧凑型PLC（如S7-1200或S7-1500），机架号通常是0。
+这个参数是用来指定PLC系统中的物理或逻辑机架号，对于较大的系统，可能会有多个机架。</p>
+</dd>
+    <dt><code>slot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>PLC中CPU模块所在的位置</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="WebBackend_Service_PlcService__ctor_S7_Net_CpuType_System_String_Microsoft_Extensions_Logging_ILogger_WebBackend_Service_PlcService__System_Int16_System_Int16__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>CPU类型和IP地址在config.yaml中设置</p>
+</div>
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="WebBackend_Service_PlcService_Plc_" data-uid="WebBackend.Service.PlcService.Plc*"></a>
+
+  <h3 id="WebBackend_Service_PlcService_Plc" data-uid="WebBackend.Service.PlcService.Plc">
+  Plc
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Service/PLCService.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plc对象，用于控制Plc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Plc Plc { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Plc</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="WebBackend_Service_PlcService_ReadBit_" data-uid="WebBackend.Service.PlcService.ReadBit*"></a>
+
+  <h3 id="WebBackend_Service_PlcService_ReadBit_S7_Net_DataType_System_Int32_System_Int32_System_Int32_" data-uid="WebBackend.Service.PlcService.ReadBit(S7.Net.DataType,System.Int32,System.Int32,System.Int32)">
+  ReadBit(DataType, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Service/PLCService.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>读取PLC指定位置一个位的信息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReadBit(DataType dataType, int db, int startByteAdr, int bitAdr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dataType</code> <span class="xref">DataType</span></dt>
+    <dd><p>S7.Net.DataType类型，具体见官方文档</p>
+</dd>
+    <dt><code>db</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>db块索引号</p>
+</dd>
+    <dt><code>startByteAdr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>起始字节索引地址</p>
+</dd>
+    <dt><code>bitAdr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>位地址</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>读取成功返回该位的值</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>异常，记录了详细的异常信息</p>
+</dd>
+  </dl>
+
+
+
+  <a id="WebBackend_Service_PlcService_TakePhoto_" data-uid="WebBackend.Service.PlcService.TakePhoto*"></a>
+
+  <h3 id="WebBackend_Service_PlcService_TakePhoto_System_Int32_" data-uid="WebBackend.Service.PlcService.TakePhoto(System.Int32)">
+  TakePhoto(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Service/PLCService.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>通过向PLC指定位置写1，向PLC发送信号进行拍照</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TakePhoto(int milliseconds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>milliseconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>高点平持续多少毫秒</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Service_PlcService_WriteBit_" data-uid="WebBackend.Service.PlcService.WriteBit*"></a>
+
+  <h3 id="WebBackend_Service_PlcService_WriteBit_S7_Net_DataType_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="WebBackend.Service.PlcService.WriteBit(S7.Net.DataType,System.Int32,System.Int32,System.Int32,System.Boolean)">
+  WriteBit(DataType, int, int, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Service/PLCService.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>在PLC指定位置写入一个位的信息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WriteBit(DataType dataType, int db, int startByteAdr, int bitAdr, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dataType</code> <span class="xref">DataType</span></dt>
+    <dd><p>S7.Net.DataType类型，具体见官方文档</p>
+</dd>
+    <dt><code>db</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>db块索引号</p>
+</dd>
+    <dt><code>startByteAdr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>起始字节索引地址</p>
+</dd>
+    <dt><code>bitAdr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>位地址</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>布尔值，true写入1，false写入0</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>写入成功返回true，否则抛出异常</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>异常，记录了详细的异常信息</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Service/PLCService.cs/#L10" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

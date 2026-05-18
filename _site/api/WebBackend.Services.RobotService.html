@@ -1,0 +1,1044 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RobotService | Develop Robot Arm Control API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RobotService | Develop Robot Arm Control API Documentation ">
+      
+      <meta name="description" content="提供给RobotController机器人相关功能">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jjhhyyg/Console_Robot/new/dev/apiSpec/new?filename=WebBackend_Services_RobotService.md&amp;value=---%0Auid%3A%20WebBackend.Services.RobotService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Develop Robot Arm Control API Documentation">
+            Develop Robot Arm Control API Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="WebBackend.Services.RobotService">
+
+
+
+  <h1 id="WebBackend_Services_RobotService" data-uid="WebBackend.Services.RobotService" class="text-break">
+Class RobotService  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="WebBackend.html">WebBackend</a>.<a class="xref" href="WebBackend.Services.html">Services</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>WebBackend.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>提供给RobotController机器人相关功能</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RobotService</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">RobotService</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="WebBackend_Services_RobotService_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>构造函数，用于依赖注入全局数据以及机器人控制器</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="WebBackend_Services_RobotService__ctor_" data-uid="WebBackend.Services.RobotService.#ctor*"></a>
+
+  <h3 id="WebBackend_Services_RobotService__ctor_WebBackend_Dao_IApplicationData_WebBackend_Util_Control_WebBackend_PlcService_Microsoft_Extensions_Logging_ILogger_WebBackend_Services_RobotService__WebBackend_Dao_RobotConfiguration_" data-uid="WebBackend.Services.RobotService.#ctor(WebBackend.Dao.IApplicationData,WebBackend.Util.Control,WebBackend.PlcService,Microsoft.Extensions.Logging.ILogger{WebBackend.Services.RobotService},WebBackend.Dao.RobotConfiguration)">
+  RobotService(IApplicationData, Control, PlcService, ILogger&lt;RobotService&gt;, RobotConfiguration)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>提供给RobotController机器人相关功能</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RobotService(IApplicationData appData, Control controller, PlcService plcService, ILogger&lt;RobotService&gt; logger, RobotConfiguration configuration)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>appData</code> <a class="xref" href="WebBackend.Dao.IApplicationData.html">IApplicationData</a></dt>
+    <dd><p>全局数据</p>
+</dd>
+    <dt><code>controller</code> <a class="xref" href="WebBackend.Util.Control.html">Control</a></dt>
+    <dd><p>机器人控制器</p>
+</dd>
+    <dt><code>plcService</code> <a class="xref" href="WebBackend.PlcService.html">PlcService</a></dt>
+    <dd><p>PLC业务逻辑类</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="WebBackend.Services.RobotService.html">RobotService</a>&gt;</dt>
+    <dd><p>日志记录器</p>
+</dd>
+    <dt><code>configuration</code> <a class="xref" href="WebBackend.Dao.RobotConfiguration.html">RobotConfiguration</a></dt>
+    <dd><p>机器人配置信息</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="WebBackend_Services_RobotService__ctor_WebBackend_Dao_IApplicationData_WebBackend_Util_Control_WebBackend_PlcService_Microsoft_Extensions_Logging_ILogger_WebBackend_Services_RobotService__WebBackend_Dao_RobotConfiguration__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>构造函数，用于依赖注入全局数据以及机器人控制器</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="WebBackend_Services_RobotService_Disconnect_" data-uid="WebBackend.Services.RobotService.Disconnect*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_Disconnect" data-uid="WebBackend.Services.RobotService.Disconnect">
+  Disconnect()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>掉使能舵机、释放控制权限并断开连接</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Disconnect()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>释放成功返回true，失败抛出异常</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>异常，记录了详细的异常信息</p>
+</dd>
+  </dl>
+
+
+
+  <a id="WebBackend_Services_RobotService_GetAPIStatus_" data-uid="WebBackend.Services.RobotService.GetAPIStatus*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_GetAPIStatus" data-uid="WebBackend.Services.RobotService.GetAPIStatus">
+  GetAPIStatus()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L491"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取控制器状态</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetAPIStatus()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>-1 表示失败，0 表示正常，1 表示机器人错误，2 表示机器人处于停止状态，需要调用 start 接口启动</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Services_RobotService_GetCurrentJPos_" data-uid="WebBackend.Services.RobotService.GetCurrentJPos*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_GetCurrentJPos" data-uid="WebBackend.Services.RobotService.GetCurrentJPos">
+  GetCurrentJPos()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L464"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取当前机械臂的世界坐标系（实际对应示教器上的用户坐标系）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public E_ROB_POS_CLI GetCurrentJPos()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">E_ROB_POS_CLI</span></dt>
+    <dd><p>笛卡尔坐标系</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Services_RobotService_GetCurrentTask_" data-uid="WebBackend.Services.RobotService.GetCurrentTask*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_GetCurrentTask" data-uid="WebBackend.Services.RobotService.GetCurrentTask">
+  GetCurrentTask()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L547"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取当前执行的任务</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task GetCurrentTask()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="WebBackend.Dao.Task.html">Task</a></dt>
+    <dd><p>如果队列非空，返回当前任务，否则返回一个持续时间（Duration）为-1的Task</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Services_RobotService_GetCurrentWPos_" data-uid="WebBackend.Services.RobotService.GetCurrentWPos*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_GetCurrentWPos" data-uid="WebBackend.Services.RobotService.GetCurrentWPos">
+  GetCurrentWPos()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L473"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取当前机械臂的关节坐标系</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public E_ROB_POS_CLI GetCurrentWPos()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">E_ROB_POS_CLI</span></dt>
+    <dd><p>六轴转动角度</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Services_RobotService_GetRunMode_" data-uid="WebBackend.Services.RobotService.GetRunMode*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_GetRunMode" data-uid="WebBackend.Services.RobotService.GetRunMode">
+  GetRunMode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L519"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取运动模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public E_RunModeType_CLI GetRunMode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">E_RunModeType_CLI</span></dt>
+    <dd><p>E_RunModeType_CLI枚举类，1为步进，2为连续</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Services_RobotService_GetServoState_" data-uid="WebBackend.Services.RobotService.GetServoState*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_GetServoState" data-uid="WebBackend.Services.RobotService.GetServoState">
+  GetServoState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L482"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获得舵机状态</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public E_ServoStatusType_CLI GetServoState()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">E_ServoStatusType_CLI</span></dt>
+    <dd><p>三种状态，详见E_ServoStatusType_CLI枚举类</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Services_RobotService_GetSysMode_" data-uid="WebBackend.Services.RobotService.GetSysMode*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_GetSysMode" data-uid="WebBackend.Services.RobotService.GetSysMode">
+  GetSysMode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L500"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取系统模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public E_SysModeType_CLI GetSysMode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">E_SysModeType_CLI</span></dt>
+    <dd><p>E_SysModeType_CLI枚举类，manualMode-手动模式，autoMode-自动模式，API-API模式（其他模式略）</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Services_RobotService_GetTaskQueue_" data-uid="WebBackend.Services.RobotService.GetTaskQueue*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_GetTaskQueue" data-uid="WebBackend.Services.RobotService.GetTaskQueue">
+  GetTaskQueue()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L538"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取任务队列</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConcurrentQueue&lt;Task&gt; GetTaskQueue()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentqueue-1">ConcurrentQueue</a>&lt;<a class="xref" href="WebBackend.Dao.Task.html">Task</a>&gt;</dt>
+    <dd><p>任务队列</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Services_RobotService_LoadTool_" data-uid="WebBackend.Services.RobotService.LoadTool*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_LoadTool_System_Int32_" data-uid="WebBackend.Services.RobotService.LoadTool(System.Int32)">
+  LoadTool(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>加载工具坐标系</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadTool(int toolId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>toolId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>工具坐标系ID</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>加载成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Services_RobotService_LoadUserCoord_" data-uid="WebBackend.Services.RobotService.LoadUserCoord*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_LoadUserCoord_System_Int32_" data-uid="WebBackend.Services.RobotService.LoadUserCoord(System.Int32)">
+  LoadUserCoord(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>加载用户坐标系</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadUserCoord(int userId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>用户坐标系ID</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>加载成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Services_RobotService_Pause_" data-uid="WebBackend.Services.RobotService.Pause*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_Pause_System_Int32_" data-uid="WebBackend.Services.RobotService.Pause(System.Int32)">
+  Pause(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>暂停机器人运动，但不清空队列</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Pause(int milliseconds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>milliseconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>等待信号发送和接受的时间（以毫秒为单位）</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Services_RobotService_RunAllCommand_" data-uid="WebBackend.Services.RobotService.RunAllCommand*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_RunAllCommand" data-uid="WebBackend.Services.RobotService.RunAllCommand">
+  RunAllCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L422"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>运行所有指令，运行结束后才返回值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RunAllCommand()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>整数状态值：
+0   所有指令运行成功
+-1  机械臂启动失败
+-2  非运动指令
+-3  指令执行失败
+-4  指令为空，未导入指令
+-5  点位为空，未导入点位
+-99 任务执行失败，服务器内部错误</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Services_RobotService_RunCommand_" data-uid="WebBackend.Services.RobotService.RunCommand*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_RunCommand_WebBackend_Dao_Command_" data-uid="WebBackend.Services.RobotService.RunCommand(WebBackend.Dao.Command)">
+  RunCommand(Command)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>运行一条指令</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RunCommand(Command command)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>command</code> <a class="xref" href="WebBackend.Dao.Command.html">Command</a></dt>
+    <dd><p>待运行指令参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>整数状态值：
+0   运行成功
+-1  机械臂启动失败
+-2  非运动指令
+-3  指令执行失败</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Services_RobotService_SetGlobalSpeed_" data-uid="WebBackend.Services.RobotService.SetGlobalSpeed*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_SetGlobalSpeed_System_Int32_" data-uid="WebBackend.Services.RobotService.SetGlobalSpeed(System.Int32)">
+  SetGlobalSpeed(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置全局速度</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetGlobalSpeed(int speed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>speed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>0~100 表示百分比</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Services_RobotService_SetRunMode_" data-uid="WebBackend.Services.RobotService.SetRunMode*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_SetRunMode_EstunApiStruct_CLI_E_RunModeType_CLI_" data-uid="WebBackend.Services.RobotService.SetRunMode(EstunApiStruct_CLI.E_RunModeType_CLI)">
+  SetRunMode(E_RunModeType_CLI)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L529"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置运动模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetRunMode(E_RunModeType_CLI mode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <span class="xref">E_RunModeType_CLI</span></dt>
+    <dd><p>E_RunModeType_CLI枚举类，1为步进，2为连续</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>设置成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Services_RobotService_SetSysMode_" data-uid="WebBackend.Services.RobotService.SetSysMode*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_SetSysMode_EstunApiStruct_CLI_E_SysModeType_CLI_" data-uid="WebBackend.Services.RobotService.SetSysMode(EstunApiStruct_CLI.E_SysModeType_CLI)">
+  SetSysMode(E_SysModeType_CLI)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置系统运行模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetSysMode(E_SysModeType_CLI mode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <span class="xref">E_SysModeType_CLI</span></dt>
+    <dd><p>E_SysModeType_CLI枚举类，manualMode-手动模式，autoMode-自动模式，API-API模式（其他模式略）</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Services_RobotService_SetToolId_" data-uid="WebBackend.Services.RobotService.SetToolId*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_SetToolId_System_Int32_" data-uid="WebBackend.Services.RobotService.SetToolId(System.Int32)">
+  SetToolId(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L561"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置工具坐标系</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetToolId(int toolId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>toolId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>工具坐标系ID</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>设置成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Services_RobotService_Sleep_" data-uid="WebBackend.Services.RobotService.Sleep*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_Sleep_System_Int32_" data-uid="WebBackend.Services.RobotService.Sleep(System.Int32)">
+  Sleep(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>睡眠</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Sleep(int milliseconds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>milliseconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>以毫秒为单位</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Services_RobotService_Start_" data-uid="WebBackend.Services.RobotService.Start*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_Start_System_Int32_" data-uid="WebBackend.Services.RobotService.Start(System.Int32)">
+  Start(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>开始机器人运动</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Start(int milliseconds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>milliseconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>等待信号发送和接受的时间（以毫秒为单位）</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Services_RobotService_Startup_" data-uid="WebBackend.Services.RobotService.Startup*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_Startup" data-uid="WebBackend.Services.RobotService.Startup">
+  Startup()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>启动机器人并让机器人准备运动</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Startup()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>0       启动成功
+-1      机械臂连接失败
+-2      尝试清除机械臂错误信息但还是存在错误，需要上示教器查看
+-3      申请运动权限失败
+-4      舵机启动失败，还处于关机状态
+-5      舵机启动失败，处于错误状态
+-6      设置全局速度失败
+-7      加载用户坐标系失败
+-8      加载工具坐标系失败
+-9      停止机械臂失败（清空运动队列失败）
+-10     设置系统模式为API模式失败</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Services_RobotService_Stop_" data-uid="WebBackend.Services.RobotService.Stop*"></a>
+
+  <h3 id="WebBackend_Services_RobotService_Stop_System_Int32_" data-uid="WebBackend.Services.RobotService.Stop(System.Int32)">
+  Stop(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>停止机器人运行并清空队列</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Stop(int milliseconds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>milliseconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>等待信号发送和接受的时间（以毫秒为单位）</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jjhhyyg/Console_Robot/blob/dev/WebBackend/Services/RobotService.cs/#L19" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

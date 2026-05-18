@@ -1,0 +1,520 @@
+{
+  "source_base_path": "F:/DevelopRobot",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Configuration.DatabaseAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Configuration.DatabaseAccess.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Configuration.TraceTypeConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Configuration.TraceTypeConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Configuration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Controller.FileController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Controller.FileController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Controller.HomeController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Controller.HomeController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Controller.PlcController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Controller.PlcController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Controller.RobotController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Controller.RobotController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Controller.TestController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Controller.TestController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Controller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Controller.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.DTO.GlobalSpeedRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.DTO.GlobalSpeedRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.DTO.R.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.DTO.R.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.DTO.TaskGetRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.DTO.TaskGetRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.DTO.ToolIdRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.DTO.ToolIdRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.DTO.TraceRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.DTO.TraceRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.DTO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.DTO.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Dao.ApplicationData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Dao.ApplicationData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Dao.Command.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Dao.Command.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Dao.IApplicationData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Dao.IApplicationData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Dao.IPlcConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Dao.IPlcConfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Dao.IRobotConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Dao.IRobotConfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Dao.PlcConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Dao.PlcConfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Dao.RobotConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Dao.RobotConfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Dao.RobotPosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Dao.RobotPosition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Dao.SeqDatabaseSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Dao.SeqDatabaseSettings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Dao.ServerConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Dao.ServerConfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Dao.Task.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Dao.Task.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Dao.TraceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Dao.TraceType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Dao.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Dao.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Service.DatabaseInitializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Service.DatabaseInitializer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Service.FileService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Service.FileService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Service.PlcService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Service.PlcService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Service.RobotConfigurationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Service.RobotConfigurationService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Service.RobotService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Service.RobotService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Service.TaskProcessingService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Service.TaskProcessingService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Service.TaskService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Service.TaskService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Service.TraceTypeService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Service.TraceTypeService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Service.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Service.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Util.Control.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Util.Control.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Util.FileReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Util.FileReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Util.Parser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Util.Parser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebBackend.Util.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebBackend.Util.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/ER系列工业机器人API使用手册_RCS2_V1.3.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "docs/ER系列工业机器人API使用手册_RCS2_V1.3.pdf"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/modification-guide.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/modification-guide.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "log.md",
+      "output": {
+        ".html": {
+          "relative_path": "log.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

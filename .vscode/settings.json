@@ -1,0 +1,4 @@
+{
+  "dotnet.preferCSharpExtension": true,
+  "dotnet.defaultSolution": "Console_Robot.sln"
+}

@@ -1,0 +1,454 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebBackend.DTO.TraceRequest
+  commentId: T:WebBackend.DTO.TraceRequest
+  id: TraceRequest
+  parent: WebBackend.DTO
+  children:
+  - WebBackend.DTO.TraceRequest.#ctor(System.String)
+  - WebBackend.DTO.TraceRequest.TraceName
+  langs:
+  - csharp
+  - vb
+  name: TraceRequest
+  nameWithType: TraceRequest
+  fullName: WebBackend.DTO.TraceRequest
+  type: Class
+  source:
+    remote:
+      path: WebBackend/DTO/TraceRequest.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: TraceRequest
+    path: WebBackend/DTO/TraceRequest.cs
+    startLine: 5
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.DTO
+  summary: 轨迹名DTO
+  example: []
+  syntax:
+    content: 'public record TraceRequest : IEquatable<TraceRequest>'
+    content.vb: Public Class TraceRequest Implements IEquatable(Of TraceRequest)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{WebBackend.DTO.TraceRequest}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: WebBackend.DTO.TraceRequest.#ctor(System.String)
+  commentId: M:WebBackend.DTO.TraceRequest.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: WebBackend.DTO.TraceRequest
+  langs:
+  - csharp
+  - vb
+  name: TraceRequest(string)
+  nameWithType: TraceRequest.TraceRequest(string)
+  fullName: WebBackend.DTO.TraceRequest.TraceRequest(string)
+  type: Constructor
+  source:
+    remote:
+      path: WebBackend/DTO/TraceRequest.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: .ctor
+    path: WebBackend/DTO/TraceRequest.cs
+    startLine: 5
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.DTO
+  summary: 轨迹名DTO
+  example: []
+  syntax:
+    content: public TraceRequest(string TraceName)
+    parameters:
+    - id: TraceName
+      type: System.String
+    content.vb: Public Sub New(TraceName As String)
+  overload: WebBackend.DTO.TraceRequest.#ctor*
+  nameWithType.vb: TraceRequest.New(String)
+  fullName.vb: WebBackend.DTO.TraceRequest.New(String)
+  name.vb: New(String)
+- uid: WebBackend.DTO.TraceRequest.TraceName
+  commentId: P:WebBackend.DTO.TraceRequest.TraceName
+  id: TraceName
+  parent: WebBackend.DTO.TraceRequest
+  langs:
+  - csharp
+  - vb
+  name: TraceName
+  nameWithType: TraceRequest.TraceName
+  fullName: WebBackend.DTO.TraceRequest.TraceName
+  type: Property
+  source:
+    remote:
+      path: WebBackend/DTO/TraceRequest.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: TraceName
+    path: WebBackend/DTO/TraceRequest.cs
+    startLine: 5
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.DTO
+  syntax:
+    content: public string TraceName { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TraceName As String
+  overload: WebBackend.DTO.TraceRequest.TraceName*
+references:
+- uid: WebBackend.DTO
+  commentId: N:WebBackend.DTO
+  href: WebBackend.html
+  name: WebBackend.DTO
+  nameWithType: WebBackend.DTO
+  fullName: WebBackend.DTO
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.DTO
+    name: DTO
+    href: WebBackend.DTO.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.DTO
+    name: DTO
+    href: WebBackend.DTO.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{WebBackend.DTO.TraceRequest}
+  commentId: T:System.IEquatable{WebBackend.DTO.TraceRequest}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<TraceRequest>
+  nameWithType: IEquatable<TraceRequest>
+  fullName: System.IEquatable<WebBackend.DTO.TraceRequest>
+  nameWithType.vb: IEquatable(Of TraceRequest)
+  fullName.vb: System.IEquatable(Of WebBackend.DTO.TraceRequest)
+  name.vb: IEquatable(Of TraceRequest)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: WebBackend.DTO.TraceRequest
+    name: TraceRequest
+    href: WebBackend.DTO.TraceRequest.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: WebBackend.DTO.TraceRequest
+    name: TraceRequest
+    href: WebBackend.DTO.TraceRequest.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: WebBackend.DTO.TraceRequest.#ctor*
+  commentId: Overload:WebBackend.DTO.TraceRequest.#ctor
+  href: WebBackend.DTO.TraceRequest.html#WebBackend_DTO_TraceRequest__ctor_System_String_
+  name: TraceRequest
+  nameWithType: TraceRequest.TraceRequest
+  fullName: WebBackend.DTO.TraceRequest.TraceRequest
+  nameWithType.vb: TraceRequest.New
+  fullName.vb: WebBackend.DTO.TraceRequest.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: WebBackend.DTO.TraceRequest.TraceName*
+  commentId: Overload:WebBackend.DTO.TraceRequest.TraceName
+  href: WebBackend.DTO.TraceRequest.html#WebBackend_DTO_TraceRequest_TraceName
+  name: TraceName
+  nameWithType: TraceRequest.TraceName
+  fullName: WebBackend.DTO.TraceRequest.TraceName

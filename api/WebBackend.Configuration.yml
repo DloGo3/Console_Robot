@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebBackend.Configuration
+  commentId: N:WebBackend.Configuration
+  id: WebBackend.Configuration
+  children:
+  - WebBackend.Configuration.DatabaseAccess
+  - WebBackend.Configuration.TraceTypeConfig
+  langs:
+  - csharp
+  - vb
+  name: WebBackend.Configuration
+  nameWithType: WebBackend.Configuration
+  fullName: WebBackend.Configuration
+  type: Namespace
+  assemblies:
+  - WebBackend
+references:
+- uid: WebBackend.Configuration.DatabaseAccess
+  commentId: T:WebBackend.Configuration.DatabaseAccess
+  parent: WebBackend.Configuration
+  href: WebBackend.Configuration.DatabaseAccess.html
+  name: DatabaseAccess
+  nameWithType: DatabaseAccess
+  fullName: WebBackend.Configuration.DatabaseAccess
+- uid: WebBackend.Configuration.TraceTypeConfig
+  commentId: T:WebBackend.Configuration.TraceTypeConfig
+  href: WebBackend.Configuration.TraceTypeConfig.html
+  name: TraceTypeConfig
+  nameWithType: TraceTypeConfig
+  fullName: WebBackend.Configuration.TraceTypeConfig
+- uid: WebBackend.Configuration
+  commentId: N:WebBackend.Configuration
+  href: WebBackend.html
+  name: WebBackend.Configuration
+  nameWithType: WebBackend.Configuration
+  fullName: WebBackend.Configuration
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Configuration
+    name: Configuration
+    href: WebBackend.Configuration.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Configuration
+    name: Configuration
+    href: WebBackend.Configuration.html

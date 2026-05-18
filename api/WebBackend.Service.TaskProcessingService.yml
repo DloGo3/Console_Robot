@@ -1,0 +1,996 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebBackend.Service.TaskProcessingService
+  commentId: T:WebBackend.Service.TaskProcessingService
+  id: TaskProcessingService
+  parent: WebBackend.Service
+  children:
+  - WebBackend.Service.TaskProcessingService.#ctor(Microsoft.Extensions.Logging.ILogger{WebBackend.Service.TaskProcessingService},System.IServiceProvider)
+  - WebBackend.Service.TaskProcessingService.ClearTaskQueue
+  - WebBackend.Service.TaskProcessingService.EmergencyStop
+  - WebBackend.Service.TaskProcessingService.EnqueueTask(WebBackend.Dao.Task)
+  - WebBackend.Service.TaskProcessingService.ExecuteAsync(System.Threading.CancellationToken)
+  - WebBackend.Service.TaskProcessingService.TaskContinue
+  - WebBackend.Service.TaskProcessingService.TaskCount
+  langs:
+  - csharp
+  - vb
+  name: TaskProcessingService
+  nameWithType: TaskProcessingService
+  fullName: WebBackend.Service.TaskProcessingService
+  type: Class
+  source:
+    remote:
+      path: WebBackend/Service/TaskProcessingService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: TaskProcessingService
+    path: WebBackend/Service/TaskProcessingService.cs
+    startLine: 18
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 后台服务类，负责处理任务队列中的任务�?
+  example: []
+  syntax:
+    content: 'public class TaskProcessingService : BackgroundService, IHostedService, IDisposable'
+    content.vb: Public Class TaskProcessingService Inherits BackgroundService Implements IHostedService, IDisposable
+  inheritance:
+  - System.Object
+  - Microsoft.Extensions.Hosting.BackgroundService
+  implements:
+  - Microsoft.Extensions.Hosting.IHostedService
+  - System.IDisposable
+  inheritedMembers:
+  - Microsoft.Extensions.Hosting.BackgroundService.Dispose
+  - Microsoft.Extensions.Hosting.BackgroundService.StartAsync(System.Threading.CancellationToken)
+  - Microsoft.Extensions.Hosting.BackgroundService.StopAsync(System.Threading.CancellationToken)
+  - Microsoft.Extensions.Hosting.BackgroundService.ExecuteTask
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: WebBackend.Service.TaskProcessingService.#ctor(Microsoft.Extensions.Logging.ILogger{WebBackend.Service.TaskProcessingService},System.IServiceProvider)
+  commentId: M:WebBackend.Service.TaskProcessingService.#ctor(Microsoft.Extensions.Logging.ILogger{WebBackend.Service.TaskProcessingService},System.IServiceProvider)
+  id: '#ctor(Microsoft.Extensions.Logging.ILogger{WebBackend.Service.TaskProcessingService},System.IServiceProvider)'
+  parent: WebBackend.Service.TaskProcessingService
+  langs:
+  - csharp
+  - vb
+  name: TaskProcessingService(ILogger<TaskProcessingService>, IServiceProvider)
+  nameWithType: TaskProcessingService.TaskProcessingService(ILogger<TaskProcessingService>, IServiceProvider)
+  fullName: WebBackend.Service.TaskProcessingService.TaskProcessingService(Microsoft.Extensions.Logging.ILogger<WebBackend.Service.TaskProcessingService>, System.IServiceProvider)
+  type: Constructor
+  source:
+    remote:
+      path: WebBackend/Service/TaskProcessingService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: .ctor
+    path: WebBackend/Service/TaskProcessingService.cs
+    startLine: 29
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 初始�?<xref href="WebBackend.Service.TaskProcessingService" data-throw-if-not-resolved="false"></xref> 类的新实例�?
+  example: []
+  syntax:
+    content: public TaskProcessingService(ILogger<TaskProcessingService> logger, IServiceProvider serviceProvider)
+    parameters:
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{WebBackend.Service.TaskProcessingService}
+      description: 用于记录日志的日志记录器实例�?
+    - id: serviceProvider
+      type: System.IServiceProvider
+      description: 用于创建作用域和解析服务的服务提供者�?
+    content.vb: Public Sub New(logger As ILogger(Of TaskProcessingService), serviceProvider As IServiceProvider)
+  overload: WebBackend.Service.TaskProcessingService.#ctor*
+  nameWithType.vb: TaskProcessingService.New(ILogger(Of TaskProcessingService), IServiceProvider)
+  fullName.vb: WebBackend.Service.TaskProcessingService.New(Microsoft.Extensions.Logging.ILogger(Of WebBackend.Service.TaskProcessingService), System.IServiceProvider)
+  name.vb: New(ILogger(Of TaskProcessingService), IServiceProvider)
+- uid: WebBackend.Service.TaskProcessingService.EnqueueTask(WebBackend.Dao.Task)
+  commentId: M:WebBackend.Service.TaskProcessingService.EnqueueTask(WebBackend.Dao.Task)
+  id: EnqueueTask(WebBackend.Dao.Task)
+  parent: WebBackend.Service.TaskProcessingService
+  langs:
+  - csharp
+  - vb
+  name: EnqueueTask(Task)
+  nameWithType: TaskProcessingService.EnqueueTask(Task)
+  fullName: WebBackend.Service.TaskProcessingService.EnqueueTask(WebBackend.Dao.Task)
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/TaskProcessingService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: EnqueueTask
+    path: WebBackend/Service/TaskProcessingService.cs
+    startLine: 39
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 将任务加入队列中等待处理�?
+  example: []
+  syntax:
+    content: public void EnqueueTask(Task task)
+    parameters:
+    - id: task
+      type: WebBackend.Dao.Task
+      description: 要加入队列的任务实例�?
+    content.vb: Public Sub EnqueueTask(task As Task)
+  overload: WebBackend.Service.TaskProcessingService.EnqueueTask*
+- uid: WebBackend.Service.TaskProcessingService.ClearTaskQueue
+  commentId: M:WebBackend.Service.TaskProcessingService.ClearTaskQueue
+  id: ClearTaskQueue
+  parent: WebBackend.Service.TaskProcessingService
+  langs:
+  - csharp
+  - vb
+  name: ClearTaskQueue()
+  nameWithType: TaskProcessingService.ClearTaskQueue()
+  fullName: WebBackend.Service.TaskProcessingService.ClearTaskQueue()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/TaskProcessingService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: ClearTaskQueue
+    path: WebBackend/Service/TaskProcessingService.cs
+    startLine: 47
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 清空所有队列中的任务�?
+  example: []
+  syntax:
+    content: public void ClearTaskQueue()
+    content.vb: Public Sub ClearTaskQueue()
+  overload: WebBackend.Service.TaskProcessingService.ClearTaskQueue*
+- uid: WebBackend.Service.TaskProcessingService.TaskCount
+  commentId: P:WebBackend.Service.TaskProcessingService.TaskCount
+  id: TaskCount
+  parent: WebBackend.Service.TaskProcessingService
+  langs:
+  - csharp
+  - vb
+  name: TaskCount
+  nameWithType: TaskProcessingService.TaskCount
+  fullName: WebBackend.Service.TaskProcessingService.TaskCount
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Service/TaskProcessingService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: TaskCount
+    path: WebBackend/Service/TaskProcessingService.cs
+    startLine: 56
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 获取当前任务队列中的任务数量�?
+  example: []
+  syntax:
+    content: public int TaskCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: 队列中的任务数量�?
+    content.vb: Public ReadOnly Property TaskCount As Integer
+  overload: WebBackend.Service.TaskProcessingService.TaskCount*
+- uid: WebBackend.Service.TaskProcessingService.EmergencyStop
+  commentId: M:WebBackend.Service.TaskProcessingService.EmergencyStop
+  id: EmergencyStop
+  parent: WebBackend.Service.TaskProcessingService
+  langs:
+  - csharp
+  - vb
+  name: EmergencyStop()
+  nameWithType: TaskProcessingService.EmergencyStop()
+  fullName: WebBackend.Service.TaskProcessingService.EmergencyStop()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/TaskProcessingService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: EmergencyStop
+    path: WebBackend/Service/TaskProcessingService.cs
+    startLine: 61
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 立即停止所有任务的执行�?
+  example: []
+  syntax:
+    content: public void EmergencyStop()
+    content.vb: Public Sub EmergencyStop()
+  overload: WebBackend.Service.TaskProcessingService.EmergencyStop*
+- uid: WebBackend.Service.TaskProcessingService.TaskContinue
+  commentId: M:WebBackend.Service.TaskProcessingService.TaskContinue
+  id: TaskContinue
+  parent: WebBackend.Service.TaskProcessingService
+  langs:
+  - csharp
+  - vb
+  name: TaskContinue()
+  nameWithType: TaskProcessingService.TaskContinue()
+  fullName: WebBackend.Service.TaskProcessingService.TaskContinue()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/TaskProcessingService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: TaskContinue
+    path: WebBackend/Service/TaskProcessingService.cs
+    startLine: 77
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 继续执行当前任务�?
+  example: []
+  syntax:
+    content: public void TaskContinue()
+    content.vb: Public Sub TaskContinue()
+  overload: WebBackend.Service.TaskProcessingService.TaskContinue*
+- uid: WebBackend.Service.TaskProcessingService.ExecuteAsync(System.Threading.CancellationToken)
+  commentId: M:WebBackend.Service.TaskProcessingService.ExecuteAsync(System.Threading.CancellationToken)
+  id: ExecuteAsync(System.Threading.CancellationToken)
+  parent: WebBackend.Service.TaskProcessingService
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAsync(CancellationToken)
+  nameWithType: TaskProcessingService.ExecuteAsync(CancellationToken)
+  fullName: WebBackend.Service.TaskProcessingService.ExecuteAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/TaskProcessingService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: ExecuteAsync
+    path: WebBackend/Service/TaskProcessingService.cs
+    startLine: 114
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 执行后台服务，从队列中持续处理任务�?
+  example: []
+  syntax:
+    content: protected override Task ExecuteAsync(CancellationToken stoppingToken)
+    parameters:
+    - id: stoppingToken
+      type: System.Threading.CancellationToken
+      description: 用于停止任务执行的取消令牌�?
+    return:
+      type: System.Threading.Tasks.Task
+      description: 表示后台执行的异步操作�?
+    content.vb: Protected Overrides Function ExecuteAsync(stoppingToken As CancellationToken) As Task
+  overridden: Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)
+  overload: WebBackend.Service.TaskProcessingService.ExecuteAsync*
+references:
+- uid: WebBackend.Service
+  commentId: N:WebBackend.Service
+  href: WebBackend.html
+  name: WebBackend.Service
+  nameWithType: WebBackend.Service
+  fullName: WebBackend.Service
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Service
+    name: Service
+    href: WebBackend.Service.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Service
+    name: Service
+    href: WebBackend.Service.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Extensions.Hosting.BackgroundService
+  commentId: T:Microsoft.Extensions.Hosting.BackgroundService
+  parent: Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice
+  name: BackgroundService
+  nameWithType: BackgroundService
+  fullName: Microsoft.Extensions.Hosting.BackgroundService
+- uid: Microsoft.Extensions.Hosting.IHostedService
+  commentId: T:Microsoft.Extensions.Hosting.IHostedService
+  parent: Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice
+  name: IHostedService
+  nameWithType: IHostedService
+  fullName: Microsoft.Extensions.Hosting.IHostedService
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.Extensions.Hosting.BackgroundService.Dispose
+  commentId: M:Microsoft.Extensions.Hosting.BackgroundService.Dispose
+  parent: Microsoft.Extensions.Hosting.BackgroundService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.dispose
+  name: Dispose()
+  nameWithType: BackgroundService.Dispose()
+  fullName: Microsoft.Extensions.Hosting.BackgroundService.Dispose()
+  spec.csharp:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.dispose
+  - name: (
+  - name: )
+- uid: Microsoft.Extensions.Hosting.BackgroundService.StartAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Hosting.BackgroundService.StartAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Hosting.BackgroundService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.startasync
+  name: StartAsync(CancellationToken)
+  nameWithType: BackgroundService.StartAsync(CancellationToken)
+  fullName: Microsoft.Extensions.Hosting.BackgroundService.StartAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.StartAsync(System.Threading.CancellationToken)
+    name: StartAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.startasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.StartAsync(System.Threading.CancellationToken)
+    name: StartAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.startasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Microsoft.Extensions.Hosting.BackgroundService.StopAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Hosting.BackgroundService.StopAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Hosting.BackgroundService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.stopasync
+  name: StopAsync(CancellationToken)
+  nameWithType: BackgroundService.StopAsync(CancellationToken)
+  fullName: Microsoft.Extensions.Hosting.BackgroundService.StopAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.StopAsync(System.Threading.CancellationToken)
+    name: StopAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.stopasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.StopAsync(System.Threading.CancellationToken)
+    name: StopAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.stopasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Microsoft.Extensions.Hosting.BackgroundService.ExecuteTask
+  commentId: P:Microsoft.Extensions.Hosting.BackgroundService.ExecuteTask
+  parent: Microsoft.Extensions.Hosting.BackgroundService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.executetask
+  name: ExecuteTask
+  nameWithType: BackgroundService.ExecuteTask
+  fullName: Microsoft.Extensions.Hosting.BackgroundService.ExecuteTask
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.Hosting
+  commentId: N:Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Hosting
+  nameWithType: Microsoft.Extensions.Hosting
+  fullName: Microsoft.Extensions.Hosting
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
+- uid: WebBackend.Service.TaskProcessingService
+  commentId: T:WebBackend.Service.TaskProcessingService
+  parent: WebBackend.Service
+  href: WebBackend.Service.TaskProcessingService.html
+  name: TaskProcessingService
+  nameWithType: TaskProcessingService
+  fullName: WebBackend.Service.TaskProcessingService
+- uid: WebBackend.Service.TaskProcessingService.#ctor*
+  commentId: Overload:WebBackend.Service.TaskProcessingService.#ctor
+  href: WebBackend.Service.TaskProcessingService.html#WebBackend_Service_TaskProcessingService__ctor_Microsoft_Extensions_Logging_ILogger_WebBackend_Service_TaskProcessingService__System_IServiceProvider_
+  name: TaskProcessingService
+  nameWithType: TaskProcessingService.TaskProcessingService
+  fullName: WebBackend.Service.TaskProcessingService.TaskProcessingService
+  nameWithType.vb: TaskProcessingService.New
+  fullName.vb: WebBackend.Service.TaskProcessingService.New
+  name.vb: New
+- uid: Microsoft.Extensions.Logging.ILogger{WebBackend.Service.TaskProcessingService}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{WebBackend.Service.TaskProcessingService}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TaskProcessingService>
+  nameWithType: ILogger<TaskProcessingService>
+  fullName: Microsoft.Extensions.Logging.ILogger<WebBackend.Service.TaskProcessingService>
+  nameWithType.vb: ILogger(Of TaskProcessingService)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of WebBackend.Service.TaskProcessingService)
+  name.vb: ILogger(Of TaskProcessingService)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: WebBackend.Service.TaskProcessingService
+    name: TaskProcessingService
+    href: WebBackend.Service.TaskProcessingService.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: WebBackend.Service.TaskProcessingService
+    name: TaskProcessingService
+    href: WebBackend.Service.TaskProcessingService.html
+  - name: )
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: WebBackend.Service.TaskProcessingService.EnqueueTask*
+  commentId: Overload:WebBackend.Service.TaskProcessingService.EnqueueTask
+  href: WebBackend.Service.TaskProcessingService.html#WebBackend_Service_TaskProcessingService_EnqueueTask_WebBackend_Dao_Task_
+  name: EnqueueTask
+  nameWithType: TaskProcessingService.EnqueueTask
+  fullName: WebBackend.Service.TaskProcessingService.EnqueueTask
+- uid: WebBackend.Dao.Task
+  commentId: T:WebBackend.Dao.Task
+  parent: WebBackend.Dao
+  href: WebBackend.Dao.Task.html
+  name: Task
+  nameWithType: Task
+  fullName: WebBackend.Dao.Task
+- uid: WebBackend.Dao
+  commentId: N:WebBackend.Dao
+  href: WebBackend.html
+  name: WebBackend.Dao
+  nameWithType: WebBackend.Dao
+  fullName: WebBackend.Dao
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html
+- uid: WebBackend.Service.TaskProcessingService.ClearTaskQueue*
+  commentId: Overload:WebBackend.Service.TaskProcessingService.ClearTaskQueue
+  href: WebBackend.Service.TaskProcessingService.html#WebBackend_Service_TaskProcessingService_ClearTaskQueue
+  name: ClearTaskQueue
+  nameWithType: TaskProcessingService.ClearTaskQueue
+  fullName: WebBackend.Service.TaskProcessingService.ClearTaskQueue
+- uid: WebBackend.Service.TaskProcessingService.TaskCount*
+  commentId: Overload:WebBackend.Service.TaskProcessingService.TaskCount
+  href: WebBackend.Service.TaskProcessingService.html#WebBackend_Service_TaskProcessingService_TaskCount
+  name: TaskCount
+  nameWithType: TaskProcessingService.TaskCount
+  fullName: WebBackend.Service.TaskProcessingService.TaskCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: WebBackend.Service.TaskProcessingService.EmergencyStop*
+  commentId: Overload:WebBackend.Service.TaskProcessingService.EmergencyStop
+  href: WebBackend.Service.TaskProcessingService.html#WebBackend_Service_TaskProcessingService_EmergencyStop
+  name: EmergencyStop
+  nameWithType: TaskProcessingService.EmergencyStop
+  fullName: WebBackend.Service.TaskProcessingService.EmergencyStop
+- uid: WebBackend.Service.TaskProcessingService.TaskContinue*
+  commentId: Overload:WebBackend.Service.TaskProcessingService.TaskContinue
+  href: WebBackend.Service.TaskProcessingService.html#WebBackend_Service_TaskProcessingService_TaskContinue
+  name: TaskContinue
+  nameWithType: TaskProcessingService.TaskContinue
+  fullName: WebBackend.Service.TaskProcessingService.TaskContinue
+- uid: Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Hosting.BackgroundService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.executeasync
+  name: ExecuteAsync(CancellationToken)
+  nameWithType: BackgroundService.ExecuteAsync(CancellationToken)
+  fullName: Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)
+    name: ExecuteAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.executeasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)
+    name: ExecuteAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.executeasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: WebBackend.Service.TaskProcessingService.ExecuteAsync*
+  commentId: Overload:WebBackend.Service.TaskProcessingService.ExecuteAsync
+  href: WebBackend.Service.TaskProcessingService.html#WebBackend_Service_TaskProcessingService_ExecuteAsync_System_Threading_CancellationToken_
+  name: ExecuteAsync
+  nameWithType: TaskProcessingService.ExecuteAsync
+  fullName: WebBackend.Service.TaskProcessingService.ExecuteAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

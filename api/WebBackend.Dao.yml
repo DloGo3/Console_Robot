@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebBackend.Dao
+  commentId: N:WebBackend.Dao
+  id: WebBackend.Dao
+  children:
+  - WebBackend.Dao.ApplicationData
+  - WebBackend.Dao.Command
+  - WebBackend.Dao.IApplicationData
+  - WebBackend.Dao.IPlcConfiguration
+  - WebBackend.Dao.IRobotConfiguration
+  - WebBackend.Dao.PlcConfiguration
+  - WebBackend.Dao.RobotConfiguration
+  - WebBackend.Dao.RobotPosition
+  - WebBackend.Dao.SeqDatabaseSettings
+  - WebBackend.Dao.ServerConfiguration
+  - WebBackend.Dao.Task
+  - WebBackend.Dao.TraceType
+  langs:
+  - csharp
+  - vb
+  name: WebBackend.Dao
+  nameWithType: WebBackend.Dao
+  fullName: WebBackend.Dao
+  type: Namespace
+  assemblies:
+  - WebBackend
+references:
+- uid: WebBackend.Dao.Command
+  commentId: T:WebBackend.Dao.Command
+  parent: WebBackend.Dao
+  href: WebBackend.Dao.Command.html
+  name: Command
+  nameWithType: Command
+  fullName: WebBackend.Dao.Command
+- uid: WebBackend.Dao.IApplicationData
+  commentId: T:WebBackend.Dao.IApplicationData
+  parent: WebBackend.Dao
+  href: WebBackend.Dao.IApplicationData.html
+  name: IApplicationData
+  nameWithType: IApplicationData
+  fullName: WebBackend.Dao.IApplicationData
+- uid: WebBackend.Dao.ApplicationData
+  commentId: T:WebBackend.Dao.ApplicationData
+  href: WebBackend.Dao.ApplicationData.html
+  name: ApplicationData
+  nameWithType: ApplicationData
+  fullName: WebBackend.Dao.ApplicationData
+- uid: WebBackend.Dao.IPlcConfiguration
+  commentId: T:WebBackend.Dao.IPlcConfiguration
+  parent: WebBackend.Dao
+  href: WebBackend.Dao.IPlcConfiguration.html
+  name: IPlcConfiguration
+  nameWithType: IPlcConfiguration
+  fullName: WebBackend.Dao.IPlcConfiguration
+- uid: WebBackend.Dao.PlcConfiguration
+  commentId: T:WebBackend.Dao.PlcConfiguration
+  href: WebBackend.Dao.PlcConfiguration.html
+  name: PlcConfiguration
+  nameWithType: PlcConfiguration
+  fullName: WebBackend.Dao.PlcConfiguration
+- uid: WebBackend.Dao.IRobotConfiguration
+  commentId: T:WebBackend.Dao.IRobotConfiguration
+  parent: WebBackend.Dao
+  href: WebBackend.Dao.IRobotConfiguration.html
+  name: IRobotConfiguration
+  nameWithType: IRobotConfiguration
+  fullName: WebBackend.Dao.IRobotConfiguration
+- uid: WebBackend.Dao.RobotConfiguration
+  commentId: T:WebBackend.Dao.RobotConfiguration
+  parent: WebBackend.Dao
+  href: WebBackend.Dao.RobotConfiguration.html
+  name: RobotConfiguration
+  nameWithType: RobotConfiguration
+  fullName: WebBackend.Dao.RobotConfiguration
+- uid: WebBackend.Dao.RobotPosition
+  commentId: T:WebBackend.Dao.RobotPosition
+  href: WebBackend.Dao.RobotPosition.html
+  name: RobotPosition
+  nameWithType: RobotPosition
+  fullName: WebBackend.Dao.RobotPosition
+- uid: WebBackend.Dao.SeqDatabaseSettings
+  commentId: T:WebBackend.Dao.SeqDatabaseSettings
+  href: WebBackend.Dao.SeqDatabaseSettings.html
+  name: SeqDatabaseSettings
+  nameWithType: SeqDatabaseSettings
+  fullName: WebBackend.Dao.SeqDatabaseSettings
+- uid: WebBackend.Dao.ServerConfiguration
+  commentId: T:WebBackend.Dao.ServerConfiguration
+  href: WebBackend.Dao.ServerConfiguration.html
+  name: ServerConfiguration
+  nameWithType: ServerConfiguration
+  fullName: WebBackend.Dao.ServerConfiguration
+- uid: WebBackend.Dao.Task
+  commentId: T:WebBackend.Dao.Task
+  parent: WebBackend.Dao
+  href: WebBackend.Dao.Task.html
+  name: Task
+  nameWithType: Task
+  fullName: WebBackend.Dao.Task
+- uid: WebBackend.Dao.TraceType
+  commentId: T:WebBackend.Dao.TraceType
+  parent: WebBackend.Dao
+  href: WebBackend.Dao.TraceType.html
+  name: TraceType
+  nameWithType: TraceType
+  fullName: WebBackend.Dao.TraceType
+- uid: WebBackend.Dao
+  commentId: N:WebBackend.Dao
+  href: WebBackend.html
+  name: WebBackend.Dao
+  nameWithType: WebBackend.Dao
+  fullName: WebBackend.Dao
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html

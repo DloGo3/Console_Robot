@@ -1,0 +1,91 @@
+### YamlMime:TableOfContent
+items:
+- uid: WebBackend.Configuration
+  name: WebBackend.Configuration
+  items:
+  - uid: WebBackend.Configuration.DatabaseAccess
+    name: DatabaseAccess
+  - uid: WebBackend.Configuration.TraceTypeConfig
+    name: TraceTypeConfig
+- uid: WebBackend.Controller
+  name: WebBackend.Controller
+  items:
+  - uid: WebBackend.Controller.FileController
+    name: FileController
+  - uid: WebBackend.Controller.HomeController
+    name: HomeController
+  - uid: WebBackend.Controller.PlcController
+    name: PlcController
+  - uid: WebBackend.Controller.RobotController
+    name: RobotController
+  - uid: WebBackend.Controller.TestController
+    name: TestController
+- uid: WebBackend.DTO
+  name: WebBackend.DTO
+  items:
+  - uid: WebBackend.DTO.GlobalSpeedRequest
+    name: GlobalSpeedRequest
+  - uid: WebBackend.DTO.R
+    name: R
+  - uid: WebBackend.DTO.TaskGetRequest
+    name: TaskGetRequest
+  - uid: WebBackend.DTO.ToolIdRequest
+    name: ToolIdRequest
+  - uid: WebBackend.DTO.TraceRequest
+    name: TraceRequest
+- uid: WebBackend.Dao
+  name: WebBackend.Dao
+  items:
+  - uid: WebBackend.Dao.ApplicationData
+    name: ApplicationData
+  - uid: WebBackend.Dao.Command
+    name: Command
+  - uid: WebBackend.Dao.IApplicationData
+    name: IApplicationData
+  - uid: WebBackend.Dao.IPlcConfiguration
+    name: IPlcConfiguration
+  - uid: WebBackend.Dao.IRobotConfiguration
+    name: IRobotConfiguration
+  - uid: WebBackend.Dao.PlcConfiguration
+    name: PlcConfiguration
+  - uid: WebBackend.Dao.RobotConfiguration
+    name: RobotConfiguration
+  - uid: WebBackend.Dao.RobotPosition
+    name: RobotPosition
+  - uid: WebBackend.Dao.SeqDatabaseSettings
+    name: SeqDatabaseSettings
+  - uid: WebBackend.Dao.ServerConfiguration
+    name: ServerConfiguration
+  - uid: WebBackend.Dao.Task
+    name: Task
+  - uid: WebBackend.Dao.TraceType
+    name: TraceType
+- uid: WebBackend.Service
+  name: WebBackend.Service
+  items:
+  - uid: WebBackend.Service.DatabaseInitializer
+    name: DatabaseInitializer
+  - uid: WebBackend.Service.FileService
+    name: FileService
+  - uid: WebBackend.Service.PlcService
+    name: PlcService
+  - uid: WebBackend.Service.RobotConfigurationService
+    name: RobotConfigurationService
+  - uid: WebBackend.Service.RobotService
+    name: RobotService
+  - uid: WebBackend.Service.TaskProcessingService
+    name: TaskProcessingService
+  - uid: WebBackend.Service.TaskService
+    name: TaskService
+  - uid: WebBackend.Service.TraceTypeService
+    name: TraceTypeService
+- uid: WebBackend.Util
+  name: WebBackend.Util
+  items:
+  - uid: WebBackend.Util.Control
+    name: Control
+  - uid: WebBackend.Util.FileReader
+    name: FileReader
+  - uid: WebBackend.Util.Parser
+    name: Parser
+memberLayout: SamePage

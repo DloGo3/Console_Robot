@@ -1,0 +1,283 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebBackend.Dao.IRobotConfiguration
+  commentId: T:WebBackend.Dao.IRobotConfiguration
+  id: IRobotConfiguration
+  parent: WebBackend.Dao
+  children:
+  - WebBackend.Dao.IRobotConfiguration.AutoReconnect
+  - WebBackend.Dao.IRobotConfiguration.GlobalSpeed
+  - WebBackend.Dao.IRobotConfiguration.Ip
+  - WebBackend.Dao.IRobotConfiguration.ToolId
+  - WebBackend.Dao.IRobotConfiguration.UserId
+  langs:
+  - csharp
+  - vb
+  name: IRobotConfiguration
+  nameWithType: IRobotConfiguration
+  fullName: WebBackend.Dao.IRobotConfiguration
+  type: Interface
+  source:
+    remote:
+      path: WebBackend/Dao/RobotConfiguration.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: IRobotConfiguration
+    path: WebBackend/Dao/RobotConfiguration.cs
+    startLine: 5
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 机器人配置信息（接口�?
+  example: []
+  syntax:
+    content: public interface IRobotConfiguration
+    content.vb: Public Interface IRobotConfiguration
+- uid: WebBackend.Dao.IRobotConfiguration.Ip
+  commentId: P:WebBackend.Dao.IRobotConfiguration.Ip
+  id: Ip
+  parent: WebBackend.Dao.IRobotConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Ip
+  nameWithType: IRobotConfiguration.Ip
+  fullName: WebBackend.Dao.IRobotConfiguration.Ip
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/RobotConfiguration.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: Ip
+    path: WebBackend/Dao/RobotConfiguration.cs
+    startLine: 10
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 机器人IP地址（示教器上设置）
+  example: []
+  syntax:
+    content: string Ip { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Ip As String
+  overload: WebBackend.Dao.IRobotConfiguration.Ip*
+- uid: WebBackend.Dao.IRobotConfiguration.AutoReconnect
+  commentId: P:WebBackend.Dao.IRobotConfiguration.AutoReconnect
+  id: AutoReconnect
+  parent: WebBackend.Dao.IRobotConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AutoReconnect
+  nameWithType: IRobotConfiguration.AutoReconnect
+  fullName: WebBackend.Dao.IRobotConfiguration.AutoReconnect
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/RobotConfiguration.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: AutoReconnect
+    path: WebBackend/Dao/RobotConfiguration.cs
+    startLine: 14
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 断线是否重连标识，为true表示断线重连
+  example: []
+  syntax:
+    content: bool AutoReconnect { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property AutoReconnect As Boolean
+  overload: WebBackend.Dao.IRobotConfiguration.AutoReconnect*
+- uid: WebBackend.Dao.IRobotConfiguration.GlobalSpeed
+  commentId: P:WebBackend.Dao.IRobotConfiguration.GlobalSpeed
+  id: GlobalSpeed
+  parent: WebBackend.Dao.IRobotConfiguration
+  langs:
+  - csharp
+  - vb
+  name: GlobalSpeed
+  nameWithType: IRobotConfiguration.GlobalSpeed
+  fullName: WebBackend.Dao.IRobotConfiguration.GlobalSpeed
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/RobotConfiguration.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: GlobalSpeed
+    path: WebBackend/Dao/RobotConfiguration.cs
+    startLine: 18
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 全局速度，int值，0~100
+  example: []
+  syntax:
+    content: int GlobalSpeed { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property GlobalSpeed As Integer
+  overload: WebBackend.Dao.IRobotConfiguration.GlobalSpeed*
+- uid: WebBackend.Dao.IRobotConfiguration.UserId
+  commentId: P:WebBackend.Dao.IRobotConfiguration.UserId
+  id: UserId
+  parent: WebBackend.Dao.IRobotConfiguration
+  langs:
+  - csharp
+  - vb
+  name: UserId
+  nameWithType: IRobotConfiguration.UserId
+  fullName: WebBackend.Dao.IRobotConfiguration.UserId
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/RobotConfiguration.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: UserId
+    path: WebBackend/Dao/RobotConfiguration.cs
+    startLine: 22
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 用户坐标系ID
+  example: []
+  syntax:
+    content: int UserId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property UserId As Integer
+  overload: WebBackend.Dao.IRobotConfiguration.UserId*
+- uid: WebBackend.Dao.IRobotConfiguration.ToolId
+  commentId: P:WebBackend.Dao.IRobotConfiguration.ToolId
+  id: ToolId
+  parent: WebBackend.Dao.IRobotConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ToolId
+  nameWithType: IRobotConfiguration.ToolId
+  fullName: WebBackend.Dao.IRobotConfiguration.ToolId
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/RobotConfiguration.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: ToolId
+    path: WebBackend/Dao/RobotConfiguration.cs
+    startLine: 26
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 工具坐标系ID
+  example: []
+  syntax:
+    content: int ToolId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property ToolId As Integer
+  overload: WebBackend.Dao.IRobotConfiguration.ToolId*
+references:
+- uid: WebBackend.Dao
+  commentId: N:WebBackend.Dao
+  href: WebBackend.html
+  name: WebBackend.Dao
+  nameWithType: WebBackend.Dao
+  fullName: WebBackend.Dao
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html
+- uid: WebBackend.Dao.IRobotConfiguration.Ip*
+  commentId: Overload:WebBackend.Dao.IRobotConfiguration.Ip
+  href: WebBackend.Dao.IRobotConfiguration.html#WebBackend_Dao_IRobotConfiguration_Ip
+  name: Ip
+  nameWithType: IRobotConfiguration.Ip
+  fullName: WebBackend.Dao.IRobotConfiguration.Ip
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WebBackend.Dao.IRobotConfiguration.AutoReconnect*
+  commentId: Overload:WebBackend.Dao.IRobotConfiguration.AutoReconnect
+  href: WebBackend.Dao.IRobotConfiguration.html#WebBackend_Dao_IRobotConfiguration_AutoReconnect
+  name: AutoReconnect
+  nameWithType: IRobotConfiguration.AutoReconnect
+  fullName: WebBackend.Dao.IRobotConfiguration.AutoReconnect
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: WebBackend.Dao.IRobotConfiguration.GlobalSpeed*
+  commentId: Overload:WebBackend.Dao.IRobotConfiguration.GlobalSpeed
+  href: WebBackend.Dao.IRobotConfiguration.html#WebBackend_Dao_IRobotConfiguration_GlobalSpeed
+  name: GlobalSpeed
+  nameWithType: IRobotConfiguration.GlobalSpeed
+  fullName: WebBackend.Dao.IRobotConfiguration.GlobalSpeed
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: WebBackend.Dao.IRobotConfiguration.UserId*
+  commentId: Overload:WebBackend.Dao.IRobotConfiguration.UserId
+  href: WebBackend.Dao.IRobotConfiguration.html#WebBackend_Dao_IRobotConfiguration_UserId
+  name: UserId
+  nameWithType: IRobotConfiguration.UserId
+  fullName: WebBackend.Dao.IRobotConfiguration.UserId
+- uid: WebBackend.Dao.IRobotConfiguration.ToolId*
+  commentId: Overload:WebBackend.Dao.IRobotConfiguration.ToolId
+  href: WebBackend.Dao.IRobotConfiguration.html#WebBackend_Dao_IRobotConfiguration_ToolId
+  name: ToolId
+  nameWithType: IRobotConfiguration.ToolId
+  fullName: WebBackend.Dao.IRobotConfiguration.ToolId

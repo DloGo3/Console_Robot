@@ -1,0 +1,642 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebBackend.Dao.TraceType
+  commentId: T:WebBackend.Dao.TraceType
+  id: TraceType
+  parent: WebBackend.Dao
+  children:
+  - WebBackend.Dao.TraceType.#ctor
+  - WebBackend.Dao.TraceType.#ctor(System.String)
+  - WebBackend.Dao.TraceType.#ctor(System.String,System.String,System.Int32)
+  - WebBackend.Dao.TraceType.Id
+  - WebBackend.Dao.TraceType.Position
+  - WebBackend.Dao.TraceType.ToTraceName
+  - WebBackend.Dao.TraceType.Type
+  - WebBackend.Dao.TraceType.Version
+  langs:
+  - csharp
+  - vb
+  name: TraceType
+  nameWithType: TraceType
+  fullName: WebBackend.Dao.TraceType
+  type: Class
+  source:
+    remote:
+      path: WebBackend/Dao/Task.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: TraceType
+    path: WebBackend/Dao/Task.cs
+    startLine: 94
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 表示任务类型的类
+  example: []
+  syntax:
+    content: public class TraceType
+    content.vb: Public Class TraceType
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: WebBackend.Dao.TraceType.Id
+  commentId: P:WebBackend.Dao.TraceType.Id
+  id: Id
+  parent: WebBackend.Dao.TraceType
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: TraceType.Id
+  fullName: WebBackend.Dao.TraceType.Id
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/Task.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: Id
+    path: WebBackend/Dao/Task.cs
+    startLine: 99
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 任务类型ID
+  example: []
+  syntax:
+    content: public int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Id As Integer
+  overload: WebBackend.Dao.TraceType.Id*
+- uid: WebBackend.Dao.TraceType.Type
+  commentId: P:WebBackend.Dao.TraceType.Type
+  id: Type
+  parent: WebBackend.Dao.TraceType
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: TraceType.Type
+  fullName: WebBackend.Dao.TraceType.Type
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/Task.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: Type
+    path: WebBackend/Dao/Task.cs
+    startLine: 103
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 任务类型名称
+  example: []
+  syntax:
+    content: public string Type { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Type As String
+  overload: WebBackend.Dao.TraceType.Type*
+- uid: WebBackend.Dao.TraceType.Position
+  commentId: P:WebBackend.Dao.TraceType.Position
+  id: Position
+  parent: WebBackend.Dao.TraceType
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: TraceType.Position
+  fullName: WebBackend.Dao.TraceType.Position
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/Task.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: Position
+    path: WebBackend/Dao/Task.cs
+    startLine: 107
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 任务位置
+  example: []
+  syntax:
+    content: public string Position { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Position As String
+  overload: WebBackend.Dao.TraceType.Position*
+- uid: WebBackend.Dao.TraceType.Version
+  commentId: P:WebBackend.Dao.TraceType.Version
+  id: Version
+  parent: WebBackend.Dao.TraceType
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: TraceType.Version
+  fullName: WebBackend.Dao.TraceType.Version
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/Task.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: Version
+    path: WebBackend/Dao/Task.cs
+    startLine: 111
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 任务版本
+  example: []
+  syntax:
+    content: public int Version { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Version As Integer
+  overload: WebBackend.Dao.TraceType.Version*
+- uid: WebBackend.Dao.TraceType.#ctor
+  commentId: M:WebBackend.Dao.TraceType.#ctor
+  id: '#ctor'
+  parent: WebBackend.Dao.TraceType
+  langs:
+  - csharp
+  - vb
+  name: TraceType()
+  nameWithType: TraceType.TraceType()
+  fullName: WebBackend.Dao.TraceType.TraceType()
+  type: Constructor
+  source:
+    remote:
+      path: WebBackend/Dao/Task.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: .ctor
+    path: WebBackend/Dao/Task.cs
+    startLine: 116
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 无参构造函数，Type为空，Position为空，Version�?
+  example: []
+  syntax:
+    content: public TraceType()
+    content.vb: Public Sub New()
+  overload: WebBackend.Dao.TraceType.#ctor*
+  nameWithType.vb: TraceType.New()
+  fullName.vb: WebBackend.Dao.TraceType.New()
+  name.vb: New()
+- uid: WebBackend.Dao.TraceType.#ctor(System.String,System.String,System.Int32)
+  commentId: M:WebBackend.Dao.TraceType.#ctor(System.String,System.String,System.Int32)
+  id: '#ctor(System.String,System.String,System.Int32)'
+  parent: WebBackend.Dao.TraceType
+  langs:
+  - csharp
+  - vb
+  name: TraceType(string, string, int)
+  nameWithType: TraceType.TraceType(string, string, int)
+  fullName: WebBackend.Dao.TraceType.TraceType(string, string, int)
+  type: Constructor
+  source:
+    remote:
+      path: WebBackend/Dao/Task.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: .ctor
+    path: WebBackend/Dao/Task.cs
+    startLine: 129
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 有参构造函�?
+  example: []
+  syntax:
+    content: public TraceType(string type, string position, int version)
+    parameters:
+    - id: type
+      type: System.String
+      description: 任务类型名称
+    - id: position
+      type: System.String
+      description: 任务位置
+    - id: version
+      type: System.Int32
+      description: 任务版本
+    content.vb: Public Sub New(type As String, position As String, version As Integer)
+  overload: WebBackend.Dao.TraceType.#ctor*
+  nameWithType.vb: TraceType.New(String, String, Integer)
+  fullName.vb: WebBackend.Dao.TraceType.New(String, String, Integer)
+  name.vb: New(String, String, Integer)
+- uid: WebBackend.Dao.TraceType.#ctor(System.String)
+  commentId: M:WebBackend.Dao.TraceType.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: WebBackend.Dao.TraceType
+  langs:
+  - csharp
+  - vb
+  name: TraceType(string)
+  nameWithType: TraceType.TraceType(string)
+  fullName: WebBackend.Dao.TraceType.TraceType(string)
+  type: Constructor
+  source:
+    remote:
+      path: WebBackend/Dao/Task.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: .ctor
+    path: WebBackend/Dao/Task.cs
+    startLine: 141
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 有参构造函数，基于轨迹文件原始名称
+  example: []
+  syntax:
+    content: public TraceType(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: ''
+    content.vb: Public Sub New(name As String)
+  overload: WebBackend.Dao.TraceType.#ctor*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: ''
+  nameWithType.vb: TraceType.New(String)
+  fullName.vb: WebBackend.Dao.TraceType.New(String)
+  name.vb: New(String)
+- uid: WebBackend.Dao.TraceType.ToTraceName
+  commentId: M:WebBackend.Dao.TraceType.ToTraceName
+  id: ToTraceName
+  parent: WebBackend.Dao.TraceType
+  langs:
+  - csharp
+  - vb
+  name: ToTraceName()
+  nameWithType: TraceType.ToTraceName()
+  fullName: WebBackend.Dao.TraceType.ToTraceName()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Dao/Task.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: ToTraceName
+    path: WebBackend/Dao/Task.cs
+    startLine: 168
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 根据TraceType还原轨迹文件原始名称
+  example: []
+  syntax:
+    content: public string ToTraceName()
+    return:
+      type: System.String
+      description: ZA-ALL-01这样的字符串，对应data文件夹中的轨迹文件名�?
+    content.vb: Public Function ToTraceName() As String
+  overload: WebBackend.Dao.TraceType.ToTraceName*
+references:
+- uid: WebBackend.Dao
+  commentId: N:WebBackend.Dao
+  href: WebBackend.html
+  name: WebBackend.Dao
+  nameWithType: WebBackend.Dao
+  fullName: WebBackend.Dao
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WebBackend.Dao.TraceType.Id*
+  commentId: Overload:WebBackend.Dao.TraceType.Id
+  href: WebBackend.Dao.TraceType.html#WebBackend_Dao_TraceType_Id
+  name: Id
+  nameWithType: TraceType.Id
+  fullName: WebBackend.Dao.TraceType.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: WebBackend.Dao.TraceType.Type*
+  commentId: Overload:WebBackend.Dao.TraceType.Type
+  href: WebBackend.Dao.TraceType.html#WebBackend_Dao_TraceType_Type
+  name: Type
+  nameWithType: TraceType.Type
+  fullName: WebBackend.Dao.TraceType.Type
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: WebBackend.Dao.TraceType.Position*
+  commentId: Overload:WebBackend.Dao.TraceType.Position
+  href: WebBackend.Dao.TraceType.html#WebBackend_Dao_TraceType_Position
+  name: Position
+  nameWithType: TraceType.Position
+  fullName: WebBackend.Dao.TraceType.Position
+- uid: WebBackend.Dao.TraceType.Version*
+  commentId: Overload:WebBackend.Dao.TraceType.Version
+  href: WebBackend.Dao.TraceType.html#WebBackend_Dao_TraceType_Version
+  name: Version
+  nameWithType: TraceType.Version
+  fullName: WebBackend.Dao.TraceType.Version
+- uid: WebBackend.Dao.TraceType.#ctor*
+  commentId: Overload:WebBackend.Dao.TraceType.#ctor
+  href: WebBackend.Dao.TraceType.html#WebBackend_Dao_TraceType__ctor
+  name: TraceType
+  nameWithType: TraceType.TraceType
+  fullName: WebBackend.Dao.TraceType.TraceType
+  nameWithType.vb: TraceType.New
+  fullName.vb: WebBackend.Dao.TraceType.New
+  name.vb: New
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: WebBackend.Dao.TraceType.ToTraceName*
+  commentId: Overload:WebBackend.Dao.TraceType.ToTraceName
+  href: WebBackend.Dao.TraceType.html#WebBackend_Dao_TraceType_ToTraceName
+  name: ToTraceName
+  nameWithType: TraceType.ToTraceName
+  fullName: WebBackend.Dao.TraceType.ToTraceName

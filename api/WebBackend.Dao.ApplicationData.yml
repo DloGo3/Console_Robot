@@ -1,0 +1,1431 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebBackend.Dao.ApplicationData
+  commentId: T:WebBackend.Dao.ApplicationData
+  id: ApplicationData
+  parent: WebBackend.Dao
+  children:
+  - WebBackend.Dao.ApplicationData.#ctor(Microsoft.Extensions.Configuration.IConfiguration,WebBackend.Util.Parser,Microsoft.Extensions.Logging.ILogger{WebBackend.Dao.ApplicationData})
+  - WebBackend.Dao.ApplicationData.CommandList
+  - WebBackend.Dao.ApplicationData.CurrentCommandIndex
+  - WebBackend.Dao.ApplicationData.CurrentDetectedPointsNum
+  - WebBackend.Dao.ApplicationData.CurrentTask
+  - WebBackend.Dao.ApplicationData.PointsToBeDetected
+  - WebBackend.Dao.ApplicationData.PosDict
+  - WebBackend.Dao.ApplicationData.SpeedDict
+  - WebBackend.Dao.ApplicationData.StopWatch
+  - WebBackend.Dao.ApplicationData.TaskQueue
+  - WebBackend.Dao.ApplicationData.ZoneDict
+  langs:
+  - csharp
+  - vb
+  name: ApplicationData
+  nameWithType: ApplicationData
+  fullName: WebBackend.Dao.ApplicationData
+  type: Class
+  source:
+    remote:
+      path: WebBackend/Dao/IApplicationData.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: ApplicationData
+    path: WebBackend/Dao/IApplicationData.cs
+    startLine: 61
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 存储全局信息（实现类�?
+  example: []
+  syntax:
+    content: 'public class ApplicationData : IApplicationData'
+    content.vb: Public Class ApplicationData Implements IApplicationData
+  inheritance:
+  - System.Object
+  implements:
+  - WebBackend.Dao.IApplicationData
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: WebBackend.Dao.ApplicationData.ZoneDict
+  commentId: P:WebBackend.Dao.ApplicationData.ZoneDict
+  id: ZoneDict
+  parent: WebBackend.Dao.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: ZoneDict
+  nameWithType: ApplicationData.ZoneDict
+  fullName: WebBackend.Dao.ApplicationData.ZoneDict
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/IApplicationData.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: ZoneDict
+    path: WebBackend/Dao/IApplicationData.cs
+    startLine: 75
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: Zone数据
+  example: []
+  syntax:
+    content: public ConcurrentDictionary<string, E_ROB_ZONE_CLI> ZoneDict { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Concurrent.ConcurrentDictionary{System.String,EstunApiStruct_CLI.E_ROB_ZONE_CLI}
+    content.vb: Public Property ZoneDict As ConcurrentDictionary(Of String, E_ROB_ZONE_CLI)
+  overload: WebBackend.Dao.ApplicationData.ZoneDict*
+  implements:
+  - WebBackend.Dao.IApplicationData.ZoneDict
+- uid: WebBackend.Dao.ApplicationData.SpeedDict
+  commentId: P:WebBackend.Dao.ApplicationData.SpeedDict
+  id: SpeedDict
+  parent: WebBackend.Dao.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: SpeedDict
+  nameWithType: ApplicationData.SpeedDict
+  fullName: WebBackend.Dao.ApplicationData.SpeedDict
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/IApplicationData.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: SpeedDict
+    path: WebBackend/Dao/IApplicationData.cs
+    startLine: 79
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: Speed数据
+  example: []
+  syntax:
+    content: public ConcurrentDictionary<string, E_ROB_SPEED_CLI> SpeedDict { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Concurrent.ConcurrentDictionary{System.String,EstunApiStruct_CLI.E_ROB_SPEED_CLI}
+    content.vb: Public Property SpeedDict As ConcurrentDictionary(Of String, E_ROB_SPEED_CLI)
+  overload: WebBackend.Dao.ApplicationData.SpeedDict*
+  implements:
+  - WebBackend.Dao.IApplicationData.SpeedDict
+- uid: WebBackend.Dao.ApplicationData.PosDict
+  commentId: P:WebBackend.Dao.ApplicationData.PosDict
+  id: PosDict
+  parent: WebBackend.Dao.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: PosDict
+  nameWithType: ApplicationData.PosDict
+  fullName: WebBackend.Dao.ApplicationData.PosDict
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/IApplicationData.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: PosDict
+    path: WebBackend/Dao/IApplicationData.cs
+    startLine: 83
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 点位信息
+  example: []
+  syntax:
+    content: public ConcurrentDictionary<string, RobotPosition> PosDict { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Concurrent.ConcurrentDictionary{System.String,WebBackend.Dao.RobotPosition}
+    content.vb: Public Property PosDict As ConcurrentDictionary(Of String, RobotPosition)
+  overload: WebBackend.Dao.ApplicationData.PosDict*
+  implements:
+  - WebBackend.Dao.IApplicationData.PosDict
+- uid: WebBackend.Dao.ApplicationData.CommandList
+  commentId: P:WebBackend.Dao.ApplicationData.CommandList
+  id: CommandList
+  parent: WebBackend.Dao.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: CommandList
+  nameWithType: ApplicationData.CommandList
+  fullName: WebBackend.Dao.ApplicationData.CommandList
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/IApplicationData.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: CommandList
+    path: WebBackend/Dao/IApplicationData.cs
+    startLine: 87
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 指令列表
+  example: []
+  syntax:
+    content: public List<Command> CommandList { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{WebBackend.Dao.Command}
+    content.vb: Public Property CommandList As List(Of Command)
+  overload: WebBackend.Dao.ApplicationData.CommandList*
+  implements:
+  - WebBackend.Dao.IApplicationData.CommandList
+- uid: WebBackend.Dao.ApplicationData.TaskQueue
+  commentId: P:WebBackend.Dao.ApplicationData.TaskQueue
+  id: TaskQueue
+  parent: WebBackend.Dao.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: TaskQueue
+  nameWithType: ApplicationData.TaskQueue
+  fullName: WebBackend.Dao.ApplicationData.TaskQueue
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/IApplicationData.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: TaskQueue
+    path: WebBackend/Dao/IApplicationData.cs
+    startLine: 91
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 任务队列
+  example: []
+  syntax:
+    content: public ConcurrentQueue<Task> TaskQueue { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Concurrent.ConcurrentQueue{WebBackend.Dao.Task}
+    content.vb: Public Property TaskQueue As ConcurrentQueue(Of Task)
+  overload: WebBackend.Dao.ApplicationData.TaskQueue*
+  implements:
+  - WebBackend.Dao.IApplicationData.TaskQueue
+- uid: WebBackend.Dao.ApplicationData.CurrentTask
+  commentId: P:WebBackend.Dao.ApplicationData.CurrentTask
+  id: CurrentTask
+  parent: WebBackend.Dao.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: CurrentTask
+  nameWithType: ApplicationData.CurrentTask
+  fullName: WebBackend.Dao.ApplicationData.CurrentTask
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/IApplicationData.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: CurrentTask
+    path: WebBackend/Dao/IApplicationData.cs
+    startLine: 95
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 当前正在执行的任�?
+  example: []
+  syntax:
+    content: public Task CurrentTask { get; set; }
+    parameters: []
+    return:
+      type: WebBackend.Dao.Task
+    content.vb: Public Property CurrentTask As Task
+  overload: WebBackend.Dao.ApplicationData.CurrentTask*
+  implements:
+  - WebBackend.Dao.IApplicationData.CurrentTask
+- uid: WebBackend.Dao.ApplicationData.PointsToBeDetected
+  commentId: P:WebBackend.Dao.ApplicationData.PointsToBeDetected
+  id: PointsToBeDetected
+  parent: WebBackend.Dao.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: PointsToBeDetected
+  nameWithType: ApplicationData.PointsToBeDetected
+  fullName: WebBackend.Dao.ApplicationData.PointsToBeDetected
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/IApplicationData.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: PointsToBeDetected
+    path: WebBackend/Dao/IApplicationData.cs
+    startLine: 99
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 待检测点
+  example: []
+  syntax:
+    content: public ConcurrentDictionary<string, RobotPosition> PointsToBeDetected { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Concurrent.ConcurrentDictionary{System.String,WebBackend.Dao.RobotPosition}
+    content.vb: Public Property PointsToBeDetected As ConcurrentDictionary(Of String, RobotPosition)
+  overload: WebBackend.Dao.ApplicationData.PointsToBeDetected*
+  implements:
+  - WebBackend.Dao.IApplicationData.PointsToBeDetected
+- uid: WebBackend.Dao.ApplicationData.CurrentCommandIndex
+  commentId: P:WebBackend.Dao.ApplicationData.CurrentCommandIndex
+  id: CurrentCommandIndex
+  parent: WebBackend.Dao.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: CurrentCommandIndex
+  nameWithType: ApplicationData.CurrentCommandIndex
+  fullName: WebBackend.Dao.ApplicationData.CurrentCommandIndex
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/IApplicationData.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: CurrentCommandIndex
+    path: WebBackend/Dao/IApplicationData.cs
+    startLine: 103
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 当前正在执行的指�?
+  example: []
+  syntax:
+    content: public int CurrentCommandIndex { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property CurrentCommandIndex As Integer
+  overload: WebBackend.Dao.ApplicationData.CurrentCommandIndex*
+  implements:
+  - WebBackend.Dao.IApplicationData.CurrentCommandIndex
+- uid: WebBackend.Dao.ApplicationData.StopWatch
+  commentId: P:WebBackend.Dao.ApplicationData.StopWatch
+  id: StopWatch
+  parent: WebBackend.Dao.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: StopWatch
+  nameWithType: ApplicationData.StopWatch
+  fullName: WebBackend.Dao.ApplicationData.StopWatch
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/IApplicationData.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: StopWatch
+    path: WebBackend/Dao/IApplicationData.cs
+    startLine: 107
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 全局计时�?
+  example: []
+  syntax:
+    content: public Stopwatch StopWatch { get; set; }
+    parameters: []
+    return:
+      type: System.Diagnostics.Stopwatch
+    content.vb: Public Property StopWatch As Stopwatch
+  overload: WebBackend.Dao.ApplicationData.StopWatch*
+  implements:
+  - WebBackend.Dao.IApplicationData.StopWatch
+- uid: WebBackend.Dao.ApplicationData.CurrentDetectedPointsNum
+  commentId: P:WebBackend.Dao.ApplicationData.CurrentDetectedPointsNum
+  id: CurrentDetectedPointsNum
+  parent: WebBackend.Dao.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: CurrentDetectedPointsNum
+  nameWithType: ApplicationData.CurrentDetectedPointsNum
+  fullName: WebBackend.Dao.ApplicationData.CurrentDetectedPointsNum
+  type: Property
+  source:
+    remote:
+      path: WebBackend/Dao/IApplicationData.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: CurrentDetectedPointsNum
+    path: WebBackend/Dao/IApplicationData.cs
+    startLine: 111
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 当前已检测点数量
+  example: []
+  syntax:
+    content: public int CurrentDetectedPointsNum { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property CurrentDetectedPointsNum As Integer
+  overload: WebBackend.Dao.ApplicationData.CurrentDetectedPointsNum*
+  implements:
+  - WebBackend.Dao.IApplicationData.CurrentDetectedPointsNum
+- uid: WebBackend.Dao.ApplicationData.#ctor(Microsoft.Extensions.Configuration.IConfiguration,WebBackend.Util.Parser,Microsoft.Extensions.Logging.ILogger{WebBackend.Dao.ApplicationData})
+  commentId: M:WebBackend.Dao.ApplicationData.#ctor(Microsoft.Extensions.Configuration.IConfiguration,WebBackend.Util.Parser,Microsoft.Extensions.Logging.ILogger{WebBackend.Dao.ApplicationData})
+  id: '#ctor(Microsoft.Extensions.Configuration.IConfiguration,WebBackend.Util.Parser,Microsoft.Extensions.Logging.ILogger{WebBackend.Dao.ApplicationData})'
+  parent: WebBackend.Dao.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: ApplicationData(IConfiguration, Parser, ILogger<ApplicationData>)
+  nameWithType: ApplicationData.ApplicationData(IConfiguration, Parser, ILogger<ApplicationData>)
+  fullName: WebBackend.Dao.ApplicationData.ApplicationData(Microsoft.Extensions.Configuration.IConfiguration, WebBackend.Util.Parser, Microsoft.Extensions.Logging.ILogger<WebBackend.Dao.ApplicationData>)
+  type: Constructor
+  source:
+    remote:
+      path: WebBackend/Dao/IApplicationData.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: .ctor
+    path: WebBackend/Dao/IApplicationData.cs
+    startLine: 122
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 构造函�?
+  example: []
+  syntax:
+    content: public ApplicationData(IConfiguration config, Parser parser, ILogger<ApplicationData> logger)
+    parameters:
+    - id: config
+      type: Microsoft.Extensions.Configuration.IConfiguration
+      description: 从config.yaml来的配置信息
+    - id: parser
+      type: WebBackend.Util.Parser
+      description: 注入文件解析�?
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{WebBackend.Dao.ApplicationData}
+      description: 日志记录�?
+    content.vb: Public Sub New(config As IConfiguration, parser As Parser, logger As ILogger(Of ApplicationData))
+  overload: WebBackend.Dao.ApplicationData.#ctor*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: 解析Zone或者Speed变量出错时抛出该异常
+  nameWithType.vb: ApplicationData.New(IConfiguration, Parser, ILogger(Of ApplicationData))
+  fullName.vb: WebBackend.Dao.ApplicationData.New(Microsoft.Extensions.Configuration.IConfiguration, WebBackend.Util.Parser, Microsoft.Extensions.Logging.ILogger(Of WebBackend.Dao.ApplicationData))
+  name.vb: New(IConfiguration, Parser, ILogger(Of ApplicationData))
+references:
+- uid: WebBackend.Dao
+  commentId: N:WebBackend.Dao
+  href: WebBackend.html
+  name: WebBackend.Dao
+  nameWithType: WebBackend.Dao
+  fullName: WebBackend.Dao
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: WebBackend.Dao.IApplicationData
+  commentId: T:WebBackend.Dao.IApplicationData
+  parent: WebBackend.Dao
+  href: WebBackend.Dao.IApplicationData.html
+  name: IApplicationData
+  nameWithType: IApplicationData
+  fullName: WebBackend.Dao.IApplicationData
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WebBackend.Dao.ApplicationData.ZoneDict*
+  commentId: Overload:WebBackend.Dao.ApplicationData.ZoneDict
+  href: WebBackend.Dao.ApplicationData.html#WebBackend_Dao_ApplicationData_ZoneDict
+  name: ZoneDict
+  nameWithType: ApplicationData.ZoneDict
+  fullName: WebBackend.Dao.ApplicationData.ZoneDict
+- uid: WebBackend.Dao.IApplicationData.ZoneDict
+  commentId: P:WebBackend.Dao.IApplicationData.ZoneDict
+  parent: WebBackend.Dao.IApplicationData
+  href: WebBackend.Dao.IApplicationData.html#WebBackend_Dao_IApplicationData_ZoneDict
+  name: ZoneDict
+  nameWithType: IApplicationData.ZoneDict
+  fullName: WebBackend.Dao.IApplicationData.ZoneDict
+- uid: System.Collections.Concurrent.ConcurrentDictionary{System.String,EstunApiStruct_CLI.E_ROB_ZONE_CLI}
+  commentId: T:System.Collections.Concurrent.ConcurrentDictionary{System.String,EstunApiStruct_CLI.E_ROB_ZONE_CLI}
+  parent: System.Collections.Concurrent
+  definition: System.Collections.Concurrent.ConcurrentDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  name: ConcurrentDictionary<string, E_ROB_ZONE_CLI>
+  nameWithType: ConcurrentDictionary<string, E_ROB_ZONE_CLI>
+  fullName: System.Collections.Concurrent.ConcurrentDictionary<string, EstunApiStruct_CLI.E_ROB_ZONE_CLI>
+  nameWithType.vb: ConcurrentDictionary(Of String, E_ROB_ZONE_CLI)
+  fullName.vb: System.Collections.Concurrent.ConcurrentDictionary(Of String, EstunApiStruct_CLI.E_ROB_ZONE_CLI)
+  name.vb: ConcurrentDictionary(Of String, E_ROB_ZONE_CLI)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: EstunApiStruct_CLI.E_ROB_ZONE_CLI
+    name: E_ROB_ZONE_CLI
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: EstunApiStruct_CLI.E_ROB_ZONE_CLI
+    name: E_ROB_ZONE_CLI
+    isExternal: true
+  - name: )
+- uid: System.Collections.Concurrent.ConcurrentDictionary`2
+  commentId: T:System.Collections.Concurrent.ConcurrentDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  name: ConcurrentDictionary<TKey, TValue>
+  nameWithType: ConcurrentDictionary<TKey, TValue>
+  fullName: System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>
+  nameWithType.vb: ConcurrentDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Concurrent.ConcurrentDictionary(Of TKey, TValue)
+  name.vb: ConcurrentDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Concurrent
+  commentId: N:System.Collections.Concurrent
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Concurrent
+  nameWithType: System.Collections.Concurrent
+  fullName: System.Collections.Concurrent
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Concurrent
+    name: Concurrent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Concurrent
+    name: Concurrent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent
+- uid: WebBackend.Dao.ApplicationData.SpeedDict*
+  commentId: Overload:WebBackend.Dao.ApplicationData.SpeedDict
+  href: WebBackend.Dao.ApplicationData.html#WebBackend_Dao_ApplicationData_SpeedDict
+  name: SpeedDict
+  nameWithType: ApplicationData.SpeedDict
+  fullName: WebBackend.Dao.ApplicationData.SpeedDict
+- uid: WebBackend.Dao.IApplicationData.SpeedDict
+  commentId: P:WebBackend.Dao.IApplicationData.SpeedDict
+  parent: WebBackend.Dao.IApplicationData
+  href: WebBackend.Dao.IApplicationData.html#WebBackend_Dao_IApplicationData_SpeedDict
+  name: SpeedDict
+  nameWithType: IApplicationData.SpeedDict
+  fullName: WebBackend.Dao.IApplicationData.SpeedDict
+- uid: System.Collections.Concurrent.ConcurrentDictionary{System.String,EstunApiStruct_CLI.E_ROB_SPEED_CLI}
+  commentId: T:System.Collections.Concurrent.ConcurrentDictionary{System.String,EstunApiStruct_CLI.E_ROB_SPEED_CLI}
+  parent: System.Collections.Concurrent
+  definition: System.Collections.Concurrent.ConcurrentDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  name: ConcurrentDictionary<string, E_ROB_SPEED_CLI>
+  nameWithType: ConcurrentDictionary<string, E_ROB_SPEED_CLI>
+  fullName: System.Collections.Concurrent.ConcurrentDictionary<string, EstunApiStruct_CLI.E_ROB_SPEED_CLI>
+  nameWithType.vb: ConcurrentDictionary(Of String, E_ROB_SPEED_CLI)
+  fullName.vb: System.Collections.Concurrent.ConcurrentDictionary(Of String, EstunApiStruct_CLI.E_ROB_SPEED_CLI)
+  name.vb: ConcurrentDictionary(Of String, E_ROB_SPEED_CLI)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: EstunApiStruct_CLI.E_ROB_SPEED_CLI
+    name: E_ROB_SPEED_CLI
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: EstunApiStruct_CLI.E_ROB_SPEED_CLI
+    name: E_ROB_SPEED_CLI
+    isExternal: true
+  - name: )
+- uid: WebBackend.Dao.ApplicationData.PosDict*
+  commentId: Overload:WebBackend.Dao.ApplicationData.PosDict
+  href: WebBackend.Dao.ApplicationData.html#WebBackend_Dao_ApplicationData_PosDict
+  name: PosDict
+  nameWithType: ApplicationData.PosDict
+  fullName: WebBackend.Dao.ApplicationData.PosDict
+- uid: WebBackend.Dao.IApplicationData.PosDict
+  commentId: P:WebBackend.Dao.IApplicationData.PosDict
+  parent: WebBackend.Dao.IApplicationData
+  href: WebBackend.Dao.IApplicationData.html#WebBackend_Dao_IApplicationData_PosDict
+  name: PosDict
+  nameWithType: IApplicationData.PosDict
+  fullName: WebBackend.Dao.IApplicationData.PosDict
+- uid: System.Collections.Concurrent.ConcurrentDictionary{System.String,WebBackend.Dao.RobotPosition}
+  commentId: T:System.Collections.Concurrent.ConcurrentDictionary{System.String,WebBackend.Dao.RobotPosition}
+  parent: System.Collections.Concurrent
+  definition: System.Collections.Concurrent.ConcurrentDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  name: ConcurrentDictionary<string, RobotPosition>
+  nameWithType: ConcurrentDictionary<string, RobotPosition>
+  fullName: System.Collections.Concurrent.ConcurrentDictionary<string, WebBackend.Dao.RobotPosition>
+  nameWithType.vb: ConcurrentDictionary(Of String, RobotPosition)
+  fullName.vb: System.Collections.Concurrent.ConcurrentDictionary(Of String, WebBackend.Dao.RobotPosition)
+  name.vb: ConcurrentDictionary(Of String, RobotPosition)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: WebBackend.Dao.RobotPosition
+    name: RobotPosition
+    href: WebBackend.Dao.RobotPosition.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: WebBackend.Dao.RobotPosition
+    name: RobotPosition
+    href: WebBackend.Dao.RobotPosition.html
+  - name: )
+- uid: WebBackend.Dao.ApplicationData.CommandList*
+  commentId: Overload:WebBackend.Dao.ApplicationData.CommandList
+  href: WebBackend.Dao.ApplicationData.html#WebBackend_Dao_ApplicationData_CommandList
+  name: CommandList
+  nameWithType: ApplicationData.CommandList
+  fullName: WebBackend.Dao.ApplicationData.CommandList
+- uid: WebBackend.Dao.IApplicationData.CommandList
+  commentId: P:WebBackend.Dao.IApplicationData.CommandList
+  parent: WebBackend.Dao.IApplicationData
+  href: WebBackend.Dao.IApplicationData.html#WebBackend_Dao_IApplicationData_CommandList
+  name: CommandList
+  nameWithType: IApplicationData.CommandList
+  fullName: WebBackend.Dao.IApplicationData.CommandList
+- uid: System.Collections.Generic.List{WebBackend.Dao.Command}
+  commentId: T:System.Collections.Generic.List{WebBackend.Dao.Command}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Command>
+  nameWithType: List<Command>
+  fullName: System.Collections.Generic.List<WebBackend.Dao.Command>
+  nameWithType.vb: List(Of Command)
+  fullName.vb: System.Collections.Generic.List(Of WebBackend.Dao.Command)
+  name.vb: List(Of Command)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: WebBackend.Dao.Command
+    name: Command
+    href: WebBackend.Dao.Command.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: WebBackend.Dao.Command
+    name: Command
+    href: WebBackend.Dao.Command.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: WebBackend.Dao.ApplicationData.TaskQueue*
+  commentId: Overload:WebBackend.Dao.ApplicationData.TaskQueue
+  href: WebBackend.Dao.ApplicationData.html#WebBackend_Dao_ApplicationData_TaskQueue
+  name: TaskQueue
+  nameWithType: ApplicationData.TaskQueue
+  fullName: WebBackend.Dao.ApplicationData.TaskQueue
+- uid: WebBackend.Dao.IApplicationData.TaskQueue
+  commentId: P:WebBackend.Dao.IApplicationData.TaskQueue
+  parent: WebBackend.Dao.IApplicationData
+  href: WebBackend.Dao.IApplicationData.html#WebBackend_Dao_IApplicationData_TaskQueue
+  name: TaskQueue
+  nameWithType: IApplicationData.TaskQueue
+  fullName: WebBackend.Dao.IApplicationData.TaskQueue
+- uid: System.Collections.Concurrent.ConcurrentQueue{WebBackend.Dao.Task}
+  commentId: T:System.Collections.Concurrent.ConcurrentQueue{WebBackend.Dao.Task}
+  parent: System.Collections.Concurrent
+  definition: System.Collections.Concurrent.ConcurrentQueue`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentqueue-1
+  name: ConcurrentQueue<Task>
+  nameWithType: ConcurrentQueue<Task>
+  fullName: System.Collections.Concurrent.ConcurrentQueue<WebBackend.Dao.Task>
+  nameWithType.vb: ConcurrentQueue(Of Task)
+  fullName.vb: System.Collections.Concurrent.ConcurrentQueue(Of WebBackend.Dao.Task)
+  name.vb: ConcurrentQueue(Of Task)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentQueue`1
+    name: ConcurrentQueue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentqueue-1
+  - name: <
+  - uid: WebBackend.Dao.Task
+    name: Task
+    href: WebBackend.Dao.Task.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentQueue`1
+    name: ConcurrentQueue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentqueue-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: WebBackend.Dao.Task
+    name: Task
+    href: WebBackend.Dao.Task.html
+  - name: )
+- uid: System.Collections.Concurrent.ConcurrentQueue`1
+  commentId: T:System.Collections.Concurrent.ConcurrentQueue`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentqueue-1
+  name: ConcurrentQueue<T>
+  nameWithType: ConcurrentQueue<T>
+  fullName: System.Collections.Concurrent.ConcurrentQueue<T>
+  nameWithType.vb: ConcurrentQueue(Of T)
+  fullName.vb: System.Collections.Concurrent.ConcurrentQueue(Of T)
+  name.vb: ConcurrentQueue(Of T)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentQueue`1
+    name: ConcurrentQueue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentqueue-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentQueue`1
+    name: ConcurrentQueue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentqueue-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: WebBackend.Dao.ApplicationData.CurrentTask*
+  commentId: Overload:WebBackend.Dao.ApplicationData.CurrentTask
+  href: WebBackend.Dao.ApplicationData.html#WebBackend_Dao_ApplicationData_CurrentTask
+  name: CurrentTask
+  nameWithType: ApplicationData.CurrentTask
+  fullName: WebBackend.Dao.ApplicationData.CurrentTask
+- uid: WebBackend.Dao.IApplicationData.CurrentTask
+  commentId: P:WebBackend.Dao.IApplicationData.CurrentTask
+  parent: WebBackend.Dao.IApplicationData
+  href: WebBackend.Dao.IApplicationData.html#WebBackend_Dao_IApplicationData_CurrentTask
+  name: CurrentTask
+  nameWithType: IApplicationData.CurrentTask
+  fullName: WebBackend.Dao.IApplicationData.CurrentTask
+- uid: WebBackend.Dao.Task
+  commentId: T:WebBackend.Dao.Task
+  parent: WebBackend.Dao
+  href: WebBackend.Dao.Task.html
+  name: Task
+  nameWithType: Task
+  fullName: WebBackend.Dao.Task
+- uid: WebBackend.Dao.ApplicationData.PointsToBeDetected*
+  commentId: Overload:WebBackend.Dao.ApplicationData.PointsToBeDetected
+  href: WebBackend.Dao.ApplicationData.html#WebBackend_Dao_ApplicationData_PointsToBeDetected
+  name: PointsToBeDetected
+  nameWithType: ApplicationData.PointsToBeDetected
+  fullName: WebBackend.Dao.ApplicationData.PointsToBeDetected
+- uid: WebBackend.Dao.IApplicationData.PointsToBeDetected
+  commentId: P:WebBackend.Dao.IApplicationData.PointsToBeDetected
+  parent: WebBackend.Dao.IApplicationData
+  href: WebBackend.Dao.IApplicationData.html#WebBackend_Dao_IApplicationData_PointsToBeDetected
+  name: PointsToBeDetected
+  nameWithType: IApplicationData.PointsToBeDetected
+  fullName: WebBackend.Dao.IApplicationData.PointsToBeDetected
+- uid: WebBackend.Dao.ApplicationData.CurrentCommandIndex*
+  commentId: Overload:WebBackend.Dao.ApplicationData.CurrentCommandIndex
+  href: WebBackend.Dao.ApplicationData.html#WebBackend_Dao_ApplicationData_CurrentCommandIndex
+  name: CurrentCommandIndex
+  nameWithType: ApplicationData.CurrentCommandIndex
+  fullName: WebBackend.Dao.ApplicationData.CurrentCommandIndex
+- uid: WebBackend.Dao.IApplicationData.CurrentCommandIndex
+  commentId: P:WebBackend.Dao.IApplicationData.CurrentCommandIndex
+  parent: WebBackend.Dao.IApplicationData
+  href: WebBackend.Dao.IApplicationData.html#WebBackend_Dao_IApplicationData_CurrentCommandIndex
+  name: CurrentCommandIndex
+  nameWithType: IApplicationData.CurrentCommandIndex
+  fullName: WebBackend.Dao.IApplicationData.CurrentCommandIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: WebBackend.Dao.ApplicationData.StopWatch*
+  commentId: Overload:WebBackend.Dao.ApplicationData.StopWatch
+  href: WebBackend.Dao.ApplicationData.html#WebBackend_Dao_ApplicationData_StopWatch
+  name: StopWatch
+  nameWithType: ApplicationData.StopWatch
+  fullName: WebBackend.Dao.ApplicationData.StopWatch
+- uid: WebBackend.Dao.IApplicationData.StopWatch
+  commentId: P:WebBackend.Dao.IApplicationData.StopWatch
+  parent: WebBackend.Dao.IApplicationData
+  href: WebBackend.Dao.IApplicationData.html#WebBackend_Dao_IApplicationData_StopWatch
+  name: StopWatch
+  nameWithType: IApplicationData.StopWatch
+  fullName: WebBackend.Dao.IApplicationData.StopWatch
+- uid: System.Diagnostics.Stopwatch
+  commentId: T:System.Diagnostics.Stopwatch
+  parent: System.Diagnostics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.stopwatch
+  name: Stopwatch
+  nameWithType: Stopwatch
+  fullName: System.Diagnostics.Stopwatch
+- uid: System.Diagnostics
+  commentId: N:System.Diagnostics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Diagnostics
+  nameWithType: System.Diagnostics
+  fullName: System.Diagnostics
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics
+- uid: WebBackend.Dao.ApplicationData.CurrentDetectedPointsNum*
+  commentId: Overload:WebBackend.Dao.ApplicationData.CurrentDetectedPointsNum
+  href: WebBackend.Dao.ApplicationData.html#WebBackend_Dao_ApplicationData_CurrentDetectedPointsNum
+  name: CurrentDetectedPointsNum
+  nameWithType: ApplicationData.CurrentDetectedPointsNum
+  fullName: WebBackend.Dao.ApplicationData.CurrentDetectedPointsNum
+- uid: WebBackend.Dao.IApplicationData.CurrentDetectedPointsNum
+  commentId: P:WebBackend.Dao.IApplicationData.CurrentDetectedPointsNum
+  parent: WebBackend.Dao.IApplicationData
+  href: WebBackend.Dao.IApplicationData.html#WebBackend_Dao_IApplicationData_CurrentDetectedPointsNum
+  name: CurrentDetectedPointsNum
+  nameWithType: IApplicationData.CurrentDetectedPointsNum
+  fullName: WebBackend.Dao.IApplicationData.CurrentDetectedPointsNum
+- uid: System.Exception
+  commentId: T:System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: WebBackend.Dao.ApplicationData.#ctor*
+  commentId: Overload:WebBackend.Dao.ApplicationData.#ctor
+  href: WebBackend.Dao.ApplicationData.html#WebBackend_Dao_ApplicationData__ctor_Microsoft_Extensions_Configuration_IConfiguration_WebBackend_Util_Parser_Microsoft_Extensions_Logging_ILogger_WebBackend_Dao_ApplicationData__
+  name: ApplicationData
+  nameWithType: ApplicationData.ApplicationData
+  fullName: WebBackend.Dao.ApplicationData.ApplicationData
+  nameWithType.vb: ApplicationData.New
+  fullName.vb: WebBackend.Dao.ApplicationData.New
+  name.vb: New
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: WebBackend.Util.Parser
+  commentId: T:WebBackend.Util.Parser
+  parent: WebBackend.Util
+  href: WebBackend.Util.Parser.html
+  name: Parser
+  nameWithType: Parser
+  fullName: WebBackend.Util.Parser
+- uid: Microsoft.Extensions.Logging.ILogger{WebBackend.Dao.ApplicationData}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{WebBackend.Dao.ApplicationData}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<ApplicationData>
+  nameWithType: ILogger<ApplicationData>
+  fullName: Microsoft.Extensions.Logging.ILogger<WebBackend.Dao.ApplicationData>
+  nameWithType.vb: ILogger(Of ApplicationData)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of WebBackend.Dao.ApplicationData)
+  name.vb: ILogger(Of ApplicationData)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: WebBackend.Dao.ApplicationData
+    name: ApplicationData
+    href: WebBackend.Dao.ApplicationData.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: WebBackend.Dao.ApplicationData
+    name: ApplicationData
+    href: WebBackend.Dao.ApplicationData.html
+  - name: )
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+- uid: WebBackend.Util
+  commentId: N:WebBackend.Util
+  href: WebBackend.html
+  name: WebBackend.Util
+  nameWithType: WebBackend.Util
+  fullName: WebBackend.Util
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Util
+    name: Util
+    href: WebBackend.Util.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Util
+    name: Util
+    href: WebBackend.Util.html
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging

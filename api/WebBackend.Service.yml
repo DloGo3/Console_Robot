@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebBackend.Service
+  commentId: N:WebBackend.Service
+  id: WebBackend.Service
+  children:
+  - WebBackend.Service.DatabaseInitializer
+  - WebBackend.Service.FileService
+  - WebBackend.Service.PlcService
+  - WebBackend.Service.RobotConfigurationService
+  - WebBackend.Service.RobotService
+  - WebBackend.Service.TaskProcessingService
+  - WebBackend.Service.TaskService
+  - WebBackend.Service.TraceTypeService
+  langs:
+  - csharp
+  - vb
+  name: WebBackend.Service
+  nameWithType: WebBackend.Service
+  fullName: WebBackend.Service
+  type: Namespace
+  assemblies:
+  - WebBackend
+references:
+- uid: WebBackend.Service.DatabaseInitializer
+  commentId: T:WebBackend.Service.DatabaseInitializer
+  href: WebBackend.Service.DatabaseInitializer.html
+  name: DatabaseInitializer
+  nameWithType: DatabaseInitializer
+  fullName: WebBackend.Service.DatabaseInitializer
+- uid: WebBackend.Service.FileService
+  commentId: T:WebBackend.Service.FileService
+  parent: WebBackend.Service
+  href: WebBackend.Service.FileService.html
+  name: FileService
+  nameWithType: FileService
+  fullName: WebBackend.Service.FileService
+- uid: WebBackend.Service.PlcService
+  commentId: T:WebBackend.Service.PlcService
+  parent: WebBackend.Service
+  href: WebBackend.Service.PlcService.html
+  name: PlcService
+  nameWithType: PlcService
+  fullName: WebBackend.Service.PlcService
+- uid: WebBackend.Service.RobotConfigurationService
+  commentId: T:WebBackend.Service.RobotConfigurationService
+  href: WebBackend.Service.RobotConfigurationService.html
+  name: RobotConfigurationService
+  nameWithType: RobotConfigurationService
+  fullName: WebBackend.Service.RobotConfigurationService
+- uid: WebBackend.Service.RobotService
+  commentId: T:WebBackend.Service.RobotService
+  parent: WebBackend.Service
+  href: WebBackend.Service.RobotService.html
+  name: RobotService
+  nameWithType: RobotService
+  fullName: WebBackend.Service.RobotService
+- uid: WebBackend.Service.TaskProcessingService
+  commentId: T:WebBackend.Service.TaskProcessingService
+  parent: WebBackend.Service
+  href: WebBackend.Service.TaskProcessingService.html
+  name: TaskProcessingService
+  nameWithType: TaskProcessingService
+  fullName: WebBackend.Service.TaskProcessingService
+- uid: WebBackend.Service.TaskService
+  commentId: T:WebBackend.Service.TaskService
+  parent: WebBackend.Service
+  href: WebBackend.Service.TaskService.html
+  name: TaskService
+  nameWithType: TaskService
+  fullName: WebBackend.Service.TaskService
+- uid: WebBackend.Service.TraceTypeService
+  commentId: T:WebBackend.Service.TraceTypeService
+  parent: WebBackend.Service
+  href: WebBackend.Service.TraceTypeService.html
+  name: TraceTypeService
+  nameWithType: TraceTypeService
+  fullName: WebBackend.Service.TraceTypeService
+- uid: WebBackend.Service
+  commentId: N:WebBackend.Service
+  href: WebBackend.html
+  name: WebBackend.Service
+  nameWithType: WebBackend.Service
+  fullName: WebBackend.Service
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Service
+    name: Service
+    href: WebBackend.Service.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Service
+    name: Service
+    href: WebBackend.Service.html

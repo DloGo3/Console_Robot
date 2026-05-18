@@ -1,0 +1,470 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebBackend.Dao.RobotPosition
+  commentId: T:WebBackend.Dao.RobotPosition
+  id: RobotPosition
+  parent: WebBackend.Dao
+  children:
+  - WebBackend.Dao.RobotPosition.#ctor
+  - WebBackend.Dao.RobotPosition.ToString
+  - WebBackend.Dao.RobotPosition.det
+  langs:
+  - csharp
+  - vb
+  name: RobotPosition
+  nameWithType: RobotPosition
+  fullName: WebBackend.Dao.RobotPosition
+  type: Class
+  source:
+    remote:
+      path: WebBackend/Dao/RobotPosition.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: RobotPosition
+    path: WebBackend/Dao/RobotPosition.cs
+    startLine: 7
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 能判断是否需要检测的点位信息�?
+  example: []
+  syntax:
+    content: 'public class RobotPosition : E_ROB_POS_CLI'
+    content.vb: Public Class RobotPosition Inherits E_ROB_POS_CLI
+  inheritance:
+  - System.Object
+  - EstunApiStruct_CLI.E_ROB_POS_CLI
+  inheritedMembers:
+  - EstunApiStruct_CLI.E_ROB_POS_CLI.posType
+  - EstunApiStruct_CLI.E_ROB_POS_CLI.posCfg
+  - EstunApiStruct_CLI.E_ROB_POS_CLI.posValue
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: WebBackend.Dao.RobotPosition.det
+  commentId: F:WebBackend.Dao.RobotPosition.det
+  id: det
+  parent: WebBackend.Dao.RobotPosition
+  langs:
+  - csharp
+  - vb
+  name: det
+  nameWithType: RobotPosition.det
+  fullName: WebBackend.Dao.RobotPosition.det
+  type: Field
+  source:
+    remote:
+      path: WebBackend/Dao/RobotPosition.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: det
+    path: WebBackend/Dao/RobotPosition.cs
+    startLine: 12
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: �?表示不需要检测，�?表示需要检�?
+  example: []
+  syntax:
+    content: public int det
+    return:
+      type: System.Int32
+    content.vb: Public det As Integer
+- uid: WebBackend.Dao.RobotPosition.#ctor
+  commentId: M:WebBackend.Dao.RobotPosition.#ctor
+  id: '#ctor'
+  parent: WebBackend.Dao.RobotPosition
+  langs:
+  - csharp
+  - vb
+  name: RobotPosition()
+  nameWithType: RobotPosition.RobotPosition()
+  fullName: WebBackend.Dao.RobotPosition.RobotPosition()
+  type: Constructor
+  source:
+    remote:
+      path: WebBackend/Dao/RobotPosition.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: .ctor
+    path: WebBackend/Dao/RobotPosition.cs
+    startLine: 18
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 无参构造函数，默认不是检测点
+  remarks: posType�?表示是轴关节坐标，为1表示是空间坐�?
+  example: []
+  syntax:
+    content: public RobotPosition()
+    content.vb: Public Sub New()
+  overload: WebBackend.Dao.RobotPosition.#ctor*
+  nameWithType.vb: RobotPosition.New()
+  fullName.vb: WebBackend.Dao.RobotPosition.New()
+  name.vb: New()
+- uid: WebBackend.Dao.RobotPosition.ToString
+  commentId: M:WebBackend.Dao.RobotPosition.ToString
+  id: ToString
+  parent: WebBackend.Dao.RobotPosition
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: RobotPosition.ToString()
+  fullName: WebBackend.Dao.RobotPosition.ToString()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Dao/RobotPosition.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: ToString
+    path: WebBackend/Dao/RobotPosition.cs
+    startLine: 27
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Dao
+  summary: 重写ToString方法，便于显示数�?
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: 多行点位数据
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: WebBackend.Dao.RobotPosition.ToString*
+references:
+- uid: WebBackend.Dao
+  commentId: N:WebBackend.Dao
+  href: WebBackend.html
+  name: WebBackend.Dao
+  nameWithType: WebBackend.Dao
+  fullName: WebBackend.Dao
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: EstunApiStruct_CLI.E_ROB_POS_CLI
+  commentId: T:EstunApiStruct_CLI.E_ROB_POS_CLI
+  parent: EstunApiStruct_CLI
+  isExternal: true
+  name: E_ROB_POS_CLI
+  nameWithType: E_ROB_POS_CLI
+  fullName: EstunApiStruct_CLI.E_ROB_POS_CLI
+- uid: EstunApiStruct_CLI.E_ROB_POS_CLI.posType
+  commentId: F:EstunApiStruct_CLI.E_ROB_POS_CLI.posType
+  parent: EstunApiStruct_CLI.E_ROB_POS_CLI
+  isExternal: true
+  name: posType
+  nameWithType: E_ROB_POS_CLI.posType
+  fullName: EstunApiStruct_CLI.E_ROB_POS_CLI.posType
+- uid: EstunApiStruct_CLI.E_ROB_POS_CLI.posCfg
+  commentId: F:EstunApiStruct_CLI.E_ROB_POS_CLI.posCfg
+  parent: EstunApiStruct_CLI.E_ROB_POS_CLI
+  isExternal: true
+  name: posCfg
+  nameWithType: E_ROB_POS_CLI.posCfg
+  fullName: EstunApiStruct_CLI.E_ROB_POS_CLI.posCfg
+- uid: EstunApiStruct_CLI.E_ROB_POS_CLI.posValue
+  commentId: F:EstunApiStruct_CLI.E_ROB_POS_CLI.posValue
+  parent: EstunApiStruct_CLI.E_ROB_POS_CLI
+  isExternal: true
+  name: posValue
+  nameWithType: E_ROB_POS_CLI.posValue
+  fullName: EstunApiStruct_CLI.E_ROB_POS_CLI.posValue
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EstunApiStruct_CLI
+  commentId: N:EstunApiStruct_CLI
+  isExternal: true
+  name: EstunApiStruct_CLI
+  nameWithType: EstunApiStruct_CLI
+  fullName: EstunApiStruct_CLI
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: WebBackend.Dao.RobotPosition.#ctor*
+  commentId: Overload:WebBackend.Dao.RobotPosition.#ctor
+  href: WebBackend.Dao.RobotPosition.html#WebBackend_Dao_RobotPosition__ctor
+  name: RobotPosition
+  nameWithType: RobotPosition.RobotPosition
+  fullName: WebBackend.Dao.RobotPosition.RobotPosition
+  nameWithType.vb: RobotPosition.New
+  fullName.vb: WebBackend.Dao.RobotPosition.New
+  name.vb: New
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: WebBackend.Dao.RobotPosition.ToString*
+  commentId: Overload:WebBackend.Dao.RobotPosition.ToString
+  href: WebBackend.Dao.RobotPosition.html#WebBackend_Dao_RobotPosition_ToString
+  name: ToString
+  nameWithType: RobotPosition.ToString
+  fullName: WebBackend.Dao.RobotPosition.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

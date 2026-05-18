@@ -1,0 +1,527 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebBackend.Configuration.DatabaseAccess
+  commentId: T:WebBackend.Configuration.DatabaseAccess
+  id: DatabaseAccess
+  parent: WebBackend.Configuration
+  children:
+  - WebBackend.Configuration.DatabaseAccess.#ctor(System.String,Microsoft.Extensions.Logging.ILogger{WebBackend.Configuration.DatabaseAccess})
+  - WebBackend.Configuration.DatabaseAccess.Connect
+  - WebBackend.Configuration.DatabaseAccess.Disconnect
+  langs:
+  - csharp
+  - vb
+  name: DatabaseAccess
+  nameWithType: DatabaseAccess
+  fullName: WebBackend.Configuration.DatabaseAccess
+  type: Class
+  source:
+    remote:
+      path: WebBackend/Configuration/DatabaseAccess.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: DatabaseAccess
+    path: WebBackend/Configuration/DatabaseAccess.cs
+    startLine: 11
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Configuration
+  summary: MySQL数据库连接控制类
+  example: []
+  syntax:
+    content: public class DatabaseAccess
+    content.vb: Public Class DatabaseAccess
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: WebBackend.Configuration.DatabaseAccess.#ctor(System.String,Microsoft.Extensions.Logging.ILogger{WebBackend.Configuration.DatabaseAccess})
+  commentId: M:WebBackend.Configuration.DatabaseAccess.#ctor(System.String,Microsoft.Extensions.Logging.ILogger{WebBackend.Configuration.DatabaseAccess})
+  id: '#ctor(System.String,Microsoft.Extensions.Logging.ILogger{WebBackend.Configuration.DatabaseAccess})'
+  parent: WebBackend.Configuration.DatabaseAccess
+  langs:
+  - csharp
+  - vb
+  name: DatabaseAccess(string, ILogger<DatabaseAccess>)
+  nameWithType: DatabaseAccess.DatabaseAccess(string, ILogger<DatabaseAccess>)
+  fullName: WebBackend.Configuration.DatabaseAccess.DatabaseAccess(string, Microsoft.Extensions.Logging.ILogger<WebBackend.Configuration.DatabaseAccess>)
+  type: Constructor
+  source:
+    remote:
+      path: WebBackend/Configuration/DatabaseAccess.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: .ctor
+    path: WebBackend/Configuration/DatabaseAccess.cs
+    startLine: 11
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Configuration
+  summary: MySQL数据库连接控制类
+  example: []
+  syntax:
+    content: public DatabaseAccess(string connectionString, ILogger<DatabaseAccess> logger)
+    parameters:
+    - id: connectionString
+      type: System.String
+      description: 在appsettings.json中配置的MySQL数据库连接信�?
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{WebBackend.Configuration.DatabaseAccess}
+      description: 日志记录�?
+    content.vb: Public Sub New(connectionString As String, logger As ILogger(Of DatabaseAccess))
+  overload: WebBackend.Configuration.DatabaseAccess.#ctor*
+  nameWithType.vb: DatabaseAccess.New(String, ILogger(Of DatabaseAccess))
+  fullName.vb: WebBackend.Configuration.DatabaseAccess.New(String, Microsoft.Extensions.Logging.ILogger(Of WebBackend.Configuration.DatabaseAccess))
+  name.vb: New(String, ILogger(Of DatabaseAccess))
+- uid: WebBackend.Configuration.DatabaseAccess.Connect
+  commentId: M:WebBackend.Configuration.DatabaseAccess.Connect
+  id: Connect
+  parent: WebBackend.Configuration.DatabaseAccess
+  langs:
+  - csharp
+  - vb
+  name: Connect()
+  nameWithType: DatabaseAccess.Connect()
+  fullName: WebBackend.Configuration.DatabaseAccess.Connect()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Configuration/DatabaseAccess.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: Connect
+    path: WebBackend/Configuration/DatabaseAccess.cs
+    startLine: 19
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Configuration
+  summary: 连接数据�?
+  example: []
+  syntax:
+    content: public void Connect()
+    content.vb: Public Sub Connect()
+  overload: WebBackend.Configuration.DatabaseAccess.Connect*
+- uid: WebBackend.Configuration.DatabaseAccess.Disconnect
+  commentId: M:WebBackend.Configuration.DatabaseAccess.Disconnect
+  id: Disconnect
+  parent: WebBackend.Configuration.DatabaseAccess
+  langs:
+  - csharp
+  - vb
+  name: Disconnect()
+  nameWithType: DatabaseAccess.Disconnect()
+  fullName: WebBackend.Configuration.DatabaseAccess.Disconnect()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Configuration/DatabaseAccess.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: Disconnect
+    path: WebBackend/Configuration/DatabaseAccess.cs
+    startLine: 36
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Configuration
+  summary: 断开数据库连�?
+  example: []
+  syntax:
+    content: public void Disconnect()
+    content.vb: Public Sub Disconnect()
+  overload: WebBackend.Configuration.DatabaseAccess.Disconnect*
+references:
+- uid: WebBackend.Configuration
+  commentId: N:WebBackend.Configuration
+  href: WebBackend.html
+  name: WebBackend.Configuration
+  nameWithType: WebBackend.Configuration
+  fullName: WebBackend.Configuration
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Configuration
+    name: Configuration
+    href: WebBackend.Configuration.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Configuration
+    name: Configuration
+    href: WebBackend.Configuration.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WebBackend.Configuration.DatabaseAccess.#ctor*
+  commentId: Overload:WebBackend.Configuration.DatabaseAccess.#ctor
+  href: WebBackend.Configuration.DatabaseAccess.html#WebBackend_Configuration_DatabaseAccess__ctor_System_String_Microsoft_Extensions_Logging_ILogger_WebBackend_Configuration_DatabaseAccess__
+  name: DatabaseAccess
+  nameWithType: DatabaseAccess.DatabaseAccess
+  fullName: WebBackend.Configuration.DatabaseAccess.DatabaseAccess
+  nameWithType.vb: DatabaseAccess.New
+  fullName.vb: WebBackend.Configuration.DatabaseAccess.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Extensions.Logging.ILogger{WebBackend.Configuration.DatabaseAccess}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{WebBackend.Configuration.DatabaseAccess}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<DatabaseAccess>
+  nameWithType: ILogger<DatabaseAccess>
+  fullName: Microsoft.Extensions.Logging.ILogger<WebBackend.Configuration.DatabaseAccess>
+  nameWithType.vb: ILogger(Of DatabaseAccess)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of WebBackend.Configuration.DatabaseAccess)
+  name.vb: ILogger(Of DatabaseAccess)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: WebBackend.Configuration.DatabaseAccess
+    name: DatabaseAccess
+    href: WebBackend.Configuration.DatabaseAccess.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: WebBackend.Configuration.DatabaseAccess
+    name: DatabaseAccess
+    href: WebBackend.Configuration.DatabaseAccess.html
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: WebBackend.Configuration.DatabaseAccess.Connect*
+  commentId: Overload:WebBackend.Configuration.DatabaseAccess.Connect
+  href: WebBackend.Configuration.DatabaseAccess.html#WebBackend_Configuration_DatabaseAccess_Connect
+  name: Connect
+  nameWithType: DatabaseAccess.Connect
+  fullName: WebBackend.Configuration.DatabaseAccess.Connect
+- uid: WebBackend.Configuration.DatabaseAccess.Disconnect*
+  commentId: Overload:WebBackend.Configuration.DatabaseAccess.Disconnect
+  href: WebBackend.Configuration.DatabaseAccess.html#WebBackend_Configuration_DatabaseAccess_Disconnect
+  name: Disconnect
+  nameWithType: DatabaseAccess.Disconnect
+  fullName: WebBackend.Configuration.DatabaseAccess.Disconnect

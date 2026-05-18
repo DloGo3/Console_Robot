@@ -1,0 +1,26 @@
+Start:
+-- SprutCAM Robot
+SetCoord{Coord=t_g.Wobj1}
+SetTool{Tool=t_g.Tool39}
+MovJ{P=t_l.J0,V=t_s.V800,B="RELATIVE",C=t_s.C0}
+MovL{P=t_l.P0,V=t_s.V1000,B="RELATIVE",C=t_s.C10}
+MovL{P=t_l.P1,V=t_s.V800,B="RELATIVE",C=t_s.C10}
+MovL{P=t_l.P2,V=t_s.V800,B="RELATIVE",C=t_s.C10}
+MovL{P=t_l.P3,V=t_s.V800,B="RELATIVE",C=t_s.C10}
+MovL{P=t_l.P4,V=t_s.V800,B="RELATIVE",C=t_s.C10}
+MovL{P=t_l.P5,V=t_s.V800,B="RELATIVE",C=t_s.C10}
+MovL{P=t_l.P6,V=t_s.V800,B="RELATIVE",C=t_s.C10}
+MovL{P=t_l.P7,V=t_s.V800,B="RELATIVE",C=t_s.C10}
+MovJ{P=t_l.J1,V=t_s.V800,B="RELATIVE",C=t_s.C0}
+MovL{P=t_l.P8,V=t_s.V1000,B="RELATIVE",C=t_s.C10}
+MovL{P=t_l.P9,V=t_s.V1000,B="RELATIVE",C=t_s.C10}
+MovL{P=t_l.P10,V=t_s.V800,B="RELATIVE",C=t_s.C10}
+MovL{P=t_l.P11,V=t_s.V800,B="RELATIVE",C=t_s.C10}
+MovL{P=t_l.P12,V=t_s.V800,B="RELATIVE",C=t_s.C10}
+MovL{P=t_l.P13,V=t_s.V800,B="RELATIVE",C=t_s.C10}
+MovL{P=t_l.P14,V=t_s.V800,B="RELATIVE",C=t_s.C10}
+MovL{P=t_l.P15,V=t_s.V800,B="RELATIVE",C=t_s.C10}
+MovL{P=t_l.P16,V=t_s.V800,B="RELATIVE",C=t_s.C10}
+MovL{P=t_l.P17,V=t_s.V1000,B="RELATIVE",C=t_s.C10}
+MovJ{P=t_l.J2,V=t_s.V800,B="RELATIVE",C=t_s.C0}
+End;

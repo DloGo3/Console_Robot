@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WebBackend": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

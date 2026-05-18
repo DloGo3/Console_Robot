@@ -1,0 +1,1009 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebBackend.Service.FileService
+  commentId: T:WebBackend.Service.FileService
+  id: FileService
+  parent: WebBackend.Service
+  children:
+  - WebBackend.Service.FileService.#ctor(WebBackend.Dao.IApplicationData,WebBackend.Util.Parser,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{WebBackend.Service.FileService})
+  - WebBackend.Service.FileService.GetCommandCount
+  - WebBackend.Service.FileService.GetDataDirectory
+  - WebBackend.Service.FileService.GetPointCount
+  - WebBackend.Service.FileService.GetTraceList
+  - WebBackend.Service.FileService.LoadData(System.String)
+  - WebBackend.Service.FileService.ReadErdFile(System.String)
+  - WebBackend.Service.FileService.ReadErpFile(System.String)
+  langs:
+  - csharp
+  - vb
+  name: FileService
+  nameWithType: FileService
+  fullName: WebBackend.Service.FileService
+  type: Class
+  source:
+    remote:
+      path: WebBackend/Service/FileService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: FileService
+    path: WebBackend/Service/FileService.cs
+    startLine: 9
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 文件服务，用于解析ERD和ERP文件
+  example: []
+  syntax:
+    content: public class FileService
+    content.vb: Public Class FileService
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: WebBackend.Service.FileService.#ctor(WebBackend.Dao.IApplicationData,WebBackend.Util.Parser,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{WebBackend.Service.FileService})
+  commentId: M:WebBackend.Service.FileService.#ctor(WebBackend.Dao.IApplicationData,WebBackend.Util.Parser,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{WebBackend.Service.FileService})
+  id: '#ctor(WebBackend.Dao.IApplicationData,WebBackend.Util.Parser,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{WebBackend.Service.FileService})'
+  parent: WebBackend.Service.FileService
+  langs:
+  - csharp
+  - vb
+  name: FileService(IApplicationData, Parser, IConfiguration, ILogger<FileService>)
+  nameWithType: FileService.FileService(IApplicationData, Parser, IConfiguration, ILogger<FileService>)
+  fullName: WebBackend.Service.FileService.FileService(WebBackend.Dao.IApplicationData, WebBackend.Util.Parser, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Logging.ILogger<WebBackend.Service.FileService>)
+  type: Constructor
+  source:
+    remote:
+      path: WebBackend/Service/FileService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: .ctor
+    path: WebBackend/Service/FileService.cs
+    startLine: 36
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: FileService全参构造函�?
+  example: []
+  syntax:
+    content: public FileService(IApplicationData appData, Parser parser, IConfiguration config, ILogger<FileService> logger)
+    parameters:
+    - id: appData
+      type: WebBackend.Dao.IApplicationData
+      description: 全局数据（单例）
+    - id: parser
+      type: WebBackend.Util.Parser
+      description: 文件解析器（单例�?
+    - id: config
+      type: Microsoft.Extensions.Configuration.IConfiguration
+      description: 配置类（单例�?
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{WebBackend.Service.FileService}
+      description: 日志记录�?
+    content.vb: Public Sub New(appData As IApplicationData, parser As Parser, config As IConfiguration, logger As ILogger(Of FileService))
+  overload: WebBackend.Service.FileService.#ctor*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: 若config.yaml中没有设置DataDirectory则抛出此异常
+  nameWithType.vb: FileService.New(IApplicationData, Parser, IConfiguration, ILogger(Of FileService))
+  fullName.vb: WebBackend.Service.FileService.New(WebBackend.Dao.IApplicationData, WebBackend.Util.Parser, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Logging.ILogger(Of WebBackend.Service.FileService))
+  name.vb: New(IApplicationData, Parser, IConfiguration, ILogger(Of FileService))
+- uid: WebBackend.Service.FileService.ReadErdFile(System.String)
+  commentId: M:WebBackend.Service.FileService.ReadErdFile(System.String)
+  id: ReadErdFile(System.String)
+  parent: WebBackend.Service.FileService
+  langs:
+  - csharp
+  - vb
+  name: ReadErdFile(string)
+  nameWithType: FileService.ReadErdFile(string)
+  fullName: WebBackend.Service.FileService.ReadErdFile(string)
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/FileService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: ReadErdFile
+    path: WebBackend/Service/FileService.cs
+    startLine: 55
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 读取并加载ERD文件到内存中
+  example: []
+  syntax:
+    content: public int ReadErdFile(string filename)
+    parameters:
+    - id: filename
+      type: System.String
+      description: 可以是本地文件绝对路径，也可以是共享文件的路�?
+    return:
+      type: System.Int32
+      description: 全点位数量（包含过渡点和不需检测的点）
+    content.vb: Public Function ReadErdFile(filename As String) As Integer
+  overload: WebBackend.Service.FileService.ReadErdFile*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: 若解析ERD文件失败则抛出此异常
+  nameWithType.vb: FileService.ReadErdFile(String)
+  fullName.vb: WebBackend.Service.FileService.ReadErdFile(String)
+  name.vb: ReadErdFile(String)
+- uid: WebBackend.Service.FileService.ReadErpFile(System.String)
+  commentId: M:WebBackend.Service.FileService.ReadErpFile(System.String)
+  id: ReadErpFile(System.String)
+  parent: WebBackend.Service.FileService
+  langs:
+  - csharp
+  - vb
+  name: ReadErpFile(string)
+  nameWithType: FileService.ReadErpFile(string)
+  fullName: WebBackend.Service.FileService.ReadErpFile(string)
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/FileService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: ReadErpFile
+    path: WebBackend/Service/FileService.cs
+    startLine: 76
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 读取并加载ERP文件到内存中
+  example: []
+  syntax:
+    content: public int ReadErpFile(string filename)
+    parameters:
+    - id: filename
+      type: System.String
+      description: 可以是本地文件绝对路径，也可以是共享文件的路�?
+    return:
+      type: System.Int32
+      description: 指令数量
+    content.vb: Public Function ReadErpFile(filename As String) As Integer
+  overload: WebBackend.Service.FileService.ReadErpFile*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: 若解析ERP文件失败则抛出此异常
+  nameWithType.vb: FileService.ReadErpFile(String)
+  fullName.vb: WebBackend.Service.FileService.ReadErpFile(String)
+  name.vb: ReadErpFile(String)
+- uid: WebBackend.Service.FileService.GetDataDirectory
+  commentId: M:WebBackend.Service.FileService.GetDataDirectory
+  id: GetDataDirectory
+  parent: WebBackend.Service.FileService
+  langs:
+  - csharp
+  - vb
+  name: GetDataDirectory()
+  nameWithType: FileService.GetDataDirectory()
+  fullName: WebBackend.Service.FileService.GetDataDirectory()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/FileService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: GetDataDirectory
+    path: WebBackend/Service/FileService.cs
+    startLine: 95
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 获取当前轨迹数据文件夹绝对路�?
+  example: []
+  syntax:
+    content: public string GetDataDirectory()
+    return:
+      type: System.String
+      description: 轨迹数据文件夹绝对路�?
+    content.vb: Public Function GetDataDirectory() As String
+  overload: WebBackend.Service.FileService.GetDataDirectory*
+- uid: WebBackend.Service.FileService.GetTraceList
+  commentId: M:WebBackend.Service.FileService.GetTraceList
+  id: GetTraceList
+  parent: WebBackend.Service.FileService
+  langs:
+  - csharp
+  - vb
+  name: GetTraceList()
+  nameWithType: FileService.GetTraceList()
+  fullName: WebBackend.Service.FileService.GetTraceList()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/FileService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: GetTraceList
+    path: WebBackend/Service/FileService.cs
+    startLine: 105
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 获取当前数据文件夹下可导入轨迹的名称列表
+  example: []
+  syntax:
+    content: public List<string> GetTraceList()
+    return:
+      type: System.Collections.Generic.List{System.String}
+      description: 当前轨迹名称列表
+    content.vb: Public Function GetTraceList() As List(Of String)
+  overload: WebBackend.Service.FileService.GetTraceList*
+  exceptions:
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: 如果轨迹数据文件夹不存在，抛出此异常
+- uid: WebBackend.Service.FileService.LoadData(System.String)
+  commentId: M:WebBackend.Service.FileService.LoadData(System.String)
+  id: LoadData(System.String)
+  parent: WebBackend.Service.FileService
+  langs:
+  - csharp
+  - vb
+  name: LoadData(string)
+  nameWithType: FileService.LoadData(string)
+  fullName: WebBackend.Service.FileService.LoadData(string)
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/FileService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: LoadData
+    path: WebBackend/Service/FileService.cs
+    startLine: 144
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 根据轨迹名称（不包含后缀）加载全部点位信息、命令信息和待测点信�?
+  example: []
+  syntax:
+    content: public bool LoadData(string filename)
+    parameters:
+    - id: filename
+      type: System.String
+      description: 轨迹名称
+    return:
+      type: System.Boolean
+      description: 加载成功返回true，若ERD或者ERP文件解析�?个条目返回false
+    content.vb: Public Function LoadData(filename As String) As Boolean
+  overload: WebBackend.Service.FileService.LoadData*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: 若ERD或者ERP解析失败则抛出该异常
+  nameWithType.vb: FileService.LoadData(String)
+  fullName.vb: WebBackend.Service.FileService.LoadData(String)
+  name.vb: LoadData(String)
+- uid: WebBackend.Service.FileService.GetCommandCount
+  commentId: M:WebBackend.Service.FileService.GetCommandCount
+  id: GetCommandCount
+  parent: WebBackend.Service.FileService
+  langs:
+  - csharp
+  - vb
+  name: GetCommandCount()
+  nameWithType: FileService.GetCommandCount()
+  fullName: WebBackend.Service.FileService.GetCommandCount()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/FileService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: GetCommandCount
+    path: WebBackend/Service/FileService.cs
+    startLine: 172
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 获取当前任务的指令数�?
+  example: []
+  syntax:
+    content: public int GetCommandCount()
+    return:
+      type: System.Int32
+      description: 指令数量
+    content.vb: Public Function GetCommandCount() As Integer
+  overload: WebBackend.Service.FileService.GetCommandCount*
+- uid: WebBackend.Service.FileService.GetPointCount
+  commentId: M:WebBackend.Service.FileService.GetPointCount
+  id: GetPointCount
+  parent: WebBackend.Service.FileService
+  langs:
+  - csharp
+  - vb
+  name: GetPointCount()
+  nameWithType: FileService.GetPointCount()
+  fullName: WebBackend.Service.FileService.GetPointCount()
+  type: Method
+  source:
+    remote:
+      path: WebBackend/Service/FileService.cs
+      branch: master
+      repo: https://github.com/jjhhyyg/Console_Robot.git
+    id: GetPointCount
+    path: WebBackend/Service/FileService.cs
+    startLine: 181
+  assemblies:
+  - WebBackend
+  namespace: WebBackend.Service
+  summary: 获取当前任务的点位数�?
+  example: []
+  syntax:
+    content: public int GetPointCount()
+    return:
+      type: System.Int32
+      description: 点位数量
+    content.vb: Public Function GetPointCount() As Integer
+  overload: WebBackend.Service.FileService.GetPointCount*
+references:
+- uid: WebBackend.Service
+  commentId: N:WebBackend.Service
+  href: WebBackend.html
+  name: WebBackend.Service
+  nameWithType: WebBackend.Service
+  fullName: WebBackend.Service
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Service
+    name: Service
+    href: WebBackend.Service.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Service
+    name: Service
+    href: WebBackend.Service.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Exception
+  commentId: T:System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: WebBackend.Service.FileService.#ctor*
+  commentId: Overload:WebBackend.Service.FileService.#ctor
+  href: WebBackend.Service.FileService.html#WebBackend_Service_FileService__ctor_WebBackend_Dao_IApplicationData_WebBackend_Util_Parser_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Logging_ILogger_WebBackend_Service_FileService__
+  name: FileService
+  nameWithType: FileService.FileService
+  fullName: WebBackend.Service.FileService.FileService
+  nameWithType.vb: FileService.New
+  fullName.vb: WebBackend.Service.FileService.New
+  name.vb: New
+- uid: WebBackend.Dao.IApplicationData
+  commentId: T:WebBackend.Dao.IApplicationData
+  parent: WebBackend.Dao
+  href: WebBackend.Dao.IApplicationData.html
+  name: IApplicationData
+  nameWithType: IApplicationData
+  fullName: WebBackend.Dao.IApplicationData
+- uid: WebBackend.Util.Parser
+  commentId: T:WebBackend.Util.Parser
+  parent: WebBackend.Util
+  href: WebBackend.Util.Parser.html
+  name: Parser
+  nameWithType: Parser
+  fullName: WebBackend.Util.Parser
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: Microsoft.Extensions.Logging.ILogger{WebBackend.Service.FileService}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{WebBackend.Service.FileService}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<FileService>
+  nameWithType: ILogger<FileService>
+  fullName: Microsoft.Extensions.Logging.ILogger<WebBackend.Service.FileService>
+  nameWithType.vb: ILogger(Of FileService)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of WebBackend.Service.FileService)
+  name.vb: ILogger(Of FileService)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: WebBackend.Service.FileService
+    name: FileService
+    href: WebBackend.Service.FileService.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: WebBackend.Service.FileService
+    name: FileService
+    href: WebBackend.Service.FileService.html
+  - name: )
+- uid: WebBackend.Dao
+  commentId: N:WebBackend.Dao
+  href: WebBackend.html
+  name: WebBackend.Dao
+  nameWithType: WebBackend.Dao
+  fullName: WebBackend.Dao
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Dao
+    name: Dao
+    href: WebBackend.Dao.html
+- uid: WebBackend.Util
+  commentId: N:WebBackend.Util
+  href: WebBackend.html
+  name: WebBackend.Util
+  nameWithType: WebBackend.Util
+  fullName: WebBackend.Util
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Util
+    name: Util
+    href: WebBackend.Util.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Util
+    name: Util
+    href: WebBackend.Util.html
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: WebBackend.Service.FileService.ReadErdFile*
+  commentId: Overload:WebBackend.Service.FileService.ReadErdFile
+  href: WebBackend.Service.FileService.html#WebBackend_Service_FileService_ReadErdFile_System_String_
+  name: ReadErdFile
+  nameWithType: FileService.ReadErdFile
+  fullName: WebBackend.Service.FileService.ReadErdFile
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: WebBackend.Service.FileService.ReadErpFile*
+  commentId: Overload:WebBackend.Service.FileService.ReadErpFile
+  href: WebBackend.Service.FileService.html#WebBackend_Service_FileService_ReadErpFile_System_String_
+  name: ReadErpFile
+  nameWithType: FileService.ReadErpFile
+  fullName: WebBackend.Service.FileService.ReadErpFile
+- uid: WebBackend.Service.FileService.GetDataDirectory*
+  commentId: Overload:WebBackend.Service.FileService.GetDataDirectory
+  href: WebBackend.Service.FileService.html#WebBackend_Service_FileService_GetDataDirectory
+  name: GetDataDirectory
+  nameWithType: FileService.GetDataDirectory
+  fullName: WebBackend.Service.FileService.GetDataDirectory
+- uid: System.IO.DirectoryNotFoundException
+  commentId: T:System.IO.DirectoryNotFoundException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.directorynotfoundexception
+  name: DirectoryNotFoundException
+  nameWithType: DirectoryNotFoundException
+  fullName: System.IO.DirectoryNotFoundException
+- uid: WebBackend.Service.FileService.GetTraceList*
+  commentId: Overload:WebBackend.Service.FileService.GetTraceList
+  href: WebBackend.Service.FileService.html#WebBackend_Service_FileService_GetTraceList
+  name: GetTraceList
+  nameWithType: FileService.GetTraceList
+  fullName: WebBackend.Service.FileService.GetTraceList
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: WebBackend.Service.FileService.LoadData*
+  commentId: Overload:WebBackend.Service.FileService.LoadData
+  href: WebBackend.Service.FileService.html#WebBackend_Service_FileService_LoadData_System_String_
+  name: LoadData
+  nameWithType: FileService.LoadData
+  fullName: WebBackend.Service.FileService.LoadData
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: WebBackend.Service.FileService.GetCommandCount*
+  commentId: Overload:WebBackend.Service.FileService.GetCommandCount
+  href: WebBackend.Service.FileService.html#WebBackend_Service_FileService_GetCommandCount
+  name: GetCommandCount
+  nameWithType: FileService.GetCommandCount
+  fullName: WebBackend.Service.FileService.GetCommandCount
+- uid: WebBackend.Service.FileService.GetPointCount*
+  commentId: Overload:WebBackend.Service.FileService.GetPointCount
+  href: WebBackend.Service.FileService.html#WebBackend_Service_FileService_GetPointCount
+  name: GetPointCount
+  nameWithType: FileService.GetPointCount
+  fullName: WebBackend.Service.FileService.GetPointCount

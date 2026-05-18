@@ -1,0 +1,1590 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Control | Develop Robot Arm Control API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Control | Develop Robot Arm Control API Documentation ">
+      
+      <meta name="description" content="机器人控制类，封装了埃斯顿机械臂的API接口">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jjhhyyg/Console_Robot/new/master/apiSpec/new?filename=WebBackend_Util_Control.md&amp;value=---%0Auid%3A%20WebBackend.Util.Control%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Develop Robot Arm Control API Documentation">
+            Develop Robot Arm Control API Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="WebBackend.Util.Control">
+
+
+
+  <h1 id="WebBackend_Util_Control" data-uid="WebBackend.Util.Control" class="text-break">
+Class Control  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="WebBackend.html">WebBackend</a>.<a class="xref" href="WebBackend.Util.html">Util</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>WebBackend.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>机器人控制类，封装了埃斯顿机械臂的API接口</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Control</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Control</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="WebBackend_Util_Control_AcquirePermit_" data-uid="WebBackend.Util.Control.AcquirePermit*"></a>
+
+  <h3 id="WebBackend_Util_Control_AcquirePermit" data-uid="WebBackend.Util.Control.AcquirePermit">
+  AcquirePermit()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取操作许可</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public E_ROB_PERMIT_CLI AcquirePermit()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">E_ROB_PERMIT_CLI</span></dt>
+    <dd><p>返回操作许可</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_CleanUpAndDispose_" data-uid="WebBackend.Util.Control.CleanUpAndDispose*"></a>
+
+  <h3 id="WebBackend_Util_Control_CleanUpAndDispose_EstunApiStruct_CLI_E_ROB_PERMIT_CLI_" data-uid="WebBackend.Util.Control.CleanUpAndDispose(EstunApiStruct_CLI.E_ROB_PERMIT_CLI)">
+  CleanUpAndDispose(E_ROB_PERMIT_CLI)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>停止运动并断开链接</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CleanUpAndDispose(E_ROB_PERMIT_CLI permit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>permit</code> <span class="xref">E_ROB_PERMIT_CLI</span></dt>
+    <dd><p>通过E_</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_ClearError_" data-uid="WebBackend.Util.Control.ClearError*"></a>
+
+  <h3 id="WebBackend_Util_Control_ClearError" data-uid="WebBackend.Util.Control.ClearError">
+  ClearError()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>清除错误信息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ClearError()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_Connect_" data-uid="WebBackend.Util.Control.Connect*"></a>
+
+  <h3 id="WebBackend_Util_Control_Connect_System_String_System_Boolean_" data-uid="WebBackend.Util.Control.Connect(System.String,System.Boolean)">
+  Connect(string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>连接到服务器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Connect(string ip, bool autoReconnect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ip</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>服务器IP地址</p>
+</dd>
+    <dt><code>autoReconnect</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否自动重连</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功连接返回true，否则返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_Disconnect_" data-uid="WebBackend.Util.Control.Disconnect*"></a>
+
+  <h3 id="WebBackend_Util_Control_Disconnect" data-uid="WebBackend.Util.Control.Disconnect">
+  Disconnect()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>断开连接</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Disconnect()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_Dispose_" data-uid="WebBackend.Util.Control.Dispose*"></a>
+
+  <h3 id="WebBackend_Util_Control_Dispose" data-uid="WebBackend.Util.Control.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>释放资源</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_GetAPIStatus_" data-uid="WebBackend.Util.Control.GetAPIStatus*"></a>
+
+  <h3 id="WebBackend_Util_Control_GetAPIStatus" data-uid="WebBackend.Util.Control.GetAPIStatus">
+  GetAPIStatus()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L384"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取工作状态</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetAPIStatus()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>-1  失败</p>
+<p>0   正常</p>
+<p>1   机器人错误</p>
+<p>2   机器人处于停止状态（需要调用MotionStart）</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_GetCurrentJPos_" data-uid="WebBackend.Util.Control.GetCurrentJPos*"></a>
+
+  <h3 id="WebBackend_Util_Control_GetCurrentJPos" data-uid="WebBackend.Util.Control.GetCurrentJPos">
+  GetCurrentJPos()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取当前机器人的关节坐标</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public E_ROB_POS_CLI GetCurrentJPos()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">E_ROB_POS_CLI</span></dt>
+    <dd><p>机器人的关节坐标（六个轴转动了多少度）</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_GetCurrentWPos_" data-uid="WebBackend.Util.Control.GetCurrentWPos*"></a>
+
+  <h3 id="WebBackend_Util_Control_GetCurrentWPos" data-uid="WebBackend.Util.Control.GetCurrentWPos">
+  GetCurrentWPos()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L370"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取当前机器人的世界坐标</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public E_ROB_POS_CLI GetCurrentWPos()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">E_ROB_POS_CLI</span></dt>
+    <dd><p>机器人第六轴中心的笛卡尔坐标（x, y, z, a, b, c）</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_GetErrorId_" data-uid="WebBackend.Util.Control.GetErrorId*"></a>
+
+  <h3 id="WebBackend_Util_Control_GetErrorId" data-uid="WebBackend.Util.Control.GetErrorId">
+  GetErrorId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取错误号</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetErrorId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Error ID，为0表示没有错误</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_GetErrorInfo_" data-uid="WebBackend.Util.Control.GetErrorInfo*"></a>
+
+  <h3 id="WebBackend_Util_Control_GetErrorInfo_System_Int32_" data-uid="WebBackend.Util.Control.GetErrorInfo(System.Int32)">
+  GetErrorInfo(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取错误详情</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetErrorInfo(int errorId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>errorId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>错误号，由GetErrorId方法获取</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>错误信息</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_GetGlobalSpeed_" data-uid="WebBackend.Util.Control.GetGlobalSpeed*"></a>
+
+  <h3 id="WebBackend_Util_Control_GetGlobalSpeed" data-uid="WebBackend.Util.Control.GetGlobalSpeed">
+  GetGlobalSpeed()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取全局速度</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetGlobalSpeed()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>0~100 表示百分比</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_GetPoint_" data-uid="WebBackend.Util.Control.GetPoint*"></a>
+
+  <h3 id="WebBackend_Util_Control_GetPoint_System_String_System_Int32_EstunApiStruct_CLI_E_ROB_POS_CLI__" data-uid="WebBackend.Util.Control.GetPoint(System.String,System.Int32,EstunApiStruct_CLI.E_ROB_POS_CLI@)">
+  GetPoint(string, int, ref E_ROB_POS_CLI)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取点位信息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetPoint(string varName, int varScope, ref E_ROB_POS_CLI posBack)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>varName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>点名称</p>
+</dd>
+    <dt><code>varScope</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>点作用域，0-系统，1-全局，2-工程，3-本地</p>
+</dd>
+    <dt><code>posBack</code> <span class="xref">E_ROB_POS_CLI</span></dt>
+    <dd><p>存储获取到的点信息</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_GetRunMode_" data-uid="WebBackend.Util.Control.GetRunMode*"></a>
+
+  <h3 id="WebBackend_Util_Control_GetRunMode" data-uid="WebBackend.Util.Control.GetRunMode">
+  GetRunMode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取运动模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public E_RunModeType_CLI GetRunMode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">E_RunModeType_CLI</span></dt>
+    <dd><p>E_RunModeType_CLI枚举类，1为步进，2为连续</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_GetServoOn_" data-uid="WebBackend.Util.Control.GetServoOn*"></a>
+
+  <h3 id="WebBackend_Util_Control_GetServoOn" data-uid="WebBackend.Util.Control.GetServoOn">
+  GetServoOn()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取伺服电机状态</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public E_ServoStatusType_CLI GetServoOn()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">E_ServoStatusType_CLI</span></dt>
+    <dd><p>三种状态，详见E_ServoStatusType_CLI枚举类</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_GetSystemMode_" data-uid="WebBackend.Util.Control.GetSystemMode*"></a>
+
+  <h3 id="WebBackend_Util_Control_GetSystemMode" data-uid="WebBackend.Util.Control.GetSystemMode">
+  GetSystemMode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取系统运行模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public E_SysModeType_CLI GetSystemMode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">E_SysModeType_CLI</span></dt>
+    <dd><p>E_SysModeType_CLI枚举类，manualMode-手动模式，autoMode-自动模式，API-API模式（其他模式略）</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_GetToolIdList_" data-uid="WebBackend.Util.Control.GetToolIdList*"></a>
+
+  <h3 id="WebBackend_Util_Control_GetToolIdList" data-uid="WebBackend.Util.Control.GetToolIdList">
+  GetToolIdList()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L412"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取所有工具坐标系ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;int&gt; GetToolIdList()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd><p>包含所有工具坐标系ID的值</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_LoadProgram_" data-uid="WebBackend.Util.Control.LoadProgram*"></a>
+
+  <h3 id="WebBackend_Util_Control_LoadProgram_System_String_System_String_" data-uid="WebBackend.Util.Control.LoadProgram(System.String,System.String)">
+  LoadProgram(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>加载程序（仅当系统在自动模式下有效）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadProgram(string prjname, string prgname)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prjname</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>工程名称</p>
+</dd>
+    <dt><code>prgname</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>工程下面的程序名称</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_LoadProject_" data-uid="WebBackend.Util.Control.LoadProject*"></a>
+
+  <h3 id="WebBackend_Util_Control_LoadProject_System_String_" data-uid="WebBackend.Util.Control.LoadProject(System.String)">
+  LoadProject(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>加载工程（仅当系统在自动模式下有效）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadProject(string prjname)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prjname</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>工程名称</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_LoadTool_" data-uid="WebBackend.Util.Control.LoadTool*"></a>
+
+  <h3 id="WebBackend_Util_Control_LoadTool_System_Int32_" data-uid="WebBackend.Util.Control.LoadTool(System.Int32)">
+  LoadTool(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>加载工具坐标系</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadTool(int toolId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>toolId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>工具坐标系ID</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>加载成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_LoadUserCoord_" data-uid="WebBackend.Util.Control.LoadUserCoord*"></a>
+
+  <h3 id="WebBackend_Util_Control_LoadUserCoord_System_Int32_" data-uid="WebBackend.Util.Control.LoadUserCoord(System.Int32)">
+  LoadUserCoord(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>加载用户坐标系</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadUserCoord(int userLocationid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userLocationid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>用户坐标系ID</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>加载成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_MotionContinue_" data-uid="WebBackend.Util.Control.MotionContinue*"></a>
+
+  <h3 id="WebBackend_Util_Control_MotionContinue_System_Int32_" data-uid="WebBackend.Util.Control.MotionContinue(System.Int32)">
+  MotionContinue(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>继续机器人运动（Pause后使用）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MotionContinue(int milliseconds = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>milliseconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>等待信号发送和接受的时间（以毫秒为单位）</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_MotionPause_" data-uid="WebBackend.Util.Control.MotionPause*"></a>
+
+  <h3 id="WebBackend_Util_Control_MotionPause_System_Int32_" data-uid="WebBackend.Util.Control.MotionPause(System.Int32)">
+  MotionPause(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>暂停机器人运动，但不清空队列</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MotionPause(int milliseconds = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>milliseconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>等待信号发送和接受的时间（以毫秒为单位）</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_MotionStart_" data-uid="WebBackend.Util.Control.MotionStart*"></a>
+
+  <h3 id="WebBackend_Util_Control_MotionStart_System_Int32_" data-uid="WebBackend.Util.Control.MotionStart(System.Int32)">
+  MotionStart(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>开始机器人运动</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MotionStart(int milliseconds = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>milliseconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>等待信号发送和接受的时间（以毫秒为单位）</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_MotionStop_" data-uid="WebBackend.Util.Control.MotionStop*"></a>
+
+  <h3 id="WebBackend_Util_Control_MotionStop_System_Int32_" data-uid="WebBackend.Util.Control.MotionStop(System.Int32)">
+  MotionStop(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>停止机器人运行并清空队列</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MotionStop(int milliseconds = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>milliseconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>等待信号发送和接受的时间（以毫秒为单位）</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_MovC2_" data-uid="WebBackend.Util.Control.MovC2*"></a>
+
+  <h3 id="WebBackend_Util_Control_MovC2_EstunApiStruct_CLI_E_ROB_POS_CLI_EstunApiStruct_CLI_E_ROB_POS_CLI_EstunApiStruct_CLI_E_ROB_SPEED_CLI_EstunApiStruct_CLI_E_ROB_ZONE_CLI_System_Boolean_" data-uid="WebBackend.Util.Control.MovC2(EstunApiStruct_CLI.E_ROB_POS_CLI,EstunApiStruct_CLI.E_ROB_POS_CLI,EstunApiStruct_CLI.E_ROB_SPEED_CLI,EstunApiStruct_CLI.E_ROB_ZONE_CLI,System.Boolean)">
+  MovC2(E_ROB_POS_CLI, E_ROB_POS_CLI, E_ROB_SPEED_CLI, E_ROB_ZONE_CLI, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>api.E_MovC2（省略了非必要字段）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public E_ROB_JOBID_CLI MovC2(E_ROB_POS_CLI auxP, E_ROB_POS_CLI dstPoint, E_ROB_SPEED_CLI velo, E_ROB_ZONE_CLI zone, bool isWaitFinished)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>auxP</code> <span class="xref">E_ROB_POS_CLI</span></dt>
+    <dd><p>过渡点信息</p>
+</dd>
+    <dt><code>dstPoint</code> <span class="xref">E_ROB_POS_CLI</span></dt>
+    <dd><p>目标点信息</p>
+</dd>
+    <dt><code>velo</code> <span class="xref">E_ROB_SPEED_CLI</span></dt>
+    <dd><p>速度信息</p>
+</dd>
+    <dt><code>zone</code> <span class="xref">E_ROB_ZONE_CLI</span></dt>
+    <dd><p>过渡参数信息</p>
+</dd>
+    <dt><code>isWaitFinished</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否等待动作完成再返回值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">E_ROB_JOBID_CLI</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_MovJ2_" data-uid="WebBackend.Util.Control.MovJ2*"></a>
+
+  <h3 id="WebBackend_Util_Control_MovJ2_EstunApiStruct_CLI_E_ROB_POS_CLI_EstunApiStruct_CLI_E_ROB_SPEED_CLI_EstunApiStruct_CLI_E_ROB_ZONE_CLI_System_Boolean_" data-uid="WebBackend.Util.Control.MovJ2(EstunApiStruct_CLI.E_ROB_POS_CLI,EstunApiStruct_CLI.E_ROB_SPEED_CLI,EstunApiStruct_CLI.E_ROB_ZONE_CLI,System.Boolean)">
+  MovJ2(E_ROB_POS_CLI, E_ROB_SPEED_CLI, E_ROB_ZONE_CLI, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>api.E_MovJ2（省略了非必要字段）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public E_ROB_JOBID_CLI MovJ2(E_ROB_POS_CLI dstPoint, E_ROB_SPEED_CLI velo, E_ROB_ZONE_CLI zone, bool isWaitFinished)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dstPoint</code> <span class="xref">E_ROB_POS_CLI</span></dt>
+    <dd><p>目标点信息</p>
+</dd>
+    <dt><code>velo</code> <span class="xref">E_ROB_SPEED_CLI</span></dt>
+    <dd><p>速度信息</p>
+</dd>
+    <dt><code>zone</code> <span class="xref">E_ROB_ZONE_CLI</span></dt>
+    <dd><p>过渡参数信息</p>
+</dd>
+    <dt><code>isWaitFinished</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否等待动作完成再返回值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">E_ROB_JOBID_CLI</span></dt>
+    <dd><p>jobId，包含ID字段和时间戳，如果jobId.m_jobID小于0，说明执行命令失败</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_MovL2_" data-uid="WebBackend.Util.Control.MovL2*"></a>
+
+  <h3 id="WebBackend_Util_Control_MovL2_EstunApiStruct_CLI_E_ROB_POS_CLI_EstunApiStruct_CLI_E_ROB_SPEED_CLI_EstunApiStruct_CLI_E_ROB_ZONE_CLI_System_Boolean_" data-uid="WebBackend.Util.Control.MovL2(EstunApiStruct_CLI.E_ROB_POS_CLI,EstunApiStruct_CLI.E_ROB_SPEED_CLI,EstunApiStruct_CLI.E_ROB_ZONE_CLI,System.Boolean)">
+  MovL2(E_ROB_POS_CLI, E_ROB_SPEED_CLI, E_ROB_ZONE_CLI, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>api.E_MovL2（省略了非必要字段）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public E_ROB_JOBID_CLI MovL2(E_ROB_POS_CLI dstPoint, E_ROB_SPEED_CLI velo, E_ROB_ZONE_CLI zone, bool isWaitFinished)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dstPoint</code> <span class="xref">E_ROB_POS_CLI</span></dt>
+    <dd><p>目标点信息</p>
+</dd>
+    <dt><code>velo</code> <span class="xref">E_ROB_SPEED_CLI</span></dt>
+    <dd><p>速度信息</p>
+</dd>
+    <dt><code>zone</code> <span class="xref">E_ROB_ZONE_CLI</span></dt>
+    <dd><p>过渡参数信息</p>
+</dd>
+    <dt><code>isWaitFinished</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否等待动作完成再返回值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">E_ROB_JOBID_CLI</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_PauseProgram_" data-uid="WebBackend.Util.Control.PauseProgram*"></a>
+
+  <h3 id="WebBackend_Util_Control_PauseProgram" data-uid="WebBackend.Util.Control.PauseProgram">
+  PauseProgram()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>暂停程序，不会清空动作队列（仅当系统在自动模式下有效）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PauseProgram()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_ReleasePermit_" data-uid="WebBackend.Util.Control.ReleasePermit*"></a>
+
+  <h3 id="WebBackend_Util_Control_ReleasePermit_EstunApiStruct_CLI_E_ROB_PERMIT_CLI_" data-uid="WebBackend.Util.Control.ReleasePermit(EstunApiStruct_CLI.E_ROB_PERMIT_CLI)">
+  ReleasePermit(E_ROB_PERMIT_CLI)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>释放操作许可</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReleasePermit(E_ROB_PERMIT_CLI permit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>permit</code> <span class="xref">E_ROB_PERMIT_CLI</span></dt>
+    <dd><p>操作许可</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_RunProgram_" data-uid="WebBackend.Util.Control.RunProgram*"></a>
+
+  <h3 id="WebBackend_Util_Control_RunProgram" data-uid="WebBackend.Util.Control.RunProgram">
+  RunProgram()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>启动程序（仅当系统在自动模式下有效）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RunProgram()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_SetGlobalSpeed_" data-uid="WebBackend.Util.Control.SetGlobalSpeed*"></a>
+
+  <h3 id="WebBackend_Util_Control_SetGlobalSpeed_System_Int32_" data-uid="WebBackend.Util.Control.SetGlobalSpeed(System.Int32)">
+  SetGlobalSpeed(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置全局速度</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetGlobalSpeed(int speed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>speed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>0~100 表示百分比</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_SetPoint_" data-uid="WebBackend.Util.Control.SetPoint*"></a>
+
+  <h3 id="WebBackend_Util_Control_SetPoint_System_String_System_Int32_EstunApiStruct_CLI_E_ROB_POS_CLI_" data-uid="WebBackend.Util.Control.SetPoint(System.String,System.Int32,EstunApiStruct_CLI.E_ROB_POS_CLI)">
+  SetPoint(string, int, E_ROB_POS_CLI)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置点位</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetPoint(string varName, int varScope, E_ROB_POS_CLI pos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>varName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>点名称</p>
+</dd>
+    <dt><code>varScope</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>点作用域，0-系统，1-全局，2-工程，3-本地</p>
+</dd>
+    <dt><code>pos</code> <span class="xref">E_ROB_POS_CLI</span></dt>
+    <dd><p>待设置的点位</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_SetPoints_" data-uid="WebBackend.Util.Control.SetPoints*"></a>
+
+  <h3 id="WebBackend_Util_Control_SetPoints_System_Collections_Generic_List_System_Tuple_System_String_EstunApiStruct_CLI_E_ROB_POS_CLI___System_Int32_" data-uid="WebBackend.Util.Control.SetPoints(System.Collections.Generic.List{System.Tuple{System.String,EstunApiStruct_CLI.E_ROB_POS_CLI}},System.Int32)">
+  SetPoints(List&lt;Tuple&lt;string, E_ROB_POS_CLI&gt;&gt;, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>批量设置点位</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetPoints(List&lt;Tuple&lt;string, E_ROB_POS_CLI&gt;&gt; points, int varScope)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>points</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <span class="xref">E_ROB_POS_CLI</span>&gt;&gt;</dt>
+    <dd><p>点位列表</p>
+</dd>
+    <dt><code>varScope</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>点作用域，0-系统，1-全局，2-工程，3-本地</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>全部设置成功返回true，否则返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_SetRunMode_" data-uid="WebBackend.Util.Control.SetRunMode*"></a>
+
+  <h3 id="WebBackend_Util_Control_SetRunMode_EstunApiStruct_CLI_E_RunModeType_CLI_" data-uid="WebBackend.Util.Control.SetRunMode(EstunApiStruct_CLI.E_RunModeType_CLI)">
+  SetRunMode(E_RunModeType_CLI)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置运动模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetRunMode(E_RunModeType_CLI mode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <span class="xref">E_RunModeType_CLI</span></dt>
+    <dd><p>E_RunModeType_CLI枚举类，1为步进，2为连续</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>设置成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_SetServoState_" data-uid="WebBackend.Util.Control.SetServoState*"></a>
+
+  <h3 id="WebBackend_Util_Control_SetServoState_System_Boolean_" data-uid="WebBackend.Util.Control.SetServoState(System.Boolean)">
+  SetServoState(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置伺服电机状态</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetServoState(bool on)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>on</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否开启</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_SetSystemMode_" data-uid="WebBackend.Util.Control.SetSystemMode*"></a>
+
+  <h3 id="WebBackend_Util_Control_SetSystemMode_EstunApiStruct_CLI_E_SysModeType_CLI_" data-uid="WebBackend.Util.Control.SetSystemMode(EstunApiStruct_CLI.E_SysModeType_CLI)">
+  SetSystemMode(E_SysModeType_CLI)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置系统运行模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetSystemMode(E_SysModeType_CLI mode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <span class="xref">E_SysModeType_CLI</span></dt>
+    <dd><p>E_SysModeType_CLI枚举类，manualMode-手动模式，autoMode-自动模式，API-API模式（其他模式略）</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WebBackend_Util_Control_StopProgram_" data-uid="WebBackend.Util.Control.StopProgram*"></a>
+
+  <h3 id="WebBackend_Util_Control_StopProgram" data-uid="WebBackend.Util.Control.StopProgram">
+  StopProgram()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>停止程序并清空动作队列（仅当系统在自动模式下有效）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StopProgram()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功返回true，失败返回false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jjhhyyg/Console_Robot/blob/master/WebBackend/Util/Control.cs/#L11" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

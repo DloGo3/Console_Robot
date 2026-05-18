@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebBackend.Util
+  commentId: N:WebBackend.Util
+  id: WebBackend.Util
+  children:
+  - WebBackend.Util.Control
+  - WebBackend.Util.FileReader
+  - WebBackend.Util.Parser
+  langs:
+  - csharp
+  - vb
+  name: WebBackend.Util
+  nameWithType: WebBackend.Util
+  fullName: WebBackend.Util
+  type: Namespace
+  assemblies:
+  - WebBackend
+references:
+- uid: WebBackend.Util.Control
+  commentId: T:WebBackend.Util.Control
+  parent: WebBackend.Util
+  href: WebBackend.Util.Control.html
+  name: Control
+  nameWithType: Control
+  fullName: WebBackend.Util.Control
+- uid: WebBackend.Util.FileReader
+  commentId: T:WebBackend.Util.FileReader
+  href: WebBackend.Util.FileReader.html
+  name: FileReader
+  nameWithType: FileReader
+  fullName: WebBackend.Util.FileReader
+- uid: WebBackend.Util.Parser
+  commentId: T:WebBackend.Util.Parser
+  parent: WebBackend.Util
+  href: WebBackend.Util.Parser.html
+  name: Parser
+  nameWithType: Parser
+  fullName: WebBackend.Util.Parser
+- uid: WebBackend.Util
+  commentId: N:WebBackend.Util
+  href: WebBackend.html
+  name: WebBackend.Util
+  nameWithType: WebBackend.Util
+  fullName: WebBackend.Util
+  spec.csharp:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Util
+    name: Util
+    href: WebBackend.Util.html
+  spec.vb:
+  - uid: WebBackend
+    name: WebBackend
+    href: WebBackend.html
+  - name: .
+  - uid: WebBackend.Util
+    name: Util
+    href: WebBackend.Util.html

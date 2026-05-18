@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>项目改进指导 | Develop Robot Arm Control API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="项目改进指导 | Develop Robot Arm Control API Documentation ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jjhhyyg/Console_Robot/blob/master/docs/modification-guide.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Develop Robot Arm Control API Documentation">
+            Develop Robot Arm Control API Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="项目改进指导">项目改进指导</h1>
+
+<p>这个项目可能后续由其他人接收，在添加新功能或改进原始功能时请遵循下面几个规范：</p>
+<ol>
+<li>遵循XML格式的注释习惯：当使用Visual Studio来开发代码时，项目设置了在生成解决方案时会生成一个xml格式的注释文档，该文档被用于后期docfx工具生成html格式的API文档，具体的注释规范可以参考<a href="https://learn.microsoft.com/zh-cn/dotnet/csharp/language-reference/xmldoc/">这篇文章</a>。</li>
+<li>日志记录：日志是通过Serilog结合Seq数据库实现的，Seq数据库直接按照<a href="getting-started.html">快速开始</a>中提到的链接安装就行，Serilog通过NuGet安装（在VS中右键项目有一个<code>管理NuGet程序包</code>的选项，搜索安装即可），安装好之后通过 <a href="http://localhost:5341">http://localhost:5341</a> 可以访问到Seq数据库的前端，在Setting中添加两个API KEY，一个用于记录Controller层的日志，一个用于记录非Controller层的日志，然后在WebBackend文件夹的config.yaml设置对应的字段即可。</li>
+<li>异常处理：后端的服务器内部错误暴露给前端是软件开发一大忌，现有项目绝大部分异常都被捕获和处理，同时通过Serilog进行日志记录。Controller层和Service层都有日志记录，Controller层注重记录请求参数，Service层注重记录代码内部问题。</li>
+<li>版本控制：项目通过Git进行版本控制，在拉取该项目之后，请不要在<strong>master</strong>分支下进行代码修改，需新建一个属于自己的分支（based on master or dev）后，在测试完成功能后再merge到master分支。提交前，使用 <code>git config</code> 命令配置好自己的用户名和邮箱后再提交。每次切换分支时<strong>务必</strong>提交当前分支的所有修改（可暂时不同步到远程仓库），否则会丢失当前已保存的修改。每次拉取项目时可能会产生冲突，请小心谨慎地处理这些冲突。</li>
+</ol>
+<blockquote>
+<p>有其他问题请发邮件给我！<br>
+联系邮箱：hosealle@outlook.com</p>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jjhhyyg/Console_Robot/blob/master/docs/modification-guide.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

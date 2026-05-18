@@ -1,0 +1,38 @@
+PlcSettings:
+  CpuType: "S71500"
+  IpAddress: "192.168.1.201"
+
+DataDirectory: ".\\data"
+
+RobotConfiguration:
+    Ip: "192.168.1.200"
+    AutoReconnect: true
+    GlobalSpeed: 30
+    UserId: 1
+    ToolId: 9
+
+ProductCardBackend:
+    Ip: "192.168.0.172"
+    Port: "6060"
+    Base: "/api/v1/vt-process-card-software"
+
+SeqDatabaseSettings:
+    Host: "192.168.1.100"
+    Port: 5341
+    ControllerLogApiKey: "KtxyLKLQMmQXTtOg3JeE"
+    NonControllerLogApiKey: "TijBtjWRszUnyYw6ADL4"
+
+TraceTypeDict:
+    ZA: "闸阀A"
+    ZB: "闸阀B"
+    ZC: "闸阀C"
+    YG: "油管四通"
+    TG: "套管头"
+    SEYZ: "三儿圆柱"
+    YZ: "圆柱"
+    TJYZ: "台阶圆柱"
+    LE: "左端面"
+    MI: "中间"
+    RI: "右端面"
+    UN: "地面"
+    ALL: "全部"

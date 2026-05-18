@@ -1,0 +1,489 @@
+﻿5101    <CH>不能朝远离正硬限位方向运动</CH><EN>Cannot move away from positive hard limit</EN>
+5102    <CH>不能朝远离负硬限位方向运动</CH><EN>Cannot move away from negative hard limit</EN>
+5103    <CH>不能朝远离正软限位方向运动</CH><EN>Cannot move away from positive soft limit</EN>
+5104    <CH>不能朝远离负软限位方向运动</CH><EN>Cannot move away from negative soft limit</EN>
+5105    <CH>手动已达正软限位</CH><EN>Jog reached positive soft limit</EN>
+5106    <CH>手动已达负软限位</CH><EN>Jog reached negative soft limit</EN>
+5107    <CH>其他关节正处于硬限位中</CH><EN>Other axis is near hard limit</EN>
+5108    <CH>奇异点附近不能进行轴点动</CH><EN>Cannot jog due to near the singularity</EN>
+5109    <CH>点动逼近奇异点减速停</CH><EN>Robot stopped due to near the singularity</EN>
+5110    <CH>参数配置错误无法点动</CH><EN>Cannot jog due to incorrect configuration</EN>
+5111    <CH>寸动参数设置超范围</CH><EN>Incremental parameter exceeds limit</EN>
+5115    <CH>速度规划插补执行时间较长</CH><EN>The interpolation execution time of speed process exceeds limit</EN>
+5116    <CH>速度规划预处理执行时间较长</CH><EN>The preprocess execution time of speed process exceeds limit</EN>
+5121    <CH>系统未回零不接受启动命令</CH><EN>Cmd_Run is not received due to one or more axes not referenced</EN>
+5122    <CH>系统最大速度配置为零</CH><EN>Maximum speed is zero</EN>
+5123    <CH>系统加速度配置为零</CH><EN>Maximum acceleration is zero</EN>
+5124    <CH>系统非空闲状态不能切换仿真</CH><EN>Cannot switch to simulation when system is busy</EN>
+5125    <CH>当前为非自动运行模式，不允许执行运动指令</CH><EN>Cannot execute motion instruction in non-continuous mode</EN>
+5131    <CH>跟随目标位置不可达减速停</CH><EN>Robot soft-stop for unreachable tracking target point</EN>
+5132    <CH>MovLSync解析打断标志有误</CH><EN>Incorrect parse brake sign of first sync segment</EN>
+5133    <CH>跟随目标位置超最晚启动位置，本次不再跟随</CH><EN>Frame tracking not started due to over latest started position</EN>
+5134    <CH>跟随目标位置超最晚同步位置，本次不再跟随</CH><EN>Frame tracking invalid due to over latest synced position</EN>
+5135    <CH>跟随目标位置超跟随边界，本次不再跟随</CH><EN>Frame tracking stopped due to target point is outarea</EN>
+5136    <CH>跟随过渡段超机器人可达空间，本次不再跟随</CH><EN>Blend point is out of workspace while frame tracking</EN>
+5137    <CH>跟随编程段超机器人可达空间，本次不再跟随</CH><EN>Preview of points is out of workspace while frame tracking</EN>
+5138    <CH>跟随过渡段速度规划太小，请调整过渡参数</CH><EN>Error occurs when calculating speed along the path</EN>
+5139    <CH>跟随运动段位移或时间规划太小，请调整过渡参数或重新示教</CH><EN>Error occurs when calculating pos or time along the path</EN>
+5140    <CH>跟随同步上抬段轨迹规划错误，请修改上抬高度或联系厂家</CH><EN>Frame tracking raiseH failed due to trajectory planning error</EN>
+5141    <CH>跟随建立过渡样条曲线错误，请修改过渡参数</CH><EN>Error occurs when build blend Spline</EN>
+5161    <CH>负载质量超范围</CH><EN>Payload exceeds limit</EN>
+5162    <CH>负载质心超范围</CH><EN>Centroid vector exceeds limit</EN>
+5163    <CH>负载惯量超范围</CH><EN>Inertias tensor exceeds limit</EN>
+5171    <CH>加载伺服参数配置文件失败，需升级参数文件</CH><EN>Failed to load servo parameter file, please update file</EN>
+5172    <CH>伺服参数配置错误，需升级参数文件</CH><EN>Incorrect configuration of servo parameter, please update file</EN>
+5173    <CH>因EtherCAT sdo命令正在运行中故不响应该命令</CH><EN>Command not accepted due to EtherCAT cmd state busy</EN>
+5181    <CH>打开日志文件错误</CH><EN>Error occurs when open log file</EN>
+5182    <CH>写日志内存太大</CH><EN>Log file is too large</EN>
+5183    <CH>准备日志数据溢出</CH><EN>Log memory overflow</EN>
+5184    <CH>打开运动控制数据文件错误</CH><EN>Error occurs when open MCdata file</EN>
+5185    <CH>打开平移镜像日志文件错误</CH><EN>Error occurs when open SftMirdata file</EN>
+5186    <CH>打开伺服参数备份文件错误</CH><EN>Error occurs when open saved servo params file</EN>
+5196    <CH>中断恢复时的点位与发生中断时的点位不一致</CH><EN>Point-MIrqBack is not equal to point-MIrq</EN>
+5197    <CH>中断恢复后本段剩余小圆弧将转为直线执行</CH><EN>Current segment will change to MovL due to SegMIrqBack is MiniCircle</EN>
+5198    <CH>系统仅在正常运行状态响应中断命令</CH><EN>Command-MIrq not accepted due to sysstate not in run state</EN>
+5199    <CH>插补仅在运行状态响应中断命令</CH><EN>Command-MIrq not accepted due to autostate not in run state</EN>
+5200    <CH>轴号超范围不响应该命令</CH><EN>Command not accepted due to axis number overrange</EN>
+5201    <CH>当前系统状态不响应该命令</CH><EN>Command not accepted in current system status</EN>
+5202    <CH>当前系统模式不响应该命令</CH><EN>Command not accepted in current operation mode</EN>
+5203    <CH>虚拟轴不响应该命令</CH><EN>Command not accepted due to virtual axis</EN>
+5204    <CH>伺服未励磁不响应该命令</CH><EN>Command not accepted due to servo-off</EN>
+5205    <CH>急停按下，不响应该命令</CH><EN>Command not accepted due to E-stop button pressed</EN>
+5206    <CH>当前报警级别不响应该命令</CH><EN>Command not accepted due to alarms</EN>
+5207    <CH>视觉目标物体队列空，不响应该命令</CH><EN>Command not accepted due to empty vision object queue</EN>
+5208    <CH>机器人位置点个数超范围，不响应该命令</CH><EN>Command not accepted due to motion points number overflow</EN>
+5209    <CH>目标点超臂展或因位于奇异位置无法转换</CH><EN>Motion point is out of workspace or is singular</EN>
+5210    <CH>上一命令处理中，请稍后操作</CH><EN>Command executing, please try later</EN>
+5211    <CH>机器人位置点类型需为Apos或Cpos</CH><EN>Incorrect motion point type, must be Apos or Cpos</EN>
+5212    <CH>正在系统诊断中无法再次诊断</CH><EN>Command not accepted due to sys-diagnose not finished</EN>
+5213    <CH>仅SCARA支持左右手切换，当前机型不支持</CH><EN>Command only used for SCARA</EN>
+5214    <CH>CANOpen通讯类型不支持该命令</CH><EN>Command not accepted by CANOpen communication</EN>
+5215    <CH>当前PLC轴数超范围不响应该命令，请检查配置</CH><EN>Command not accepted due to axis number exceeds limit</EN>
+5218    <CH>伺服大电未使能，请检查大电状态并重新励磁</CH><EN>The main power off, please check out the state of main power and servo on again</EN>
+5219    <CH>回零中不响应该命令</CH><EN>Command not accepted due to in homing state</EN>
+5220    <CH>点动坐标系与参考坐标系类型不匹配，无法点动</CH><EN>Command Jog not accepted due to jog reference coordinate error</EN>
+5221    <CH>条件触发不及时，运动中请不要提高速度倍率，如倍率未提高请调整触发时间/CH><EN>Trigger is signalized too late</EN>
+5222    <CH>力矩设置值偏小，请改大SetCartDyn或SetJointDyn中的力矩百分比</CH><EN>Torque limit is a little small</EN>
+5230    <CH>螺旋圈数过大，建议分段示教</CH><EN>Helix loops too much, shorter helixes are recommended</EN>
+5235    <CH>Search索引值超范围，不执行Search功能</CH><EN>Search function not executed because the index value overrange</EN>
+5236    <CH>Search触发值为负数，不执行Search功能</CH><EN>Search function not executed because the trigger value is negative</EN>
+5241    <CH>DMC未使能加载模型参数文件</CH><EN>DMC model parameter file was disabled to load</EN>
+5242    <CH>DMC加载动力学模型参数失败</CH><EN>Failed to load Dyn-Param in json file, please update file</EN>
+5243    <CH>DMC加载VB振动抑制模型参数失败</CH><EN>Failed to load Vbr-Param in json file, please update file</EN>
+5244    <CH>DMC加载机器人连杆名义模型参数失败</CH><EN>Failed to load NormKin-Param in json file, please update file</EN>
+5245    <CH>DMC传动参数的减速比为零</CH><EN>DMC denominator of gear ratio is zero</EN>
+5246    <CH>DMC传动参数的关节最大转速为零</CH><EN>DMC maximum speed of joint is zero</EN>
+5247    <CH>DMC传动参数的电机额定转矩为零</CH><EN>DMC motor rated torque is zero</EN>
+5248    <CH>DMC传动参数的电机过载率为零</CH><EN>DMC motor overload rate is zero</EN>
+5249    <CH>DMC动力学轴数超范围</CH><EN>DMC axisnum exceeds the range</EN>
+5250    <CH>DMC动力学计算时模型参数文件未初始化</CH><EN>DMC model parameter file was not initialized during dynamic calculations</EN>
+5251    <CH>DMC振动抑制时间参数为零</CH><EN>DMC vbr-period is zero</EN>
+5252    <CH>DMC振动抑制频率计算异常</CH><EN>DMC error occurs when calculating vbr-frequency</EN>
+5253    <CH>DMC机器人轴数设置为零</CH><EN>DMC robot axisnum is zero</EN>
+5254    <CH>DMC加载IS振动抑制模型参数失败</CH><EN>Failed to load IS-Param in json file, please update file</EN>
+5255    <CH>DMC依赖的DynMdl模型参数设置失败</CH><EN>Failed to load DynMdl-Param, please update file</EN>
+5256    <CH>DMC工具或负载质量不能为负值</CH><EN>DMC tool load or payload is negative</EN>
+5257    <CH>DMC满载质量不能为负值</CH><EN>DMC full payload is negative</EN>
+5258    <CH>[RC]细插补数据缓存空，请联系厂家</CH><EN>[RC]Buffer empty of fine-interpolation module</EN>
+5259    <CH>[Sg]细插补数据缓存空，请联系厂家</CH><EN>[Sg]Buffer empty of fine-interpolation module</EN>
+5260    <CH>DMC控制轴数不匹配，需升级库文件</CH><EN>DMC unmatched axisnum, please update file</EN>
+5261    <CH>DMC函数个数不匹配，需升级库文件</CH><EN>DMC unmatched funcnum, please update file</EN>
+5262    <CH>DMC函数的形参个数不匹配，需升级库文件</CH><EN>DMC unmatched funcPara, please update file</EN>
+5263    <CH>DMC结构体变量类型个数不匹配，需升级库文件</CH><EN>DMC unmatched structNum, please update file</EN>
+5264    <CH>DMC结构体的大小不匹配，需升级库文件</CH><EN>DMC unmatched structSize, please update file</EN>
+5265    <CH>DMC枚举变量类型个数不匹配，需升级库文件</CH><EN>DMC unmatched enumNum, please update file</EN>
+5266    <CH>DMC枚举的元素个数不匹配，需升级库文件</CH><EN>DMC unmatched enumList, please update file</EN>
+5267    <CH>DMC未知错误，需升级库文件</CH><EN>DMC unknown error occurs, please update file</EN>
+5268    <CH>[RC]细插补缓存参数配置失败</CH><EN>[RC]Incorrect buf configuration of fine-interpolation module</EN>
+5269    <CH>[Sg]细插补缓存参数配置失败</CH><EN>[Sg]Incorrect buf configuration of fine-interpolation module</EN>
+5270    <CH>[Sg]无限旋转轴范围配置错误</CH><EN>[Sg]Incorrect overturn configuration of fine-interpolation module</EN>
+5271    <CH>DMC不支持该机器人类型</CH><EN>DMC not accepted due to robot type error</EN>
+5272    <CH>DMC机器人类型与轴数不匹配</CH><EN>DMC unmatched axisnum with robot type</EN>
+5273    <CH>DMC伺服参数自调节功能，电机转子惯量参数设置超范围</CH><EN>DMC-GS motor rotor inertia parameter setting is out of range</EN>
+5274    <CH>DMC伺服参数自调节功能，关节最大负惯比参数设置超范围</CH><EN>DMC-GS the load inertia ratio of joint is set out of range</EN>
+5275    <CH>DMC伺服参数自调节功能，低速段增益比例参数设置超范围</CH><EN>DMC-GS the gain scale parameter in low speed section is set out of range</EN>
+5276    <CH>DMC伺服参数自调节功能，低速段速度阈值参数设置超范围</CH><EN>DMC-GS the speed threshold parameter of the low speed section is set out of range</EN>
+5277    <CH>DMC伺服参数自调节功能，类型配置项超范围</CH><EN>DMC-GS type configuration out of range</EN>
+5278    <CH>DMC伺服参数自调节功能，获取伺服参数失败</CH><EN>DMC-GS failed to obtain servo parameters</EN>
+5279    <CH>DMC伺服参数自调节功能，伺服参数Kv计算超范围</CH><EN>DMC-GS servo parameter Kv calculation out of range</EN>
+5282    <CH>DMC伺服参数自调节功能，伺服参数Ki计算超范围</CH><EN>DMC-GS servo parameter Ki calculation out of range</EN>
+5283    <CH>DMC伺服参数自调节功能，伺服参数Kp计算超范围</CH><EN>DMC-GS servo parameter Kp calculation out of range</EN>
+5284    <CH>DMC伺服参数自调节功能，伺服参数负惯比参数计算超范围</CH><EN>DMC-GS servo parameter LIR calculation out of range</EN>
+5285    <CH>DMC伺服参数自调节功能，初始化未完成不允许使用该功能的指令</CH><EN>DMC-GS incomolete initialization is not allowed</EN>
+5286    <CH>DMC伺服参数自调节功能，伺服参数文件获取参数失败</CH><EN>DMC-GS failed to get parameter from servo file</EN>
+5287    <CH>DMC伺服参数自调节功能，伺服参数写入文件失败</CH><EN>DMC-GS failed to write servo parameter to file</EN>
+5288    <CH>DMC伺服参数自调节功能，伺服Pn恢复用时参数设置超范围</CH><EN>DMC-GS setting used to restore servo parameter are out range</EN>
+5289    <CH>DMC-Json文件读失败</CH><EN>DMC-Json read error</EN>
+5290    <CH>DMC-Json文件写失败</CH><EN>DMC-Json write error</EN>
+5291    <CH>DMC-ini文件不存在</CH><EN>DMC-ini not exist</EN>
+5292    <CH>DMC-ADP参数计算初始化失败</CH><EN>DMC-ADP param calculate failed</EN>
+5401    <CH>碰撞检测功能打开</CH><EN>Collision detection is opened</EN>
+5402    <CH>碰撞检测功能关闭</CH><EN>Collision detection is closed</EN>
+5600    <CH>PLC心跳异常</CH><EN>Abnormal PLC heart beat</EN>
+5601    <CH>编码器通道错误</CH><EN>Incorrect encoder channel</EN>
+5602    <CH>编码器减速比分母为零</CH><EN>Denominator gear of encoder is zero</EN>
+5603    <CH>配置参数缺失或设置错误</CH><EN>Config parameter is not exist or set error</EN>
+5621    <CH>齿轮比分母为零</CH><EN>Denominator of gear ratio is zero</EN>
+5622    <CH>电子齿轮输出溢出</CH><EN>Gear output overflow</EN>
+5623    <CH>丝杠导程为零</CH><EN>Screw pitch is zero</EN>
+5624    <CH>齿轮比超范围</CH><EN>Gear ratio exceeds limit</EN>
+5641    <CH>遇正硬限位</CH><EN>Reached positive hard limit</EN>
+5642    <CH>遇负硬限位</CH><EN>Reached negative hard limit</EN>
+5643    <CH>在准备离开回零开关时回零开关低电平</CH><EN>Zero switch is low level when returning</EN>
+5644    <CH>在准备找回零开关上升沿时回零开关已是高电平</CH><EN>Zero switch is high level when waiting rising edge</EN>
+5645    <CH>在准备找回零开关下降沿时回零开关已是低电平</CH><EN>Zero switch is low level when waiting falling edge</EN>
+5646    <CH>没有找到回零开关或者C脉冲</CH><EN>Failed to catch zero switch or C-pulse</EN>
+5647    <CH>未知回零状态</CH><EN>Unknown homing state</EN>
+5648    <CH>找C脉冲错误，回零失败</CH><EN>Error occurs when catching C-pulse</EN>
+5649    <CH>回零轴数超出范围不响应该命令</CH><EN>Command not accepted due to axisnum exceeds limit</EN>
+5650    <CH>给定单圈值超范围回零失败</CH><EN>Homing failed due to setting scalling exceeds</EN>
+5651    <CH>伺服反馈单圈值超范围回零失败</CH><EN>Homing failed due to getting scalling exceeds</EN>
+5652    <CH>打开丢零前位置文件错误,请谨慎回零</CH><EN>Error occurs when open homelost file,Please homing in optimal path</EN>
+5661    <CH>手轮脉冲指令溢出</CH><EN>Handwheel pulse overflow</EN>
+5671    <CH>摆动幅值设置超范围:(0~100)mm</CH><EN>"Amp" parameter of weave exceeds minimum or maximum limits:(0~100)mm</EN>
+5672    <CH>摆动频率设置超范围:(0~10)Hz</CH><EN>"Freq" parameter of weave exceeds minimum or maximum limits:(0~10)Hz</EN>
+5673    <CH>摆动绕X旋转角度超范围:(-180~180)deg</CH><EN>"RotAngle_X" parameter of weave exceeds minimum or maximum limits:(-180~180)deg</EN>
+5674    <CH>摆动绕Z旋转角度超范围:(-180~180)deg</CH><EN>"RotAngle_Z" parameter of weave exceeds minimum or maximum limits:(-180~180)deg</EN>
+5675    <CH>摆动停止时间超范围:(0~600000)ms</CH><EN>"StopTime" parameter of weave exceeds minimum or maximum limits:(0~600000)ms</EN>
+5676    <CH>当前摆弧类型不支持:仅支持正弦摆(Type=1)和三角摆(Type=2)</CH><EN>This weave type is not supported:only support sin weave(Type=1)and triangle weave(Type=2)</EN>
+5682    <CH>圆弧起点、中间点和目标点太近或共线，请重新示教</CH><EN>Arc teaching points are too closed or collinear</EN>
+5683    <CH>圆弧弧长太短，请重新示教</CH><EN>arc length is too small</EN>
+5684    <CH>计算圆弧曲线错误，请重新示教中间点或目标点</CH><EN>Error occurs when calculating arc start point</EN>
+5685    <CH>计算圆弧曲线错误，请重新示教中间点或目标点</CH><EN>Error occurs when calculating arc target point</EN>
+5686    <CH>指令起点在奇异位置</CH><EN>Start point of instruction is near singularity</EN>
+5687    <CH>指令终点在奇异位置</CH><EN>Target point of instruction is near singularity</EN>
+5688    <CH>指令起终点跨奇异位置</CH><EN>Path of instruction may pass singularity</EN>
+5689    <CH>指令过渡类型不支持</CH><EN>Incorrect blending type</EN>
+5690    <CH>指令过渡值太小</CH><EN>Incorrect blending value</EN>
+5692    <CH>指令速度值太小</CH><EN>Speed value is too small</EN>
+5693    <CH>指令解析关节超正软限位，请检查参考坐标系及指令起终点</CH><EN>Motion instruction exceeds axis positive soft limit</EN>
+5694    <CH>指令解析关节超负软限位，请检查参考坐标系及指令起终点</CH><EN>Motion instruction exceeds axis negative soft limit</EN>
+5695    <CH>建立过渡样条曲线错误，请修改过渡参数</CH><EN>Error occurs when build blend Spline</EN>
+5696    <CH>指令段GJobID不连续</CH><EN>Incorrect GJobID</EN>
+5697    <CH>指令段PJobID不连续</CH><EN>Incorrect PJobID</EN>
+5698    <CH>指令段AJobID不连续</CH><EN>Incorrect AJobID</EN>
+5699    <CH>指令段CJobID不连续</CH><EN>Incorrect CJobID</EN>
+5700    <CH>仅SCARA支持拱形运动，当前机型不支持</CH><EN>MovArch not supported for current robot type</EN>
+5701    <CH>指令段运动类型不支持</CH><EN>Incorrect motion type</EN>
+5702    <CH>指令段解析未知错误</CH><EN>Unknown error occurs when motion parse</EN>
+5703    <CH>螺旋线步进距离不能大于螺旋半径</CH><EN>Helix step should be shorter than radius</EN>
+5704    <CH>螺旋线起终点距离太近不能画出半圆，请重新示教</CH><EN>The distance between the start and end of helix cannot be semicircle</EN>
+5705    <CH>螺旋线示教点不能共线</CH><EN>Helix teaching points cannot be collinear</EN>
+5706    <CH>连续旋转关节不支持绝对位移指令</CH><EN>MovAbs not supported cause axistype is rotate continuous</EN>
+5707    <CH>过渡段速度规划太小，请调整过渡参数</CH><EN>Error occurs when calculating speed along the path</EN>
+5708    <CH>运动段位移或时间规划太小，请调整过渡参数或重新示教</CH><EN>Error occurs when calculating pos or time along the path</EN>
+5709    <CH>轨迹运行过程中存在奇异位置，请重新示教</CH><EN>The trajectory has singular pos</EN>
+5710    <CH>运动段规划不够减速，请调整过渡参数或WaitFinish比例</CH><EN>Stop distance preview calculation error</EN>
+5711    <CH>运动段规划不够减速，请调整过渡参数或WaitFinish比例</CH><EN>Stop distance preview calculation error</EN>
+5712    <CH>运动段规划获取段不及时，请调整过渡参数或WaitFinish比例</CH><EN>Segment is late for ADP calculation</EN>
+5713    <CH>运动段的过渡速度倍率规划到零，请联系厂家修改运动规划方式</CH><EN>Blend override calculation error, the override cannot be zero</EN>
+5720    <CH>关节解析被耦合软限位限制，请检查起终点</CH><EN>Motion stopped due to coupling limit</EN>  
+5721    <CH>关节逼近正软限位</CH><EN>Axis near positive soft limit</EN>
+5722    <CH>关节逼近负软限位</CH><EN>Axis near negative soft limit</EN>
+5723    <CH>关节逼近耦合软限位</CH><EN>Axis near coupling limit</EN>
+5731    <CH>接近工作或禁止区域边缘</CH><EN>Near work or blocked area</EN>
+5742    <CH>平均力矩过载</CH><EN>Average torque overload</EN>
+5743    <CH>平均功率过载</CH><EN>Average power overload</EN>
+5751    <CH>负载惯量为负值</CH><EN>Inertias tensor should not be negative</EN>
+5761    <CH>关节超过最大加速度</CH><EN>Axis acceleration exceeds limit</EN>
+5781    <CH>加工段的段地址错误，请联系厂家</CH><EN>Incorrect address of program segment</EN>
+5782    <CH>加工段的插补周期为零，请检查配置参数</CH><EN>Interp-period of program segment is zero</EN>
+5783    <CH>加工段为非运动指令段，请升级版本</CH><EN>Program segment is not motion instruction</EN>
+5784    <CH>加工段的速度为零，请检查速度参数</CH><EN>Programed speed is zero</EN>
+5785    <CH>加工段的加速度为零，请检查加速度参数</CH><EN>Programed acceleration is zero</EN>
+5786    <CH>加工段的减速度为零，请检查减速度参数</CH><EN>Programed deceleration is zero</EN>
+5787    <CH>加工段的加速比例为零</CH><EN>Programed accelerate ratio is zero</EN>
+5788    <CH>加工段的减速比例为零</CH><EN>Programed decelerate ratio is zero</EN>
+5789    <CH>加工段的终点速度被修改，请调整过渡参数或速度参数</CH><EN>Speed at the beginning of program segment is modified</EN>
+5790    <CH>加工段的起点速度被修改，请调整过渡参数或速度参数</CH><EN>Speed at the end of program segment is modified</EN>
+5792    <CH>加工段的加速段Jerk为零</CH><EN>Programed jerk of acceleration is zero</EN>
+5793    <CH>加工段的减速段Jerk为零</CH><EN>Programed jerk of deceleration is zero</EN>
+5794    <CH>加工段的运算参数错误</CH><EN>Programed parameter error</EN>
+5801    <CH>过渡段的段地址错误，请联系厂家</CH><EN>Incorrect address of blending segment</EN>
+5802    <CH>过渡段的速度为零，请调整过渡参数或速度参数</CH><EN>Speed of blending segment is zero</EN>
+5803    <CH>过渡不打断失败，请增大过渡参数或减小WaitFinish比例</CH><EN>Failed to do uninterrupted blending</EN>
+5804    <CH>加工段插补超关节速度，请调整速度参数或联系厂家</CH><EN>Predicted axis speed exceeds limit</EN>
+5821    <CH>触发段已插补完，请调整触发时间或降低运动段速度</CH><EN>Failed to catch segment relative to trigger</EN>
+5822    <CH>触发段地址异常为空，请联系厂家</CH><EN>Address of segment relative to trigger is NULL</EN>
+5823    <CH>触发段时间计算失败，请调整触发时间或降低运动段速度</CH><EN>Failed to calculate trigger time</EN>
+5824    <CH>同步触发的缓存不够，请升级版本</CH><EN>Trigger buffer is not enough</EN>
+5825    <CH>MovJ运动不支持OnDistance触发</CH><EN>OnDistance not supported by MovJ movement</EN>
+5826    <CH>触发段已解析，未及时读取触发，请调整触发时间或降低运动段速度</CH><EN>Trigger is too late to read from memory</EN>
+5831    <CH>多边体区域类型设置错误</CH><EN>Polyhedron area type error</EN>
+5832    <CH>多边体区域顶点或边数设置错误</CH><EN>Vertex or side number of polyhedron area error</EN>
+5833    <CH>多边体区域参数文件写入失败</CH><EN>Failed to write polyhedron area file</EN>
+5834    <CH>多边体区域不存在，请重新设置</CH><EN>Polyhedron area is not exist</EN>
+5841    <CH>区域范围太小，需5mm以上</CH><EN>Area is too small</EN>
+5842    <CH>区域号超出限制</CH><EN>Area number exceeds limit</EN>
+5843    <CH>圆柱区域半径需为正数</CH><EN>Radius should be positive value</EN>
+5850    <CH>焊枪与行进路线平行，请调整焊枪姿态</CH><EN>Welding torch is parallel to moving direction, please change orientation of torch</EN>
+5860    <CH>PN参数初始化失败，碰撞后快速停止功能关闭</CH><EN>Failed to init PN parameter, quick stop function closed while collision detected</EN>
+5865    <CH>当前机型不支持杆件参数修改</CH><EN>Arm parameter set not supported for current robot type</EN>
+5866    <CH>杆件参数设置超范围</CH><EN>Arm parameter exceeds the range</EN>
+5870    <CH>伺服未励磁无法启动程序</CH><EN>Failed to start due to servo off</EN>
+5871    <CH>伺服未励磁无法回零</CH><EN>Failed to homing due to servo off</EN>
+5872    <CH>参数辨识数据采集过程中无需重复采集</CH><EN>Command not accepted due to ERBD in loging already</EN>
+5873    <CH>参数辨识数据采集未开始无需结束采集</CH><EN>Command not accepted due to ERBD loging not start</EN>
+5880    <CH>变位机参数写文件创建失败，请重启系统</CH><EN>Failed to write positioner parameter</EN>
+5881    <CH>变位机ID不在可用范围，请选择已存在的变位机ID</CH><EN>Positioner ID error</EN>
+5882    <CH>变位机附加轴未配置</CH><EN>Positioner auxiliary axis do not config</EN>
+5883    <CH>变位机附加轴轴号超范围，请修改配置轴号</CH><EN>Positioner auxiliary axis number exceeds the range</EN>
+5884    <CH>变位机附加轴轴号相同，请修改配置轴号</CH><EN>Positioner auxiliary axis have same number</EN>
+5885    <CH>变位机附加轴轴号与本体轴相同，请修改配置轴号</CH><EN>Positioner auxiliary axis have the same number of robot axis</EN>
+5886    <CH>变位机附加轴类型错误，请修改轴参数LinkType</CH><EN>Positioner auxiliary axis linktype error</EN>
+5890    <CH>跟随运动不支持跨奇异</CH><EN>Singular pass not supported while frame tracking</EN>
+5891    <CH>摆弧运动不支持跨奇异</CH><EN>Singular pass not supported while weave movement</EN>
+5892    <CH>外部TCP运动不支持跨奇异</CH><EN>Singular pass not supported while ExternalTcp movement</EN>
+5893    <CH>当前机型不支持跨奇异</CH><EN>Singular pass not supported current robot type</EN>
+5894    <CH>示教终点超限或在奇异点不支持跨奇异</CH><EN>Singular pass not supported because target point error</EN>
+5895    <CH>不能跨非腕部奇异</CH><EN>Singular pass not supported because it is not wrist singular</EN>
+5900    <CH>示教终点超臂展空间或在奇异位置，请检查参考坐标系及示教点</CH><EN>Target point is out of workspace or in singularity</EN>
+5901    <CH>过渡轨迹超臂展空间，请检查参考坐标系及示教点</CH><EN>Blend point is out of workspace</EN>
+5902    <CH>运动轨迹超臂展空间，请检查参考坐标系及示教点</CH><EN>Preview of points is out of workspace</EN>
+5903    <CH>当前运动不支持速度不受倍率影响</CH><EN>Velocity not limited by override is not supported in current motion</EN>
+5904    <CH>当前运动坐标系下不支持工具偏移运动</CH><EN>ToolRel motion is not supported in current user frame</EN>
+5911    <CH>中断过程中不响应该命令</CH><EN>Command not accepted while motion interrupting</EN>
+5912    <CH>中断停止在过渡段上，中断响应失败</CH><EN>Motion interrupt failed due to stoped in blend seg</EN>
+5913    <CH>中断停止在跨奇异段上，中断响应失败</CH><EN>Motion interrupt failed due to stoped in singular pass seg</EN>
+5914    <CH>中断停止在相对运动段上，中断响应失败</CH><EN>Motion interrupt failed due to stoped in MovRel seg</EN>
+5930    <CH>跟随过程中不响应该命令，可通过切换参考坐标系退出跟随后再操作</CH><EN>Command not accepted while frame tracking</EN>
+5931    <CH>传送带未连接，请检查通讯配置及ECAT相关文件</CH><EN>Command not accepted due to conveyor disconnect</EN>
+5932    <CH>跟随触发时间配置太小</CH><EN>Incorrect configuration of trigTime</EN>
+5933    <CH>跟随触发DI端口号配置不在可用范围，请重新配置</CH><EN>Incorrect configuration of trigDI</EN>
+5934    <CH>跟随触发DO端口号配置不在可用范围，请重新配置</CH><EN>Incorrect configuration of trigDO</EN>
+5935    <CH>传送带脉冲当量设置错误</CH><EN>Incorrect configuration of conveyor pulse equivalent</EN>
+5936    <CH>跟随速度或加减速度系数设置错误</CH><EN>Incorrect configuration of VelScale or AccScale or DecScale</EN>
+5937    <CH>跟随边界参数设置错误</CH><EN>Incorrect configuration of AreaLimit</EN>
+5938    <CH>折弯工艺参数设置错误</CH><EN>Bend mould parameters error</EN>
+5940    <CH>MovLSync解析打断标志有误</CH><EN>Incorrect parse brake sign of first sync segment</EN>
+5941    <CH>跟随未启动无需退出</CH><EN>MovSyncQuit not supported due to sync not started</EN>
+5942    <CH>跟随启动重复</CH><EN>MovLSync not supported due to sync started already</EN>
+5943    <CH>跟随过程中不支持该类型的运动指令</CH><EN>Motion instruction type not supported while frame tracking</EN>
+5944    <CH>跟随过程中不支持JPos类型的目标点</CH><EN>JPos not supported while frame tracking</EN>
+5945    <CH>跟随过程中不支持摆弧指令</CH><EN>MovW not supported while frame tracking</EN>
+5946    <CH>跟随过程中不支持寻位指令</CH><EN>MovSearch not supported while frame tracking</EN>
+5947    <CH>跟随过程中不支持切换工具参数</CH><EN>SetTool not supported while frame tracking</EN>
+5948    <CH>跟随过程中不支持切换参考坐标系</CH><EN>SetCoord not supported while frame tracking</EN>
+5949    <CH>跟随规划坐标系切换错误</CH><EN>Incorrect frame type while planning frame switch</EN>
+5950    <CH>动坐标系对应的传送带ID号错误</CH><EN>Conveyor Id error while frame tracking</EN>
+5951    <CH>动坐标系对应的传送带未使能</CH><EN>Conveyor disabled while frame tracking</EN>
+5952    <CH>跟随目标物体队列空</CH><EN>Target object is empty while frame tracking</EN>
+5953    <CH>跟随规划坐标系错误跟随无法退出</CH><EN>Frame tracking quit failed due to incorrect planning frame</EN>
+5960    <CH>跟随过程中不支持指令速度不受倍率影响</CH><EN>Velocity not limited by override is not supported while frame tracking</EN>
+5971    <CH>跟随退出时上一段不能带过渡</CH><EN>Frame tracking quit failed due to last instruction only support noblend</EN>
+5972    <CH>跟随退出时上一段不能是WaitFinish指令</CH><EN>Frame tracking quit failed due to last instruction not support WaitFinish</EN>
+5973    <CH>出现非笛卡尔空间运动指令导致跟随无法退出，请联系厂家</CH><EN>Frame tracking quit failed due to unexpected instruction</EN>
+5974    <CH>参考坐标系类型错误导致跟随无法退出</CH><EN>Frame tracking quit failed due to unexpected userframe type</EN>
+5975    <CH>出现异常跟随状态导致跟随无法退出，请联系厂家</CH><EN>Frame tracking quit failed due to unexpected FTkStep</EN>
+5978    <CH>衔接段未准备完成导致跟随无法退出，请增大WaitFTimeFTk参数</CH><EN>Frame tracking quit failed due to reblend seg not ready</EN>
+5979    <CH>传送带ID错误不跟随</CH><EN>Frame tracking failed due to incorrect conveyor Id</EN>
+5980    <CH>跟随位移允差不能为零</CH><EN>Incorrect configuration of frame tracking error window</EN>
+5981    <CH>诊断期间设置虚拟传送带无效</CH><EN>Virtual conveyor disabled while debugging</EN>
+5982    <CH>传送带已使能，设置折弯跟随参数失败</CH><EN>Falied to set bend parameters cause conveyor enabled</EN>
+5983    <CH>光栅尺已使能，设置传送带跟随参数失败</CH><EN>Falied to set tracking parameters cause grating ruler enabled</EN>
+5984    <CH>折弯跟随运动超机器人臂展空间</CH><EN>Bend tracking point is out of workspace</EN>
+6101    <CH>关节超过最大软限位</CH><EN>Axis exceeds positive soft limit</EN>
+6102    <CH>关节超过最小软限位</CH><EN>Axis exceeds negative soft limit</EN>
+6103    <CH>关节号超范围</CH><EN>Incorrect axis number</EN>
+6104    <CH>轴号超范围</CH><EN>Incorrect coordinate number</EN>
+6105    <CH>机器人类型错误</CH><EN>This robot type not supported</EN>
+6106    <CH>机器人个数错误</CH><EN>Incorrect robot number</EN>
+6107    <CH>目标位置超机器人运动范围或在奇异位置</CH><EN>Target point is out of robot's workspace or in singularity</EN>
+6108    <CH>加载用户动态库失败，请重启，多次失败请联系厂家升级库文件</CH><EN>Failed to load user-Dll</EN>
+6109    <CH>获取用户动态库函数指针异常，请重启，多次失败请联系厂家升级库文件</CH><EN>Failed to obtain user-Dll function pointer</EN>
+6110    <CH>加载模型动态库失败，请重启，多次失败请联系厂家升级库文件</CH><EN>Failed to load DynMdl-Dll</EN>
+6112    <CH>加载碰撞检测动态库失败，请重启，多次失败请联系厂家升级库文件</CH><EN>Failed to load Collision-Dll</EN>
+6114    <CH>获取插值库函数指针异常，请重启，多次失败请联系厂家升级库文件</CH><EN>Failed to obtain Cubic-Dll function pointer</EN>
+6115    <CH>加载插值动态库失败，请重启，多次失败请联系厂家升级库文件</CH><EN>Failed to load Cubic-Dll</EN>
+6116    <CH>获取动力学模型库函数指针异常，请重启，多次失败请联系厂家升级库文件</CH><EN>Failed to obtain DMC-Dll function pointer</EN>
+6117    <CH>加载动力学模型动态库失败，请重启，多次失败请联系厂家升级库文件</CH><EN>Failed to load DMC-Dll</EN>
+6118    <CH>加载软浮动动态库失败，请重启，多次失败请联系厂家升级库文件</CH><EN>Failed to load SoftFloat-Dll</EN>
+6121    <CH>回零模块参数配置错误</CH><EN>Incorrect configuration of homing</EN>
+6122    <CH>手动参数配置内存异常</CH><EN>Memory exception of jogging configuration</EN>
+6123    <CH>齿轮比分子或者分母为零</CH><EN>Denominator or numerator of gear ratio is zero</EN>
+6124    <CH>电机脉冲当量或者丝杠导程为零</CH><EN>Equivalent or screw pitch is zero</EN>
+6125    <CH>系统未回零不能进行绝对位置点动</CH><EN>Cannot jog due to not referenced</EN>
+6131    <CH>系统未回零不能进行轴点动，可进行关节点动</CH><EN>Cannot jog due to system not referenced</EN>
+6132    <CH>关节未激活不能点动</CH><EN>Cannot jog due to axis not active</EN>
+6133    <CH>点动目标位置不可达</CH><EN>Jog target point is unreachable</EN>
+6134    <CH>关节因耦合软限位限制无法运动</CH><EN>Axis stopped due to coupling limit</EN>
+6141    <CH>系统未回零不能走指令</CH><EN>Cannot execute instruction due to system not referenced</EN>
+6142    <CH>加工段解析慢，请调整过渡参数或WaitFinish比例</CH><EN>Empty program segment queue when parsing</EN>
+6143    <CH>无法从当前暂停状态再启动运行，请联系厂家</CH><EN>the kernel restart failed</EN>
+6145    <CH>滤波器规划失败，请联系厂家</CH><EN>Filter planning failed</EN>
+6149    <CH>折弯坐标系计算错误，跟随失败</CH><EN>Error occurs when calculating bend frame</EN>
+6150    <CH>跟随建立样条曲线异常，请联系厂家</CH><EN>Failed to build spline of Tracking</EN>
+6151    <CH>当前机型不支持跟随功能</CH><EN>Tracking not supported for current robot type</EN>
+6152    <CH>跟随运行周期参数配置错误</CH><EN>Incorrect configuration of tracking interp-period</EN>
+6153    <CH>跟随工作区域配置错误：左边界与右边界相同</CH><EN>Incorrect configuration of tracking work area</EN>
+6154    <CH>跟随轨迹异常</CH><EN>Unexpected tracking path</EN>
+6155    <CH>跟随目标位置不可达立即停</CH><EN>Robot stop-hard for unreachable tracking target point</EN>
+6156    <CH>折弯跟随参考坐标系数据为空</CH><EN>RefSys data of bend tracking is null</EN>
+6157    <CH>折弯跟随插补时间与系统插补周期不一致，请检查折弯跟随数据</CH><EN>Interp-period of bend tracking is error</EN>
+6158    <CH>折弯跟随导轨速度不能为负值或零</CH><EN>Rail velocity in bend tracking is not positive</EN>
+6159    <CH>折弯跟随导轨运动链类型设置错误，请修改轴参数LinkType</CH><EN>Rail's linktype is error</EN>
+6160    <CH>折弯跟随导轨轨迹规划错误，请修改速度参数</CH><EN>Rail trajectory planning in bend tracking is error</EN>
+6161    <CH>脉冲输出超关节最大加速度，请联系厂家</CH><EN>Axis acceleration exceeds limit</EN>
+6162    <CH>发给伺服脉冲频率变化率过大，请联系厂家</CH><EN>Delta of servo pulse frequency is too large</EN>
+6163    <CH>脉冲输出超关节最大速度，请联系厂家</CH><EN>Axis speed exceeds limit</EN>
+6164    <CH>发给伺服脉冲频率过大，请联系厂家</CH><EN>Servo pulse frequency is too large</EN>
+6181    <CH>机器人末端在工作区域外</CH><EN>TCP is outside work area</EN>
+6182    <CH>机器人末端在禁止区域内</CH><EN>TCP is inside blocked area</EN>
+6191    <CH>伺服控制模式错误不能运行指令</CH><EN>Instruction cannot run due to incorrect servo mode</EN>
+6192    <CH>软浮动方向与机器人受力点绕世界坐标系Z轴旋转圆切线方向夹角过大</CH><EN>Softfloat direction appointed error</EN>
+6193    <CH>软浮动超速，请联系厂家</CH><EN>Softfloat overspeed</EN>
+6194    <CH>此机型不支持软浮动</CH><EN>Softfloat not supported for current robot type</EN>
+6195    <CH>伺服模式切换错误，请联系厂家</CH><EN>Error occurs when switching servo mode</EN>
+6196    <CH>软浮动执行时间超时，可修改超时参数</CH><EN>Time out when executing softfloat</EN>
+6201    <CH>[RC]细插补模块的插补周期为零</CH><EN>[RC]Interp-period of fine-interpolation module is zero</EN>
+6202    <CH>[RC]细插补模块的插补周期超范围</CH><EN>[RC]Interp-period of fine-interpolation module exceeds the range</EN>
+6203    <CH>[RC]细插补模块的插补类型超范围</CH><EN>[RC]Interp-Type of fine-interpolation module exceeds the range</EN>
+6204    <CH>[RC]细插补步数小于1</CH><EN>[RC]Incorrect interp-Step of fine-interpolation module</EN>
+6205    <CH>[RC]细插补数据缓存满</CH><EN>[RC]Buffer overflow of fine-interpolation module</EN>
+6206    <CH>[RC]细插补数据缓存空</CH><EN>[RC]Buffer empty of fine-interpolation module</EN>
+6207    <CH>[RC]细插补未知错误，需升级库文件</CH><EN>[RC]Unknown error occurs in fine-interpolation module, please update file</EN>
+6211    <CH>[Sg]细插补模块的插补周期为零</CH><EN>[Sg]Interp-period of fine-interpolation module is zero</EN>
+6212    <CH>[Sg]细插补模块的插补周期超范围</CH><EN>[Sg]Interp-period of fine-interpolation module exceeds the range</EN>
+6213    <CH>[Sg]细插补模块的插补类型超范围</CH><EN>[Sg]Interp-Type of fine-interpolation module exceeds the range</EN>
+6214    <CH>[Sg]细插补步数异常</CH><EN>[Sg]Incorrect interp-Step of fine-interpolation module</EN>
+6215    <CH>[Sg]细插补数据缓存满</CH><EN>[Sg]Buffer overflow of fine-interpolation module</EN>
+6216    <CH>[Sg]细插补数据缓存空</CH><EN>[Sg]Buffer empty of fine-interpolation module</EN>
+6217    <CH>[Sg]细插补未知错误，需升级库文件</CH><EN>[Sg]Unknown error occurs in fine-interpolation module, please update file</EN>
+6501    <CH>运行中手压松开</CH><EN>Deadman button is released when running</EN>
+6502    <CH>运行中异常掉励磁</CH><EN>Unexpected servo-off when running</EN>
+6601    <CH>关节超差，请检查最大跟踪误差参数，如参数合理请联系厂家</CH><EN>Axis following error exceeds limit</EN>
+6602    <CH>关节超程</CH><EN>Axis is over travel</EN>
+6603    <CH>关节超正硬限位</CH><EN>Axis exceeds positive hard limit</EN>
+6604    <CH>关节超负硬限位</CH><EN>Axis exceeds negative hard limit</EN>
+6621    <CH>力矩波动检测超范围</CH><EN>Torque fluctuation exceeds the range</EN>
+6622    <CH>力矩波动检测超范围</CH><EN>Torque fluctuation exceeds the range</EN>
+6623    <CH>焊枪碰撞</CH><EN>Welding gun collision</EN>
+6641    <CH>最大力矩过载</CH><EN>Maximum torque overload</EN>
+6900    <CH>急停按下</CH><EN>E-stop button pressed</EN>
+6901    <CH>急停按下不能励磁</CH><EN>Cannot servo-on due to E-stop button pressed</EN>
+6910    <CH>碰撞停止距离超范围</CH><EN>Collision stop distance exceeds the range </EN>
+6911    <CH>PN参数写错误,请重启系统</CH><EN>PN parameter write error, please restart system</EN>
+7000    <CH>EtherCAT报警</CH><EN>EtherCAT Alarm</EN>
+7010    <CH>EtherCAT伺服报警</CH><EN>EtherCAT Servo Alarm</EN>
+7400    <CH>EtherCAT通讯报警：从站未到OP状态</CH><EN>EtherCAT Communication Error, slave not in op state</EN>
+7401    <CH>EtherCAT通讯报警：参数配置错误，请检查相关配置</CH><EN>EtherCAT Communication Error, param config error</EN>
+7402    <CH>EtherCAT通讯报警：网口配置错误，请检查相关配置</CH><EN>EtherCAT Communication Error, connect port error</EN>
+7403    <CH>EtherCAT通讯报警：初始化句柄错误，请重启系统</CH><EN>EtherCAT Communication Error, init instance error</EN>
+7404    <CH>EtherCAT通讯报警：加载eni文件失败，请检查eni文件是否丢失</CH><EN>EtherCAT Communication Error, load eni file error</EN>
+7411    <CH>EtherCAT通讯报警：未连接网线，请检查网络连接</CH><EN>EtherCAT Communication Error, no slave connect</EN>
+7412    <CH>EtherCAT通讯报警：网络连接错误，请检查网络连接</CH><EN>EtherCAT Communication Error, slave connect error</EN>
+7413    <CH>EtherCAT通讯报警：从站配置错误，请检查耦合器模块拨码开关</CH><EN>EtherCAT Communication Error, slave config error</EN>
+7600    <CH>EtherCAT伺服回零失败</CH><EN>EtherCAT Servo homing failed</EN>
+7601    <CH>EtherCAT伺服回零过程中掉励磁</CH><EN>EtherCAT Servo power off during homing</EN>
+7800    <CH>EtherCAT伺服未上主电</CH><EN>EtherCAT Servo main power is off</EN>
+8000    <CH>CANOPEN报警</CH><EN>CANOPEN Alarm</EN>
+29001    <CH>COPYRTINFO失败，需重启系统</CH><EN>Failed to COPYRTINFO, please restart</EN>
+29002    <CH>内核心跳异常，需重启系统</CH><EN>Invalid kernel tick, please restart</EN>
+29003    <CH>PCSROOT命名失败，需重启系统</CH><EN>Failed to catalog PCSROOT, please restart</EN>
+29004    <CH>SHMVALID申请内存失败，需重启系统</CH><EN>Failed to allocate SHMVALID, please restart</EN>
+29005    <CH>SHMVALID创建失败，需重启系统</CH><EN>Failed to create SHMVALID, please restart</EN>
+29006    <CH>SHMVALID命名失败，需重启系统</CH><EN>Failed to catalog SHMVALID, please restart</EN>
+29007    <CH>SHMVALID验证失败，需升级验证码</CH><EN>Failed to register SHMVALID, please restart</EN>
+29008    <CH>SHMVALID删除失败，需重启系统</CH><EN>Failed to delete SHMVALID, please restart</EN>
+29009    <CH>SHMVALID释放失败，需重启系统</CH><EN>Failed to free SHMVALID, please restart</EN>
+29010    <CH>SHMMC申请内存失败，需重启系统</CH><EN>Failed to allocate SHMMC, please restart</EN>
+29011    <CH>SHMMC创建失败，需重启系统</CH><EN>Failed to create SHMMC, please restart</EN>
+29012    <CH>SHMMC命名失败，需重启系统</CH><EN>Failed to catalog SHMMC, please restart</EN>
+29013    <CH>SHMIO申请内存失败，需重启系统</CH><EN>Failed to allocate SHMIO, please restart</EN>
+29014    <CH>SHMIO创建失败，需重启系统</CH><EN>Failed to create SHMIO, please restart</EN>
+29015    <CH>SHMIO命名失败，需重启系统</CH><EN>Failed to catalog SHMIO, please restart</EN>
+29016    <CH>SHMMONITOR申请内存失败，需重启系统</CH><EN>Failed to allocate SHMMONITOR, please restart</EN>
+29017    <CH>SHMMONITOR创建失败，需重启系统</CH><EN>Failed to create SHMMONITOR, please restart</EN>
+29018    <CH>SHMMONITOR命名失败，需重启系统</CH><EN>Failed to catalog SHMMONITOR, please restart</EN>
+29019    <CH>CANOPEN主站初始化失败，需重启系统</CH><EN>Failed to initialize CANOPEN master, please restart</EN>
+29020    <CH>SEMCMD命名失败，需重启系统</CH><EN>Failed to catalog SEMCMD, please restart</EN>
+29021    <CH>SEMSTATUS命名失败，需重启系统</CH><EN>Failed to catalog SEMSTATUS, please restart</EN>
+29022    <CH>SEMINST命名失败，需重启系统</CH><EN>Failed to catalog SEMINST, please restart</EN>
+29023    <CH>SEMPROP命名失败，需重启系统</CH><EN>Failed to catalog SEMPROP, please restart</EN>
+29024    <CH>SEMIO命名失败，需重启系统</CH><EN>Failed to catalog SEMIO, please restart</EN>
+29025    <CH>SEMMONITOR命名失败，需重启系统</CH><EN>Failed to catalog SEMMONITOR, please restart</EN>
+29026    <CH>TRDMC创建失败，需重启系统</CH><EN>Failed to create TRDMC, please restart</EN>
+29027    <CH>TRDMC命名失败，需重启系统</CH><EN>Failed to catalog TRDMC, please restart</EN>
+29028    <CH>TRDPRE创建失败，需重启系统</CH><EN>Failed to create TRDPRE, please restart</EN>
+29029    <CH>TRDPRE命名失败，需重启系统</CH><EN>Failed to catalog TRDPRE, please restart</EN>
+29030    <CH>TRDLOG创建失败，需重启系统</CH><EN>Failed to create TRDLOG, please restart</EN>
+29031    <CH>TRDLOG命名失败，需重启系统</CH><EN>Failed to catalog TRDLOG, please restart</EN>
+29032    <CH>TRDCANOPEN创建失败，需重启系统</CH><EN>Failed to create TRDCANOPEN, please restart</EN>
+29033    <CH>TRDCANOPEN命名失败，需重启系统</CH><EN>Failed to catalog TRDCANOPEN, please restart</EN>
+29034    <CH>SEMCANMSG命名失败，需重启系统</CH><EN>Failed to catalog SEMCANMSG, please restart</EN>
+29035    <CH>TRDCANU2C创建失败，需重启系统</CH><EN>Failed to create TRDCANU2C, please restart</EN>
+29036    <CH>TRDCANU2C命名失败，需重启系统</CH><EN>Failed to catalog TRDCANU2C, please restart</EN>
+29037    <CH>PCSECAT创建失败，需重启系统</CH><EN>Failed to create PCSECAT, please restart</EN>
+29038    <CH>SHMECAT查找失败，需重启系统</CH><EN>Failed to lookup SHMECAT, please restart</EN>
+29039    <CH>SEMECATSTART查找失败，需重启系统</CH><EN>Failed to lookup SEMECATSTART, please restart</EN>
+29040    <CH>SEMECATIO查找失败，需重启系统</CH><EN>Failed to lookup SEMECATIO, please restart</EN>
+29041    <CH>PCSPLC查找失败，需重启系统</CH><EN>Failed to lookup PCSPLC, please restart</EN>
+29042    <CH>ALMECLR查找失败，需重启系统</CH><EN>Failed to lookup ALMECLR, please restart</EN>
+29043    <CH>SEMECAT命名失败，需重启系统</CH><EN>Failed to catalog SEMECAT, please restart</EN>
+29044    <CH>TRDECAT创建失败，需重启系统</CH><EN>Failed to create TRDECAT, please restart</EN>
+29045    <CH>ECAT初始化失败，需重启系统</CH><EN>Failed to initialize ECAT, please restart</EN>
+29046    <CH>ALMRT创建失败，需重启系统</CH><EN>Failed to create ALMRT, please restart</EN>
+29047    <CH>TRDALARM创建失败，需重启系统</CH><EN>Failed to create TRDALARM, please restart</EN>
+29048    <CH>TRDALARM命名失败，需重启系统</CH><EN>Failed to catalog TRDALARM, please restart</EN>
+29049    <CH>SEMRTINIT命名失败，需重启系统</CH><EN>Failed to catalog SEMRTINIT, please restart</EN>
+29050    <CH>EVENT唤醒失败，需重启系统</CH><EN>Failed to notify EVENT, please restart</EN>
+29051    <CH>ALMECLR等待失败，需重启系统</CH><EN>Failed to wait ALMECLR, please restart</EN>
+29052    <CH>ALMRT等待失败，需重启系统</CH><EN>Failed to wait ALMRT, please restart</EN>
+29053    <CH>TRDALARM删除失败，需重启系统</CH><EN>Failed to delete TRDALARM, please restart</EN>
+29054    <CH>TRDCANOPEN删除失败，需重启系统</CH><EN>Failed to delete TRDCANOPEN, please restart</EN>
+29055    <CH>TRDCANU2C删除失败，需重启系统</CH><EN>Failed to delete TRDCANU2C, please restart</EN>
+29056    <CH>TRDMC删除失败，需重启系统</CH><EN>Failed to delete TRDMC, please restart</EN>
+29057    <CH>TRDECAT删除失败，需重启系统</CH><EN>Failed to delete TRDECAT, please restart</EN>
+29058    <CH>TRDPRE删除失败，需重启系统</CH><EN>Failed to delete TRDPRE, please restart</EN>
+29059    <CH>TRDLOG删除失败，需重启系统</CH><EN>Failed to delete TRDLOG, please restart</EN>
+29060    <CH>SEMRTINIT删除失败，需重启系统</CH><EN>Failed to delete SEMRTINIT, please restart</EN>
+29061    <CH>SEMPRE删除失败，需重启系统</CH><EN>Failed to delete SEMPRE, please restart</EN>
+29062    <CH>SEMCANMSG删除失败，需重启系统</CH><EN>Failed to delete SEMCANMSG, please restart</EN>
+29063    <CH>SEMMC删除失败，需重启系统</CH><EN>Failed to delete SEMMC, please restart</EN>
+29064    <CH>SEMCANOPEN删除失败，需重启系统</CH><EN>Failed to delete SEMCANOPEN, please restart</EN>
+29065    <CH>SEMECAT删除失败，需重启系统</CH><EN>Failed to delete SEMECAT, please restart</EN>
+29066    <CH>SEMCMD删除失败，需重启系统</CH><EN>Failed to delete SEMCMD, please restart</EN>
+29067    <CH>SEMSTATUS删除失败，需重启系统</CH><EN>Failed to delete SEMSTATUS, please restart</EN>
+29068    <CH>SEMINST删除失败，需重启系统</CH><EN>Failed to delete SEMINST, please restart</EN>
+29069    <CH>SEMPROP删除失败，需重启系统</CH><EN>Failed to delete SEMPROP, please restart</EN>
+29070    <CH>SEMIO删除失败，需重启系统</CH><EN>Failed to delete SEMIO, please restart</EN>
+29071    <CH>SEMMONITOR删除失败，需重启系统</CH><EN>Failed to delete SEMMONITOR, please restart</EN>
+29072    <CH>SEMINTERP删除失败，需重启系统</CH><EN>Failed to delete SEMINTERP, please restart</EN>
+29073    <CH>SEMTICK删除失败，需重启系统</CH><EN>Failed to delete SEMTICK, please restart</EN>
+29074    <CH>SHMMC删除失败，需重启系统</CH><EN>Failed to delete SHMMC, please restart</EN>
+29075    <CH>SHMMC释放失败，需重启系统</CH><EN>Failed to free SHMMC, please restart</EN>
+29076    <CH>SHMIO删除失败，需重启系统</CH><EN>Failed to delete SHMIO, please restart</EN>
+29077    <CH>SHMIO释放失败，需重启系统</CH><EN>Failed to free SHMIO, please restart</EN>
+29078    <CH>SHMMONITOR删除失败，需重启系统</CH><EN>Failed to delete SHMMONITOR, please restart</EN>
+29079    <CH>SHMMONITOR释放失败，需重启系统</CH><EN>Failed to free SHMMONITOR, please restart</EN>
+29080    <CH>SHMECAT删除失败，需重启系统</CH><EN>Failed to delete SHMECAT, please restart</EN>
+29081    <CH>PCSROOT解除命名失败，需重启系统</CH><EN>Failed to uncatalog PCSROOT, please restart</EN>
+29101    <CH>加载内核报警文件失败，需升级报警文件</CH><EN>Failed to load motion alarm file, please update file</EN>
+29102    <CH>加载机器人参数配置文件失败，需升级参数文件</CH><EN>Failed to load robot parameter file, please update file</EN>
+29103    <CH>机器人参数配置错误，缺少参数或者参数范围错误</CH><EN>Incorrect configuration of robot parameter, param lost or range error</EN>
+29104    <CH>系统不支持此机型</CH><EN>This robot type not supported</EN>
+29106    <CH>[RC]关节通道号配置错误：与其它轴重复或超范围</CH><EN>[RC]Incorrect configuration of AxisNum, equal to other AxisNum or exceeds the range</EN>
+29107    <CH>关节频率文件组数超限或负载顺序配置错误</CH><EN>Incorrect configuration of freq parameter, group numbers or load mass error</EN>
+29108    <CH>插补周期错误或者细插补方式错误</CH><EN>Incorrect configuration of Tc or Ts, or Incorrect Interp-Type of fine-interpolation module</EN>
+29110    <CH>[RC&Sg]关节通道号配置个数超范围</CH><EN>[RC&Sg]Incorrect configuration of AxisNum, exceeds the range</EN>
+29111    <CH>[RC&Sg]关节通道号配置不连续</CH><EN>[RC&Sg]Incorrect configuration of AxisNum, discontinuity</EN>
+29112    <CH>[Sg]关节通道号配置错误：与其它轴重复或超范围</CH><EN>[Sg]Incorrect configuration of AxisNum, equal to other AxisNum or exceeds the range</EN>
+29113    <CH>[RC&Sg]关节通道号配置错误与其它轴重复</CH><EN>[RC&Sg]Incorrect configuration of AxisNum, equal to other AxisNum</EN>
+29114    <CH>监控数据个数超出限制</CH><EN>Number of Monitoring data exceeds the range</EN>
+29115    <CH>加载机器人轴参数配置文件失败，需升级参数文件</CH><EN>Failed to load robotAxis parameter file, please update file</EN>
+29116    <CH>加载系统IO参数配置文件失败，需升级参数文件</CH><EN>Failed to load ioCfg parameter file, please update file</EN>
+29118    <CH>加载频率参数配置文件失败，需升级参数文件</CH><EN>Failed to load Freq parameter file, please update file</EN>
+29120    <CH>通讯总轴数超范围</CH><EN>AxesNum exceeds the range</EN>
+29121    <CH>[RC&Sg]关节正限位脉冲溢出，请设置伺服电子齿轮比或缩短正限位</CH><EN>Pulse overflow, please set servo gear or reduce positive soft pos</EN>
+29122    <CH>[RC&Sg]关节负限位脉冲溢出，请设置伺服电子齿轮比或缩短负限位</CH><EN>Pulse overflow, please set servo gear or reduce negative soft pos</EN>
+29123    <CH>外部轴伺服版本无法适配机器人控制系统，请联系厂家更换伺服驱动器</CH><EN>The external servo version does not fit the robot control system</EN>
+29131    <CH>ADP库文件缓存定义与系统不匹配，需升级库文件</CH><EN>Incorrect configuration of Buffer in ADP file, please update file</EN>
+29135    <CH>OVR库文件缓存定义与系统不匹配，需升级库文件</CH><EN>Incorrect configuration of Buffer in OVR file, please update file</EN>
+29141    <CH>CUB控制轴数不匹配，需升级库文件</CH><EN>CUB unmatched AxisNum, please update file</EN>
+29142    <CH>CUB函数个数不匹配，需升级库文件</CH><EN>CUB unmatched funcNum, please update file</EN>
+29143    <CH>CUB函数的形参个数不匹配，需升级库文件</CH><EN>CUB unmatched funcPara, please update file</EN>
+29144    <CH>CUB结构体变量类型个数不匹配，需升级库文件</CH><EN>CUB unmatched structNum, please update file</EN>
+29145    <CH>CUB结构体的大小不匹配，需升级库文件</CH><EN>CUB unmatched structSize, please update file</EN>
+29146    <CH>CUB枚举变量类型个数不匹配，需升级库文件</CH><EN>CUB unmatched enumNum, please update file</EN>
+29147    <CH>CUB枚举的元素个数不匹配，需升级库文件</CH><EN>CUB unmatched enumList, please update file</EN>
+29200    <CH>EtherCAT主站配置错误或bootfile缺少或bootfile不匹配</CH><EN>EtherCAT Master config Error or bootfile lost or bootfile not match</EN>
