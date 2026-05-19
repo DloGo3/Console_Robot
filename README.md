@@ -1,5 +1,7 @@
 # Console_Robot 机械臂控制后端交接文档
 
+[中文](README.md) | [English](README.en.md)
+
 这个项目是机械臂检测工位的后端控制程序，核心作用是把前端/工艺卡系统、埃斯顿机器人、PLC、光源控制器、MySQL 数据库和拍照触发流程串起来。可以先把它当成一个 ASP.NET Core Web API 项目理解：HTTP 接口负责接收指令，Service 层负责真正和硬件、数据库、轨迹文件打交道。
 
 ## 项目当前状态
