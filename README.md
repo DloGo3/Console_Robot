@@ -437,7 +437,7 @@ Seq 日志由 `config.yaml` 的 `SeqDatabaseSettings` 控制。代码把 Control
 4. PLC 信号状态
 5. 机器人控制器报警信息
 
-## 接手时最应该先看的文件
+## 上手时最应该先看的文件
 
 建议按顺序读：
 
